@@ -216,6 +216,7 @@ body {
 }
 
 .segment-library h2,
+.builder-main h2,
 .builder-side h2,
 .explorer-workspace h2 {
   margin: 0;
@@ -386,6 +387,7 @@ body {
   outline: 3px solid rgba(49, 92, 69, 0.18);
 }
 
+.builder-main,
 .builder-side,
 .explorer-workspace {
   display: flex;
@@ -551,6 +553,25 @@ body {
   color: var(--danger);
   border-color: var(--danger);
   outline: none;
+}
+
+.heading-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+a.quiet-action {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  text-decoration: none;
+}
+
+.quiet-action--download:hover,
+.quiet-action--download:focus-visible {
+  color: var(--forest);
+  border-color: var(--forest);
 }
 
 .construction-list {

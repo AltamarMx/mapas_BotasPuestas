@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from xml.etree import ElementTree
+
 import pytest
 
 from app.app import (
@@ -12,11 +14,13 @@ from app.app import (
     closest_orientation,
     combined_bounds,
     construction_details,
+    construction_gpx,
     construction_profile,
     normalized_search,
     oriented_geometry,
     rank_segments,
     segment_network_color,
+    segment_within_bounds,
 )
 
 
@@ -61,6 +65,18 @@ def test_map_keeps_every_unselected_segment_available() -> None:
     ]
 
 
+def test_segment_within_bounds_requires_full_containment() -> None:
+    inside = {"bounds": [[19.0, -99.2], [19.1, -99.1]]}
+    partial = {"bounds": [[18.9, -99.2], [19.1, -99.1]]}
+    outside = {"bounds": [[20.0, -98.0], [20.1, -97.9]]}
+    viewport = ((18.95, -99.3), (19.2, -99.0))
+
+    assert segment_within_bounds(inside, viewport)
+    assert not segment_within_bounds(partial, viewport)
+    assert not segment_within_bounds(outside, viewport)
+    assert segment_within_bounds(partial, ())
+
+
 def test_available_map_colors_are_stable_and_never_selection_green() -> None:
     colors = [segment_network_color(f"gilles-{index:03d}") for index in range(194)]
 
@@ -98,7 +114,7 @@ def test_only_nearby_or_crossing_segments_stay_active() -> None:
 def test_construction_profile_accumulates_distance_and_reverses_elevation() -> None:
     first = segment("first", "Primero", 1_000, [19.0, -99.01], [19.0, -99.0])
     first["profile"] = [[0.0, 100.0], [1.0, 200.0]]
-    second = segment("second", "Segundo", 500, [19.0, -99.0], [19.0, -98.995])
+    second = segment("second", "Segundo", 500, [19.0, -98.995], [19.0, -99.0])
     second["profile"] = [[0.0, 300.0], [0.5, 400.0]]
     lookup = {item["id"]: item for item in (first, second)}
 
@@ -107,6 +123,47 @@ def test_construction_profile_accumulates_distance_and_reverses_elevation() -> N
     assert pieces[0]["points"] == [[0.0, 100.0], [1.0, 200.0]]
     assert pieces[1]["points"] == [[1.0, 400.0], [1.5, 300.0]]
     assert pieces[-1]["end_km"] == pytest.approx(1.5)
+
+
+def test_construction_gpx_exports_ordered_track_with_elevation() -> None:
+    first = segment("first", "Primero", 1_000, [19.0, -99.01], [19.0, -99.0])
+    first["profile"] = [[0.0, 100.0], [1.0, 200.0]]
+    second = segment("second", "Segundo", 500, [19.0, -98.995], [19.0, -99.0])
+    second["profile"] = [[0.0, 300.0], [0.5, 400.0]]
+    lookup = {item["id"]: item for item in (first, second)}
+
+    xml = construction_gpx((("first", False), ("second", True)), lookup)
+    root = ElementTree.fromstring(xml)
+    ns = {"gpx": "http://www.topografix.com/GPX/1/1"}
+
+    assert root.find("gpx:trk/gpx:name", ns).text == "Primero + Segundo"
+    assert len(root.findall(".//gpx:trkseg", ns)) == 2
+    points = root.findall(".//gpx:trkpt", ns)
+    assert [point.attrib["lon"] for point in points] == [
+        "-99.010000",
+        "-99.000000",
+        "-99.000000",
+        "-98.995000",
+    ]
+    elevations = [float(point.find("gpx:ele", ns).text) for point in points]
+    assert elevations == [100.0, 200.0, 400.0, 300.0]
+
+
+def test_construction_profile_includes_gaps_in_accumulated_distance() -> None:
+    first = segment("first", "Primero", 1_000, [19.0, -99.01], [19.0, -99.0])
+    first["profile"] = [[0.0, 100.0], [1.0, 200.0]]
+    second = segment("second", "Segundo", 500, [19.0, -98.995], [19.0, -98.99])
+    second["profile"] = [[0.0, 300.0], [0.5, 400.0]]
+    lookup = {item["id"]: item for item in (first, second)}
+
+    pieces = construction_profile((("first", False), ("second", False)), lookup)
+    details = construction_details((("first", False), ("second", False)), lookup)
+    gap_km = details[1]["gap_m"] / 1_000
+
+    assert gap_km > 0.4
+    assert pieces[1]["start_km"] == pytest.approx(1.0 + gap_km)
+    assert pieces[1]["points"][0][0] == pytest.approx(1.0 + gap_km)
+    assert pieces[-1]["end_km"] == pytest.approx(1.5 + gap_km)
 
 
 def test_suggestions_choose_the_nearest_endpoint_and_direction() -> None:

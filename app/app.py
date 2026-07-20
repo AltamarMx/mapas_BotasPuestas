@@ -22,7 +22,7 @@ from ipyleaflet import (
 )
 from ipywidgets import HTML
 from shiny import App, reactive, render, ui
-from shinywidgets import output_widget, render_widget
+from shinywidgets import output_widget, reactive_read, render_widget
 
 APP_DIR = Path(__file__).parent
 DATA_DIR = APP_DIR / "_generated"
@@ -82,6 +82,19 @@ DIRECT_CONNECTION_M = float(BUILDER_CONFIG.get("direct_connection_m", DEFAULT_DI
 WARNING_CONNECTION_M = float(
     BUILDER_CONFIG.get("warning_connection_m", DEFAULT_WARNING_CONNECTION_M)
 )
+
+
+def segment_within_bounds(segment: dict[str, Any], bounds: Any) -> bool:
+    if not bounds:
+        return True
+    (south, west), (north, east) = bounds
+    (segment_south, segment_west), (segment_north, segment_east) = segment["bounds"]
+    return (
+        segment_south >= south
+        and segment_west >= west
+        and segment_north <= north
+        and segment_east <= east
+    )
 
 
 def normalized_search(value: str) -> str:
@@ -589,6 +602,8 @@ def construction_profile(
     pieces: list[dict[str, Any]] = []
     accumulated_km = 0.0
     for detail in construction_details(selection, segments):
+        if detail["gap_m"] is not None:
+            accumulated_km += detail["gap_m"] / 1_000
         segment = detail["segment"]
         segment_id = segment["id"]
         distance_km = detail["distance_m"] / 1_000
@@ -614,6 +629,40 @@ def construction_profile(
         )
         accumulated_km += distance_km
     return pieces
+
+
+def construction_gpx(selection: Selection, segments: dict[str, dict[str, Any]]) -> str:
+    details = construction_details(selection, segments)
+    titles = [detail["segment"]["title"] for detail in details]
+    name = escape(" + ".join(titles)) if titles else "Ruta en construcción"
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<gpx version="1.1" creator="Botas Puestas" '
+        'xmlns="http://www.topografix.com/GPX/1/1">',
+        "  <trk>",
+        f"    <name>{name}</name>",
+    ]
+    for detail in details:
+        profile = detail["segment"].get("profile") or []
+        span_m = detail["source_end_m"] - detail["source_start_m"]
+        for points in detail["geometry"]:
+            distances = polyline_distances(points)
+            total_m = distances[-1] if distances else 0.0
+            lines.append("    <trkseg>")
+            for point, along_m in zip(points, distances, strict=True):
+                if profile:
+                    fraction = along_m / total_m if total_m > 0 else 0.0
+                    source_km = (detail["source_start_m"] + fraction * span_m) / 1_000
+                    elevation = profile_elevation_at(profile, source_km)
+                    lines.append(
+                        f'      <trkpt lat="{point[0]:.6f}" lon="{point[1]:.6f}">'
+                        f"<ele>{elevation:.1f}</ele></trkpt>"
+                    )
+                else:
+                    lines.append(f'      <trkpt lat="{point[0]:.6f}" lon="{point[1]:.6f}"/>')
+            lines.append("    </trkseg>")
+    lines.extend(["  </trk>", "</gpx>", ""])
+    return "\n".join(lines)
 
 
 def combined_bounds(details: list[dict[str, Any]]) -> list[list[float]] | None:
@@ -696,7 +745,7 @@ app_ui = ui.page_fluid(
         ),
         ui.tags.link(
             rel="stylesheet",
-            href="styles.css?v=continuaciones-altimetria-20260720-4",
+            href="styles.css?v=descargar-ruta-20260720-1",
         ),
         ui.tags.script(src="route-state.js?v=lista-20260720-1", defer=True),
     ),
@@ -745,13 +794,24 @@ app_ui = ui.page_fluid(
                 ui.nav_panel(
                     "Construir",
                     ui.div(
-                        ui.tags.section(
-                            ui.div(
-                                ui.tags.p("MAPA", class_="section-kicker"),
-                                ui.h2("Construye directamente sobre la red"),
+                        ui.tags.main(
+                            ui.tags.section(
+                                ui.div(
+                                    ui.tags.p("MAPA", class_="section-kicker"),
+                                    ui.h2("Construye directamente sobre la red"),
+                                ),
+                                output_widget("mapa", height="680px"),
+                                class_="map-panel",
                             ),
-                            output_widget("mapa", height="680px"),
-                            class_="map-panel",
+                            ui.tags.section(
+                                ui.div(
+                                    ui.tags.p("ALTIMETRÍA", class_="section-kicker"),
+                                    ui.h2("Elevación por distancia"),
+                                ),
+                                output_widget("altimetria", height="300px"),
+                                class_="altimetry-panel",
+                            ),
+                            class_="builder-main",
                         ),
                         ui.tags.aside(
                             ui.output_ui("builder_metrics"),
@@ -761,24 +821,20 @@ app_ui = ui.page_fluid(
                                         ui.tags.p("SECUENCIA", class_="section-kicker"),
                                         ui.h2("Ruta en construcción"),
                                     ),
-                                    ui.tags.button(
-                                        "Vaciar",
-                                        type="button",
-                                        class_="quiet-action",
-                                        data_builder_action="clear",
+                                    ui.div(
+                                        ui.output_ui("download_route_area"),
+                                        ui.tags.button(
+                                            "Vaciar",
+                                            type="button",
+                                            class_="quiet-action",
+                                            data_builder_action="clear",
+                                        ),
+                                        class_="heading-actions",
                                     ),
                                     class_="construction-heading",
                                 ),
                                 ui.output_ui("construction"),
                                 class_="construction-panel",
-                            ),
-                            ui.tags.section(
-                                ui.div(
-                                    ui.tags.p("ALTIMETRÍA", class_="section-kicker"),
-                                    ui.h2("Elevación por distancia"),
-                                ),
-                                output_widget("altimetria", height="300px"),
-                                class_="altimetry-panel",
                             ),
                             class_="builder-side",
                         ),
@@ -794,7 +850,8 @@ app_ui = ui.page_fluid(
                                 ui.tags.p("BIBLIOTECA", class_="section-kicker"),
                                 ui.h2("Tramos disponibles"),
                                 ui.tags.p(
-                                    f"Explora los {len(SEGMENTS)} tramos sin alterar tu ruta.",
+                                    f"Explora los {len(SEGMENTS)} tramos sin alterar tu ruta. "
+                                    "La lista muestra solo los que caben completos en el mapa.",
                                     class_="section-copy",
                                 ),
                                 ui.input_text(
@@ -888,10 +945,33 @@ def server(input: Any, output: Any, session: Any) -> None:
     def selected_details() -> list[dict[str, Any]]:
         return construction_details(selection.get(), SEGMENTS)
 
+    @render.ui
+    def download_route_area() -> Any:
+        if not selected_details():
+            return None
+        return ui.download_button(
+            "descargar_ruta",
+            "Descargar",
+            class_="quiet-action quiet-action--download",
+        )
+
+    @render.download(filename="ruta-botas-puestas.gpx")
+    def descargar_ruta() -> Any:
+        yield construction_gpx(selection.get(), SEGMENTS)
+
+    @reactive.calc
+    def explorer_visible_segments() -> list[dict[str, Any]]:
+        viewport = reactive_read(explorer_map, "bounds")
+        return [
+            segment
+            for segment in SEGMENTS.values()
+            if segment_within_bounds(segment, viewport)
+        ]
+
     @reactive.calc
     def explorer_results() -> list[tuple[dict[str, Any], float | None, bool]]:
         return rank_segments(
-            list(SEGMENTS.values()),
+            explorer_visible_segments(),
             query=input.buscar_explorar(),
         )
 
@@ -901,10 +981,16 @@ def server(input: Any, output: Any, session: Any) -> None:
         result_count = len(explorer_results())
         if query:
             title = f"Resultados para “{query}”"
-            copy = f"{result_count} de {len(SEGMENTS)} tramos, ordenados por longitud."
+            copy = (
+                f"{result_count} de {len(SEGMENTS)} tramos completos en la vista, "
+                "ordenados por longitud."
+            )
         else:
-            title = "Todos los tramos"
-            copy = "Ordenados del más largo al más corto."
+            title = "Tramos completos en la vista"
+            copy = (
+                f"{result_count} de {len(SEGMENTS)} tramos. Mueve o acerca el mapa "
+                "para actualizar la lista."
+            )
         return ui.div(ui.tags.strong(title), ui.tags.span(copy), class_="catalog-context")
 
     @render.ui
@@ -912,7 +998,8 @@ def server(input: Any, output: Any, session: Any) -> None:
         items = explorer_results()
         if not items:
             return ui.tags.p(
-                "No hay tramos que coincidan con esta búsqueda.",
+                "Ningún tramo cabe completo en la vista actual. Aleja o mueve el "
+                "mapa, o ajusta la búsqueda.",
                 class_="empty-state",
             )
         return ui.div(
@@ -971,7 +1058,7 @@ def server(input: Any, output: Any, session: Any) -> None:
         connection_copy = f"{direct}/{len(gaps)} directas" if gaps else "Sin conexiones"
         return ui.div(
             metric_card("Tramos", str(len(details))),
-            metric_card("Distancia", format_distance(distance_m)),
+            metric_card("Distancia", format_distance(distance_m + sum(gaps))),
             metric_card("Huecos", format_distance(sum(gaps)), accent="#b7791f"),
             metric_card("Conexiones", connection_copy, accent="#2b6f8a"),
             class_="metrics-grid",
@@ -1111,6 +1198,8 @@ def server(input: Any, output: Any, session: Any) -> None:
         total_distance_km = pieces[-1]["end_km"] if pieces else 0
         figure.update_layout(
             template="plotly_white",
+            height=300,
+            autosize=True,
             margin={"l": 58, "r": 20, "t": 42, "b": 52},
             hovermode="x unified",
             paper_bgcolor="#fffdf7",
