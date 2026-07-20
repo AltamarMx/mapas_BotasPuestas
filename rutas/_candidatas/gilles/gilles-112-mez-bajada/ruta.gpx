@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>MEZ-bajada</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #112. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99945882" minlon="-99.08973184" maxlat="19.00098148" maxlon="-99.08949195" />
+  </metadata>
+  <trk>
+    <name>MEZ-bajada</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00098148" lon="-99.08968289" />
+      <trkpt lat="19.00082876" lon="-99.08965842" />
+      <trkpt lat="19.00067604" lon="-99.08958491" />
+      <trkpt lat="19.00054579" lon="-99.08950176" />
+      <trkpt lat="19.000438" lon="-99.08949682" />
+      <trkpt lat="19.00032568" lon="-99.08951643" />
+      <trkpt lat="19.00024488" lon="-99.08949195" />
+      <trkpt lat="19.00011906" lon="-99.08957024" />
+      <trkpt lat="18.99997984" lon="-99.08965842" />
+      <trkpt lat="18.99981815" lon="-99.08970242" />
+      <trkpt lat="18.99965194" lon="-99.08965347" />
+      <trkpt lat="18.99956209" lon="-99.089629" />
+      <trkpt lat="18.99945882" lon="-99.08973184" />
+    </trkseg>
+  </trk>
+</gpx>

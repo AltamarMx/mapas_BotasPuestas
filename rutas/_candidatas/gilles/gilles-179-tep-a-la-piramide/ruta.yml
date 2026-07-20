@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-179-tep-a-la-piramide
+titulo: TEP-a la pirámide
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 179
+  nombre_original: TEP-a la pirámide
+  nombre_alternativo: null
+  sha256_geometria: 1692ccbfa835dd1d2c235d92a2f2ccc68ae78f334e64b336c3531f32519f75c9

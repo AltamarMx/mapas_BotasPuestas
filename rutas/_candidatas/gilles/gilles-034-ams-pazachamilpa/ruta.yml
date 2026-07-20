@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-034-ams-pazachamilpa
+titulo: AMS-PazaChamilpa
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 34
+  nombre_original: AMS-PazaChamilpa
+  nombre_alternativo: null
+  sha256_geometria: a6e763002c215e2b6588b3246f4f6a8efae36e4d70903418df3ad53fcbe8e641

@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-052-c-bosque-cadena
+titulo: C.Bosque-cadena
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 52
+  nombre_original: C.Bosque-cadena
+  nombre_alternativo: null
+  sha256_geometria: a67ea4be210b776c184742efd9bf4f4d1fb6739ca0be0231fd043663ca17e67a

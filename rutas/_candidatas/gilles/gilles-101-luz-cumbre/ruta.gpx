@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Luz-cumbre</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #101. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00635118" minlon="-99.09635514" maxlat="19.00894504" maxlon="-99.09503583" />
+  </metadata>
+  <trk>
+    <name>Luz-cumbre</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00894504" lon="-99.09512392">
+        <ele>2347.5</ele>
+      </trkpt>
+      <trkpt lat="19.00872954" lon="-99.09503583">
+        <ele>2350.67</ele>
+      </trkpt>
+      <trkpt lat="19.00845998" lon="-99.09503583">
+        <ele>2351.43</ele>
+      </trkpt>
+      <trkpt lat="19.00807374" lon="-99.09511412">
+        <ele>2348.42</ele>
+      </trkpt>
+      <trkpt lat="19.00771441" lon="-99.09522182">
+        <ele>2346.48</ele>
+      </trkpt>
+      <trkpt lat="19.00742691" lon="-99.09532953">
+        <ele>2347.23</ele>
+      </trkpt>
+      <trkpt lat="19.0072203" lon="-99.09546666">
+        <ele>2349.57</ele>
+      </trkpt>
+      <trkpt lat="19.00696197" lon="-99.09546406">
+        <ele>2351.99</ele>
+      </trkpt>
+      <trkpt lat="19.00680933" lon="-99.09556196">
+        <ele>2356.52</ele>
+      </trkpt>
+      <trkpt lat="19.00667463" lon="-99.09572843">
+        <ele>2361.58</ele>
+      </trkpt>
+      <trkpt lat="19.00656676" lon="-99.09593403">
+        <ele>2362.7</ele>
+      </trkpt>
+      <trkpt lat="19.00647699" lon="-99.09607116">
+        <ele>2356.11</ele>
+      </trkpt>
+      <trkpt lat="19.00635118" lon="-99.09625724">
+        <ele>2346.98</ele>
+      </trkpt>
+      <trkpt lat="19.00645" lon="-99.09635514">
+        <ele>2350.79</ele>
+      </trkpt>
+      <trkpt lat="19.00658478" lon="-99.09628658">
+        <ele>2358.2</ele>
+      </trkpt>
+      <trkpt lat="19.00666558" lon="-99.09619848">
+        <ele>2360.29</ele>
+      </trkpt>
+      <trkpt lat="19.00671948" lon="-99.09602221">
+        <ele>2363.41</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-147-sje-por-el-arroyo
+titulo: SJE-por el arroyo
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 147
+  nombre_original: SJE-por el arroyo
+  nombre_alternativo: null
+  sha256_geometria: bf5f1ea06b247c7f6897affc96b4ff8e0526c9aa6c6be113fe2f741e86e062fd

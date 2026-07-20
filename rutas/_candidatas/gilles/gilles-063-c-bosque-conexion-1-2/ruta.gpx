@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque-conexión-1-2</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #63. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00977803" minlon="-99.04736468" maxlat="19.01335325" maxlon="-99.0468849" />
+  </metadata>
+  <trk>
+    <name>C.Bosque-conexión-1-2</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01335325" lon="-99.04709738" />
+      <trkpt lat="19.01239109" lon="-99.04712479" />
+      <trkpt lat="19.01171199" lon="-99.04736468" />
+      <trkpt lat="19.01114604" lon="-99.04713845" />
+      <trkpt lat="19.01085963" lon="-99.04700819" />
+      <trkpt lat="19.01072762" lon="-99.0468849" />
+      <trkpt lat="19.01019311" lon="-99.0470014" />
+      <trkpt lat="19.00977803" lon="-99.04730299" />
+    </trkseg>
+  </trk>
+</gpx>

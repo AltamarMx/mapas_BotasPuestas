@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-114-mez-entrada-central
+titulo: MEZ-entrada central
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 114
+  nombre_original: MEZ-entrada central
+  nombre_alternativo: null
+  sha256_geometria: 052ee09c588c628987404d493d55d8b4e313a7579e53ed0161d504f4d69b67ec

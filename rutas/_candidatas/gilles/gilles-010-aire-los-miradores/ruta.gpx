@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Aire-los miradores</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #10. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00262358" minlon="-99.07383825" maxlat="19.00428546" maxlon="-99.07138059" />
+  </metadata>
+  <trk>
+    <name>Aire-los miradores</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00349496" lon="-99.07383825" />
+      <trkpt lat="19.00353092" lon="-99.07349551" />
+      <trkpt lat="19.0035129" lon="-99.07320181" />
+      <trkpt lat="19.00349496" lon="-99.07298639" />
+      <trkpt lat="19.00344106" lon="-99.07270242" />
+      <trkpt lat="19.00336915" lon="-99.07256537" />
+      <trkpt lat="19.00327938" lon="-99.072487" />
+      <trkpt lat="19.00323445" lon="-99.0722912" />
+      <trkpt lat="19.00318952" lon="-99.07205617" />
+      <trkpt lat="19.00318055" lon="-99.07179181" />
+      <trkpt lat="19.00306379" lon="-99.07172324" />
+      <trkpt lat="19.00292004" lon="-99.07166448" />
+      <trkpt lat="19.00262358" lon="-99.07146868" />
+      <trkpt lat="19.00292901" lon="-99.07154705" />
+      <trkpt lat="19.0030907" lon="-99.07143935" />
+      <trkpt lat="19.00325239" lon="-99.07138059" />
+      <trkpt lat="19.00324342" lon="-99.0715862" />
+      <trkpt lat="19.00327938" lon="-99.0718799" />
+      <trkpt lat="19.00335121" lon="-99.07209531" />
+      <trkpt lat="19.00346797" lon="-99.07214426" />
+      <trkpt lat="19.00358481" lon="-99.07222264" />
+      <trkpt lat="19.00371951" lon="-99.07228139" />
+      <trkpt lat="19.0038273" lon="-99.07220302" />
+      <trkpt lat="19.00392612" lon="-99.07217368" />
+      <trkpt lat="19.00407884" lon="-99.07225197" />
+      <trkpt lat="19.00417767" lon="-99.07234996" />
+      <trkpt lat="19.00428546" lon="-99.07246739" />
+    </trkseg>
+  </trk>
+</gpx>

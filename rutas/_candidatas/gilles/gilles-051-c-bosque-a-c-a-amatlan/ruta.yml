@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-051-c-bosque-a-c-a-amatlan
+titulo: C.Bosque-A.C. a Amatlán
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 51
+  nombre_original: C.Bosque-A.C. a Amatlán
+  nombre_alternativo: null
+  sha256_geometria: 221f0cda6903fa6fd449e70d81268c803722be62a52d624fab1d733acc69bf64

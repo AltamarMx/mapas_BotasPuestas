@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-013-aire-por-el-coral
+titulo: Aire-por el coral
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 13
+  nombre_original: Aire-por el coral
+  nombre_alternativo: null
+  sha256_geometria: e440ce403e7bf05c8f396ad194f9ddd21befc702bd8eabe2942399b98d70236b

@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-091-cor-principal
+titulo: COR-principal
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 91
+  nombre_original: COR-principal
+  nombre_alternativo: null
+  sha256_geometria: d47e90f070a48e712848dc14cdf63ef5a8a00651efb8dd14d9538d54c564d7c6

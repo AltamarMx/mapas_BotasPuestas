@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-136-sdo-cumbre-del-cerro-huitzilac
+titulo: SDO-cumbre del cerro Huitzilac
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 136
+  nombre_original: SDO-cumbre del cerro Huitzilac
+  nombre_alternativo: null
+  sha256_geometria: ffb4fd6f7014854c6c68e3cf690e75d357d128423040c43f78eed4e66e4c48fd

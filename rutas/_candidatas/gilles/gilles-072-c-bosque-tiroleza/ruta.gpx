@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque-tiroleza</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #72. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00813602" minlon="-99.05639919" maxlat="19.01423561" maxlon="-99.05405905" />
+  </metadata>
+  <trk>
+    <name>C.Bosque-tiroleza</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01423561" lon="-99.05639919" />
+      <trkpt lat="19.01401098" lon="-99.05604674" />
+      <trkpt lat="19.01365165" lon="-99.05627196" />
+      <trkpt lat="19.01284321" lon="-99.05624254" />
+      <trkpt lat="19.01254674" lon="-99.05562571" />
+      <trkpt lat="19.01211558" lon="-99.05601732" />
+      <trkpt lat="19.01203469" lon="-99.05579218" />
+      <trkpt lat="19.01175625" lon="-99.05554734" />
+      <trkpt lat="19.01143287" lon="-99.05538088" />
+      <trkpt lat="19.01100162" lon="-99.05533193" />
+      <trkpt lat="19.01091185" lon="-99.05511651" />
+      <trkpt lat="19.01148677" lon="-99.05498927" />
+      <trkpt lat="19.01118133" lon="-99.054813" />
+      <trkpt lat="19.01075008" lon="-99.05483253" />
+      <trkpt lat="19.01059745" lon="-99.05448988" />
+      <trkpt lat="19.01030098" lon="-99.05464654" />
+      <trkpt lat="19.01014826" lon="-99.05439198" />
+      <trkpt lat="19.00965415" lon="-99.05405905" />
+      <trkpt lat="19.00951048" lon="-99.05418629" />
+      <trkpt lat="19.00928585" lon="-99.05405905" />
+      <trkpt lat="19.00917806" lon="-99.05422552" />
+      <trkpt lat="19.00904336" lon="-99.05407858" />
+      <trkpt lat="19.00861211" lon="-99.05438217" />
+      <trkpt lat="19.00813602" lon="-99.05443112" />
+    </trkseg>
+  </trk>
+</gpx>

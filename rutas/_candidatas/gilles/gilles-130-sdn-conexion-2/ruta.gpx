@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>SDN-conexión-2</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #130. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.02642868" minlon="-99.05789034" maxlat="19.02987826" maxlon="-99.05670069" />
+  </metadata>
+  <trk>
+    <name>SDN-conexión-2</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.02642868" lon="-99.05670069" />
+      <trkpt lat="19.02648258" lon="-99.05680345" />
+      <trkpt lat="19.02649608" lon="-99.05696506" />
+      <trkpt lat="19.02649608" lon="-99.05706782" />
+      <trkpt lat="19.02668467" lon="-99.057156" />
+      <trkpt lat="19.02690033" lon="-99.05727343" />
+      <trkpt lat="19.02704853" lon="-99.05740569" />
+      <trkpt lat="19.027318" lon="-99.05749379" />
+      <trkpt lat="19.02750668" lon="-99.05758188" />
+      <trkpt lat="19.02774917" lon="-99.05765531" />
+      <trkpt lat="19.02796484" lon="-99.05765531" />
+      <trkpt lat="19.02814002" lon="-99.05772882" />
+      <trkpt lat="19.02838251" lon="-99.05777282" />
+      <trkpt lat="19.02858468" lon="-99.05784625" />
+      <trkpt lat="19.02880026" lon="-99.05789034" />
+      <trkpt lat="19.02884066" lon="-99.05772882" />
+      <trkpt lat="19.02894845" lon="-99.0576113" />
+      <trkpt lat="19.02908323" lon="-99.05758188" />
+      <trkpt lat="19.02921793" lon="-99.0576994" />
+      <trkpt lat="19.02929882" lon="-99.05774348" />
+      <trkpt lat="19.02939311" lon="-99.05768473" />
+      <trkpt lat="19.02956829" lon="-99.05764064" />
+      <trkpt lat="19.02959528" lon="-99.05749379" />
+      <trkpt lat="19.02970308" lon="-99.0573616" />
+      <trkpt lat="19.02987826" lon="-99.05734694" />
+    </trkseg>
+  </trk>
+</gpx>

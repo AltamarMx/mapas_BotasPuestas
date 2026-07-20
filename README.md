@@ -24,6 +24,30 @@ uv run python scripts/version_shinylive_export.py site
 uv run python -m http.server --directory site 8008
 ```
 
+## Rutas legacy en revisión
+
+Los 194 elementos `<rte>` de los GPX de Gilles se extraen como candidatas independientes en
+`rutas/_candidatas/gilles/`. Permanecen fuera del catálogo activo hasta revisar si cada geometría es
+un recorrido completo, un tramo reutilizable o material descartable.
+
+```bash
+uv run python scripts/extract_legacy_routes.py --check
+```
+
+Los 27 tramos que incluyen `<ele>` conservan esa elevación. Los otros 167 se completan durante el
+build desde el caché versionado `elevacion-dem.json`, generado con NASA SRTMGL1 v3. Si cambia la
+geometría de las candidatas, regenera ese caché antes de ejecutar `build_content.py`:
+
+```bash
+uv run python -m scripts.build_elevation_cache
+```
+
+Las teselas descargadas quedan en `.cache/srtm/` (ignorada por Git); el JSON resultante guarda los
+hashes de geometría y de las cuatro teselas para que los builds posteriores no usen la red.
+
+El extractor, la estructura editorial propuesta y el flujo para clasificar, reseñar, asociar fotos
+y publicar rutas nuevas están documentados en [`docs/flujo-de-datos-rutas.md`](docs/flujo-de-datos-rutas.md).
+
 No abras `site/index.html` directamente con `file://`: Shinylive necesita que los archivos se sirvan por HTTP.
 
 ## Primera publicación de este repositorio
@@ -220,7 +244,8 @@ Al hacer push a `main`, el workflow:
 | Foto sin fecha | Entrega el original con `DateTimeOriginal` o corrige `fecha_hora` en CSV. |
 | Foto sin GPS | Entrega el original con GPS; como excepción, una hora dentro del GPX permite interpolar. |
 | Foto demasiado lejos del track | Comprueba que pertenece a la ruta o corrige coordenadas. |
-| Perfil “sin datos” | El GPX no contiene `<ele>`. |
+| Perfil “sin datos” | La ruta no contiene `<ele>` ni tiene un registro vigente en `elevacion-dem.json`. |
+| La geometría cambió; regenera el caché | Ejecuta `python -m scripts.build_elevation_cache` y vuelve a generar el contenido. |
 | Duración “sin datos” | El GPX no contiene `<time>`. |
 | HEIC no reconocido | Conserva `.heic`/`.heif`; `pillow-heif` se instala mediante `uv sync`. |
 | La app no refleja cambios | Vuelve a ejecutar `scripts/build_content.py` antes de iniciar Shiny. |
@@ -228,7 +253,8 @@ Al hacer push a `main`, el workflow:
 ## Cómo se calculan las métricas
 
 - Distancia: Haversine dentro de cada segmento GPX.
-- Perfil: elevación interpolada cada 20 m y mediana móvil de cinco muestras.
+- Perfil: elevación GPX cuando existe; en las candidatas sin `<ele>`, NASA SRTMGL1 v3 muestreado
+  bilinealmente. Después se interpola cada 20 m y se aplica una mediana móvil de cinco muestras.
 - Ascenso/descenso: suma sobre el mismo perfil filtrado mostrado en pantalla.
 - Tiempo en movimiento: intervalos de hasta cinco minutos con velocidad entre 1 y 12 km/h.
 - Esfuerzo: `distancia_km + ascenso_m / 100`, combinado con el tiempo en movimiento.

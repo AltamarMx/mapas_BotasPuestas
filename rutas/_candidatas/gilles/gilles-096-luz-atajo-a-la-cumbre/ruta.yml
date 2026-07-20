@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-096-luz-atajo-a-la-cumbre
+titulo: Luz-atajo a la cumbre
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 96
+  nombre_original: Luz-atajo a la cumbre
+  nombre_alternativo: null
+  sha256_geometria: 70882cd1c4fee07b1b69731efd7689590755dfa1808b46005c9d2b5b603cd9ce

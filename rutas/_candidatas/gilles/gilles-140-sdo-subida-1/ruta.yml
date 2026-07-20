@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-140-sdo-subida-1
+titulo: SDO-subida-1
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 140
+  nombre_original: SDO-subida-1
+  nombre_alternativo: null
+  sha256_geometria: 822170535e77ea07b72f84799bb39b00e6982936d63fef3c0bdd6ae06758d049

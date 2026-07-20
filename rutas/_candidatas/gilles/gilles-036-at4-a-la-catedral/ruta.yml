@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-036-at4-a-la-catedral
+titulo: AT4-a la catedral
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 36
+  nombre_original: AT4-a la catedral
+  nombre_alternativo: null
+  sha256_geometria: 03b870ea977d82ffd5340fc9bb1fa243be7049a39ab2c570b07c03c3fb93f499

@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-077-cem-abajo-de-la-santiago
+titulo: CEM-abajo de la Santiago
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 77
+  nombre_original: CEM-abajo de la Santiago
+  nombre_alternativo: null
+  sha256_geometria: 80b9a157d453181107563bc418b14248d872748ed14694a43f19dc4f14746a1b

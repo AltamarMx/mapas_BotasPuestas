@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-094-luz-a-meztitla
+titulo: Luz-a Meztitla
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 94
+  nombre_original: Luz-a Meztitla
+  nombre_alternativo: null
+  sha256_geometria: 64c121fec2b02e95e1580a07fe4e33fe7baf2bdcca61c06b3bad42365959f8dc

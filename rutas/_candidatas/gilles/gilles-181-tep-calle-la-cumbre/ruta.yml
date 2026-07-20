@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-181-tep-calle-la-cumbre
+titulo: TEP-calle la cumbre
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 181
+  nombre_original: TEP-calle la cumbre
+  nombre_alternativo: null
+  sha256_geometria: 89e4c51a1bd6677c4f43af062bdfc7c74f988b7ce76dc95aa5dbce7659737110

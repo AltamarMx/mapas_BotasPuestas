@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-153-sjp-calle201504
+titulo: SJP-calle201504
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 153
+  nombre_original: SJP-calle201504
+  nombre_alternativo: null
+  sha256_geometria: 050bb8bdd6c0b84aaee6f8fcac08a51346b2a38bed152be9a19fb30ce7a9f7f6

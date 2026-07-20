@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-012-aire-mirador-de-la-cumbre
+titulo: Aire-mirador de la cumbre
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 12
+  nombre_original: Aire-mirador de la cumbre
+  nombre_alternativo: null
+  sha256_geometria: 98d25a320c10355bc9d0771a58094e3afac90837c3f40d59c37a2797cdae4491

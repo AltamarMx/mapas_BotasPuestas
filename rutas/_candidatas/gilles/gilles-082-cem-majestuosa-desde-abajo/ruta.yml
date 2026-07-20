@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-082-cem-majestuosa-desde-abajo
+titulo: CEM-majestuosa (desde abajo)
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 82
+  nombre_original: CEM-majestuosa (desde abajo)
+  nombre_alternativo: null
+  sha256_geometria: bf07ba3df1421767ae3eaa9f5082d720bb09a0b7b51e0d9c182adc1a55497689

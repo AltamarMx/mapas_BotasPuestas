@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque-conexión-8</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #69. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00367752" minlon="-99.04615181" maxlat="19.00608597" maxlon="-99.04459345" />
+  </metadata>
+  <trk>
+    <name>C.Bosque-conexión-8</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00608597" lon="-99.04615181" />
+      <trkpt lat="19.00606074" lon="-99.0460136" />
+      <trkpt lat="19.00597273" lon="-99.04590614" />
+      <trkpt lat="19.00579043" lon="-99.04579097" />
+      <trkpt lat="19.00571491" lon="-99.04561445" />
+      <trkpt lat="19.00568976" lon="-99.04541488" />
+      <trkpt lat="19.00560804" lon="-99.04527666" />
+      <trkpt lat="19.00554517" lon="-99.04508471" />
+      <trkpt lat="19.00541936" lon="-99.04500031" />
+      <trkpt lat="19.00523705" lon="-99.04496963" />
+      <trkpt lat="19.00502323" lon="-99.04493887" />
+      <trkpt lat="19.00484713" lon="-99.04492353" />
+      <trkpt lat="19.00460196" lon="-99.04489285" />
+      <trkpt lat="19.00436928" lon="-99.04486209" />
+      <trkpt lat="19.00421832" lon="-99.04479302" />
+      <trkpt lat="19.00407373" lon="-99.04471625" />
+      <trkpt lat="19.00399821" lon="-99.04467023" />
+      <trkpt lat="19.00392906" lon="-99.04459345" />
+      <trkpt lat="19.00386619" lon="-99.04465489" />
+      <trkpt lat="19.00382219" lon="-99.04472396" />
+      <trkpt lat="19.00367752" lon="-99.04474701" />
+    </trkseg>
+  </trk>
+</gpx>

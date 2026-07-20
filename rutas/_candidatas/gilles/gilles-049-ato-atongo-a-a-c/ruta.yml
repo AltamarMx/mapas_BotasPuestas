@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-049-ato-atongo-a-a-c
+titulo: ATO-Atongo a A.C.
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 49
+  nombre_original: ATO-Atongo a A.C.
+  nombre_alternativo: null
+  sha256_geometria: f3169cab0fcb9f62a9d6e6adb5d67790682f88bdb77e0d3c037ae86706d27f1a

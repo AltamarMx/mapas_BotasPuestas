@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>MEZ-vereda-Denise</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #123. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00453649" minlon="-99.09028823" maxlat="19.00556948" maxlon="-99.0866898" />
+  </metadata>
+  <trk>
+    <name>MEZ-vereda-Denise</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00556948" lon="-99.09028823">
+        <ele>2097.8</ele>
+      </trkpt>
+      <trkpt lat="19.00552011" lon="-99.0900434">
+        <ele>2086.78</ele>
+      </trkpt>
+      <trkpt lat="19.00546622" lon="-99.0897595">
+        <ele>2076.06</ele>
+      </trkpt>
+      <trkpt lat="19.00538533" lon="-99.08961751">
+        <ele>2068.7</ele>
+      </trkpt>
+      <trkpt lat="19.00525063" lon="-99.08953914">
+        <ele>2061.21</ele>
+      </trkpt>
+      <trkpt lat="19.00507092" lon="-99.08950486">
+        <ele>2052.87</ele>
+      </trkpt>
+      <trkpt lat="19.00496313" lon="-99.08942163">
+        <ele>2047.48</ele>
+      </trkpt>
+      <trkpt lat="19.00487336" lon="-99.08924544">
+        <ele>2039.91</ele>
+      </trkpt>
+      <trkpt lat="19.00481494" lon="-99.08902022">
+        <ele>2034.31</ele>
+      </trkpt>
+      <trkpt lat="19.00473858" lon="-99.08872643">
+        <ele>2028.32</ele>
+      </trkpt>
+      <trkpt lat="19.00463079" lon="-99.0885453">
+        <ele>2021.22</ele>
+      </trkpt>
+      <trkpt lat="19.00453649" lon="-99.08832008">
+        <ele>2013.04</ele>
+      </trkpt>
+      <trkpt lat="19.00458586" lon="-99.08809">
+        <ele>2010.65</ele>
+      </trkpt>
+      <trkpt lat="19.00464873" lon="-99.08788439">
+        <ele>2008.8</ele>
+      </trkpt>
+      <trkpt lat="19.00471159" lon="-99.0877963">
+        <ele>2009.35</ele>
+      </trkpt>
+      <trkpt lat="19.00467119" lon="-99.08769831">
+        <ele>2005.06</ele>
+      </trkpt>
+      <trkpt lat="19.00465325" lon="-99.0874829">
+        <ele>1998.13</ele>
+      </trkpt>
+      <trkpt lat="19.00472065" lon="-99.08736052">
+        <ele>1996</ele>
+      </trkpt>
+      <trkpt lat="19.00480597" lon="-99.08725776">
+        <ele>1994.23</ele>
+      </trkpt>
+      <trkpt lat="19.0049452" lon="-99.08715491">
+        <ele>1994.26</ele>
+      </trkpt>
+      <trkpt lat="19.00509339" lon="-99.08714024">
+        <ele>1998.33</ele>
+      </trkpt>
+      <trkpt lat="19.0052192" lon="-99.08711577">
+        <ele>2000.93</ele>
+      </trkpt>
+      <trkpt lat="19.00536295" lon="-99.08696883">
+        <ele>1998.44</ele>
+      </trkpt>
+      <trkpt lat="19.00542581" lon="-99.08688569">
+        <ele>1996.59</ele>
+      </trkpt>
+      <trkpt lat="19.00541685" lon="-99.0866898">
+        <ele>1986.93</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

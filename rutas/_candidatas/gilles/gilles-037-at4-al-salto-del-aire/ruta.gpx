@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>AT4-al salto del Aire</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #37. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99889036" minlon="-99.07833019" maxlat="19.00034923" maxlon="-99.07778872" />
+  </metadata>
+  <trk>
+    <name>AT4-al salto del Aire</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.99889036" lon="-99.07833019" />
+      <trkpt lat="18.9989093" lon="-99.07828216" />
+      <trkpt lat="18.99889673" lon="-99.07817253" />
+      <trkpt lat="18.99889673" lon="-99.07803548" />
+      <trkpt lat="18.99895331" lon="-99.07793264" />
+      <trkpt lat="18.99902246" lon="-99.07796692" />
+      <trkpt lat="18.99902246" lon="-99.07802174" />
+      <trkpt lat="18.99906018" lon="-99.07809718" />
+      <trkpt lat="18.99910418" lon="-99.0781794" />
+      <trkpt lat="18.99915447" lon="-99.07819994" />
+      <trkpt lat="18.99926771" lon="-99.07819994" />
+      <trkpt lat="18.99938087" lon="-99.07817253" />
+      <trkpt lat="18.99951297" lon="-99.07812458" />
+      <trkpt lat="18.99961355" lon="-99.07806968" />
+      <trkpt lat="18.99966384" lon="-99.07800799" />
+      <trkpt lat="18.99976443" lon="-99.07793951" />
+      <trkpt lat="18.99985252" lon="-99.07787095" />
+      <trkpt lat="18.99994682" lon="-99.07778872" />
+      <trkpt lat="19.00005997" lon="-99.07780926" />
+      <trkpt lat="19.00015435" lon="-99.07786408" />
+      <trkpt lat="19.00027379" lon="-99.07792577" />
+      <trkpt lat="19.00034923" lon="-99.07792577" />
+    </trkseg>
+  </trk>
+</gpx>

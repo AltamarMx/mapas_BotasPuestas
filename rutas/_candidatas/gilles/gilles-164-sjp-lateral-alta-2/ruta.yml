@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-164-sjp-lateral-alta-2
+titulo: SJP-lateral alta-2
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 164
+  nombre_original: SJP-lateral alta-2
+  nombre_alternativo: null
+  sha256_geometria: b79a2e7c3bde9dd1aa86355a5ec017edd311bb490935c40f4b215e7dc1577fa4

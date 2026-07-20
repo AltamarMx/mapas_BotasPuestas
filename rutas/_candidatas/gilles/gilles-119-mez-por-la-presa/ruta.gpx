@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>MEZ-por la presa</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #119. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.0011772" minlon="-99.08807281" maxlat="19.00296598" maxlon="-99.08610868" />
+  </metadata>
+  <trk>
+    <name>MEZ-por la presa</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00141625" lon="-99.08610868" />
+      <trkpt lat="19.00159235" lon="-99.08610868" />
+      <trkpt lat="19.00178731" lon="-99.08619778" />
+      <trkpt lat="19.00185462" lon="-99.08628973" />
+      <trkpt lat="19.00195168" lon="-99.08641605" />
+      <trkpt lat="19.00205134" lon="-99.08656885" />
+      <trkpt lat="19.00215914" lon="-99.08663934" />
+      <trkpt lat="19.00228855" lon="-99.08669516" />
+      <trkpt lat="19.00245024" lon="-99.0866981" />
+      <trkpt lat="19.00253749" lon="-99.0867245" />
+      <trkpt lat="19.00263187" lon="-99.08679499" />
+      <trkpt lat="19.00270731" lon="-99.08685962" />
+      <trkpt lat="19.0027747" lon="-99.08696246" />
+      <trkpt lat="19.00286632" lon="-99.08705936" />
+      <trkpt lat="19.00292558" lon="-99.08715634" />
+      <trkpt lat="19.00296598" lon="-99.08726203" />
+      <trkpt lat="19.00291208" lon="-99.08738541" />
+      <trkpt lat="19.00277194" lon="-99.0874295" />
+      <trkpt lat="19.00264529" lon="-99.08745297" />
+      <trkpt lat="19.00246742" lon="-99.0874207" />
+      <trkpt lat="19.0023111" lon="-99.08736781" />
+      <trkpt lat="19.0021826" lon="-99.08734728" />
+      <trkpt lat="19.00202092" lon="-99.08731786" />
+      <trkpt lat="19.00193467" lon="-99.08735021" />
+      <trkpt lat="19.00184305" lon="-99.08747653" />
+      <trkpt lat="19.00175412" lon="-99.08762631" />
+      <trkpt lat="19.00166502" lon="-99.08777903" />
+      <trkpt lat="19.00158959" lon="-99.08791414" />
+      <trkpt lat="19.00142513" lon="-99.08802286" />
+      <trkpt lat="19.0011772" lon="-99.08807281" />
+    </trkseg>
+  </trk>
+</gpx>

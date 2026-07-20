@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>SDO-conexión-3</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #135. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.02702229" minlon="-99.05491292" maxlat="19.02716596" maxlon="-99.05406592" />
+  </metadata>
+  <trk>
+    <name>SDO-conexión-3</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.02712103" lon="-99.05491292" />
+      <trkpt lat="19.02711206" lon="-99.05481501" />
+      <trkpt lat="19.02707619" lon="-99.05475626" />
+      <trkpt lat="19.02703126" lon="-99.05468283" />
+      <trkpt lat="19.02702229" lon="-99.0545996" />
+      <trkpt lat="19.02702229" lon="-99.05447714" />
+      <trkpt lat="19.0270492" lon="-99.05442333" />
+      <trkpt lat="19.02709412" lon="-99.05430095" />
+      <trkpt lat="19.02712103" lon="-99.0542422" />
+      <trkpt lat="19.02714349" lon="-99.05416382" />
+      <trkpt lat="19.02716596" lon="-99.05406592" />
+    </trkseg>
+  </trk>
+</gpx>

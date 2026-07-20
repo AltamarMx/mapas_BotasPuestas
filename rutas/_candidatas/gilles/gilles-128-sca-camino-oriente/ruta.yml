@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-128-sca-camino-oriente
+titulo: SCA-camino oriente
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 128
+  nombre_original: SCA-camino oriente
+  nombre_alternativo: null
+  sha256_geometria: 5b87c5447ac7bf70e3da7c3c7824fd703ebd1570b8235a0eac75ff501ec9ab7b

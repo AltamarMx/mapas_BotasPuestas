@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Luz-panteón-1</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #105. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.01046409" minlon="-99.09358811" maxlat="19.01180972" maxlon="-99.09285469" />
+  </metadata>
+  <trk>
+    <name>Luz-panteón-1</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01180972" lon="-99.09358811" />
+      <trkpt lat="19.01165256" lon="-99.09349901" />
+      <trkpt lat="19.01165256" lon="-99.09339616" />
+      <trkpt lat="19.01171543" lon="-99.0932934" />
+      <trkpt lat="19.01175943" lon="-99.09318368" />
+      <trkpt lat="19.01158961" lon="-99.09318368" />
+      <trkpt lat="19.01147017" lon="-99.09318368" />
+      <trkpt lat="19.01130664" lon="-99.09316314" />
+      <trkpt lat="19.0111872" lon="-99.09312199" />
+      <trkpt lat="19.01106147" lon="-99.09303289" />
+      <trkpt lat="19.01093566" lon="-99.09295754" />
+      <trkpt lat="19.01080364" lon="-99.09295754" />
+      <trkpt lat="19.01066526" lon="-99.09293013" />
+      <trkpt lat="19.01053324" lon="-99.09290951" />
+      <trkpt lat="19.01046409" lon="-99.09285469" />
+    </trkseg>
+  </trk>
+</gpx>

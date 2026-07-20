@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Luz-atajo a la vuelta</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #97. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00582136" minlon="-99.09528201" maxlat="19.00907999" maxlon="-99.09419026" />
+  </metadata>
+  <trk>
+    <name>Luz-atajo a la vuelta</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00582136" lon="-99.09526734" />
+      <trkpt lat="19.00595614" lon="-99.09500783" />
+      <trkpt lat="19.0059786" lon="-99.09511554" />
+      <trkpt lat="19.00599654" lon="-99.09525267" />
+      <trkpt lat="19.00604591" lon="-99.09528201" />
+      <trkpt lat="19.00612679" lon="-99.09517924" />
+      <trkpt lat="19.00617172" lon="-99.09500783" />
+      <trkpt lat="19.00628404" lon="-99.09480223" />
+      <trkpt lat="19.0064412" lon="-99.09465537" />
+      <trkpt lat="19.00656701" lon="-99.09457214" />
+      <trkpt lat="19.00673314" lon="-99.09455253" />
+      <trkpt lat="19.00684546" lon="-99.09462595" />
+      <trkpt lat="19.00694872" lon="-99.09471899" />
+      <trkpt lat="19.00705207" lon="-99.09482184" />
+      <trkpt lat="19.00715534" lon="-99.09490013" />
+      <trkpt lat="19.00730805" lon="-99.09489526" />
+      <trkpt lat="19.00755733" lon="-99.09485118" />
+      <trkpt lat="19.00773704" lon="-99.09480223" />
+      <trkpt lat="19.00797961" lon="-99.09470919" />
+      <trkpt lat="19.0081952" lon="-99.09462595" />
+      <trkpt lat="19.00846015" lon="-99.09454272" />
+      <trkpt lat="19.00866232" lon="-99.09446443" />
+      <trkpt lat="19.00885091" lon="-99.09432731" />
+      <trkpt lat="19.00907999" lon="-99.09419026" />
+    </trkseg>
+  </trk>
+</gpx>

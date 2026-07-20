@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>SLL-Mariposas-2</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #177. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.96736837" minlon="-99.00751686" maxlat="18.9685047" maxlon="-99.00602362" />
+  </metadata>
+  <trk>
+    <name>SLL-Mariposas-2</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.96736837" lon="-99.00602362" />
+      <trkpt lat="18.9674402" lon="-99.0061558" />
+      <trkpt lat="18.96755252" lon="-99.00635161" />
+      <trkpt lat="18.96765134" lon="-99.00654749" />
+      <trkpt lat="18.96772318" lon="-99.00671882" />
+      <trkpt lat="18.9678085" lon="-99.00689995" />
+      <trkpt lat="18.96798821" lon="-99.00705661" />
+      <trkpt lat="18.9681364" lon="-99.00716926" />
+      <trkpt lat="18.96825769" lon="-99.00727697" />
+      <trkpt lat="18.96834302" lon="-99.00733078" />
+      <trkpt lat="18.96843731" lon="-99.00738954" />
+      <trkpt lat="18.9685047" lon="-99.00751686" />
+    </trkseg>
+  </trk>
+</gpx>

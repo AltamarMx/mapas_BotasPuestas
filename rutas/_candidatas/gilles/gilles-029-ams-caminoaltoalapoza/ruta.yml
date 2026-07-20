@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-029-ams-caminoaltoalapoza
+titulo: AMS-caminoAltoAlaPoza
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 29
+  nombre_original: AMS-caminoAltoAlaPoza
+  nombre_alternativo: AMS-caminoAltoAlaPoza 1
+  sha256_geometria: d6eaefb5e53886196c37489e015b9521ddaab5fcf28562afb6dd6c7060f8cd1d

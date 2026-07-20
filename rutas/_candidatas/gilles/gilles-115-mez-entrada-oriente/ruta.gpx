@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>MEZ-entrada oriente</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #115. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99436086" minlon="-99.08601807" maxlat="18.99894903" maxlon="-99.08465702" />
+  </metadata>
+  <trk>
+    <name>MEZ-entrada oriente</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.99894903" lon="-99.08537183" />
+      <trkpt lat="18.99866153" lon="-99.0851368" />
+      <trkpt lat="18.99840999" lon="-99.08489205" />
+      <trkpt lat="18.99812258" lon="-99.08473539" />
+      <trkpt lat="18.99781714" lon="-99.08465702" />
+      <trkpt lat="18.99747575" lon="-99.08471578" />
+      <trkpt lat="18.99717936" lon="-99.08481368" />
+      <trkpt lat="18.99693679" lon="-99.0848431" />
+      <trkpt lat="18.99668525" lon="-99.08501937" />
+      <trkpt lat="18.99644276" lon="-99.08518575" />
+      <trkpt lat="18.99619122" lon="-99.08510746" />
+      <trkpt lat="18.99602953" lon="-99.08519556" />
+      <trkpt lat="18.99592166" lon="-99.08540117" />
+      <trkpt lat="18.99565218" lon="-99.08550887" />
+      <trkpt lat="18.99531984" lon="-99.08571457" />
+      <trkpt lat="18.99491558" lon="-99.08592998" />
+      <trkpt lat="18.99436086" lon="-99.08601807" />
+    </trkseg>
+  </trk>
+</gpx>

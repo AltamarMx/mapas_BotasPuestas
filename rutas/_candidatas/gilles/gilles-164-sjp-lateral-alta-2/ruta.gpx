@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>SJP-lateral alta-2</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #164. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.04174846" minlon="-99.11028955" maxlat="19.04420083" maxlon="-99.10174152" />
+  </metadata>
+  <trk>
+    <name>SJP-lateral alta-2</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.04174846" lon="-99.11028955" />
+      <trkpt lat="19.04191014" lon="-99.11026021" />
+      <trkpt lat="19.04213922" lon="-99.11002519" />
+      <trkpt lat="19.04230091" lon="-99.10984891" />
+      <trkpt lat="19.0423144" lon="-99.1096874" />
+      <trkpt lat="19.04244918" lon="-99.10949646" />
+      <trkpt lat="19.04244918" lon="-99.10920267" />
+      <trkpt lat="19.04246259" lon="-99.10890897" />
+      <trkpt lat="19.04250308" lon="-99.10871803" />
+      <trkpt lat="19.04265127" lon="-99.10857118" />
+      <trkpt lat="19.04278605" lon="-99.10839491" />
+      <trkpt lat="19.04270517" lon="-99.10817463" />
+      <trkpt lat="19.04267826" lon="-99.1079396" />
+      <trkpt lat="19.04265127" lon="-99.10764582" />
+      <trkpt lat="19.04259738" lon="-99.10729336" />
+      <trkpt lat="19.04263778" lon="-99.10673521" />
+      <trkpt lat="19.04267826" lon="-99.10617714" />
+      <trkpt lat="19.04269167" lon="-99.10589802" />
+      <trkpt lat="19.04262437" lon="-99.10560432" />
+      <trkpt lat="19.04262437" lon="-99.10535462" />
+      <trkpt lat="19.04270517" lon="-99.10516368" />
+      <trkpt lat="19.04275906" lon="-99.10506084" />
+      <trkpt lat="19.04270517" lon="-99.10482589" />
+      <trkpt lat="19.04278605" lon="-99.10457619" />
+      <trkpt lat="19.04290734" lon="-99.10439992" />
+      <trkpt lat="19.04286685" lon="-99.10413556" />
+      <trkpt lat="19.04292075" lon="-99.10369492" />
+      <trkpt lat="19.04305553" lon="-99.10335713" />
+      <trkpt lat="19.04316332" lon="-99.10304868" />
+      <trkpt lat="19.04324421" lon="-99.1026668" />
+      <trkpt lat="19.0433789" lon="-99.10251995" />
+      <trkpt lat="19.04360798" lon="-99.10231434" />
+      <trkpt lat="19.04382356" lon="-99.10210873" />
+      <trkpt lat="19.04401224" lon="-99.10191779" />
+      <trkpt lat="19.04420083" lon="-99.10174152" />
+    </trkseg>
+  </trk>
+</gpx>

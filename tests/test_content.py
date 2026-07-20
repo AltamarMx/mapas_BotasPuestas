@@ -1,15 +1,12 @@
 from __future__ import annotations
 
 import json
+from collections import Counter
 from pathlib import Path
 
 import pytest
-from PIL import ExifTags, Image
-from pillow_heif import register_heif_opener
 
 from scripts.build_content import DEFAULT_CONFIG, DEFAULT_ROUTES, build_project
-
-register_heif_opener()
 
 
 @pytest.fixture(scope="module")
@@ -26,64 +23,76 @@ def built_content(tmp_path_factory: pytest.TempPathFactory) -> tuple[dict, Path,
     return result, data_output, web_output
 
 
-def test_current_routes_and_metrics(built_content: tuple[dict, Path, Path]) -> None:
+def test_current_content_is_a_segment_library(
+    built_content: tuple[dict, Path, Path],
+) -> None:
     result, _, _ = built_content
-    routes = {route["id"]: route for route in result["routes"]}
-    assert set(routes) == {
-        "2026-07-19-morning-hike",
-        "milpa-alta-santo-domingo-2026",
+    assert result["routes"] == []
+    assert len(result["segments"]) == 194
+
+    longest = result["segments"][0]
+    assert longest["id"] == "gilles-092-exvia"
+    assert longest["title"] == "EXVIA"
+    assert longest["metrics"]["distance_m"] == pytest.approx(31_718, abs=2)
+    assert longest["start"] == longest["geometry"][0][0]
+    assert longest["end"] == longest["geometry"][-1][-1]
+
+
+def test_segments_are_sorted_and_keep_review_state(
+    built_content: tuple[dict, Path, Path],
+) -> None:
+    result, _, _ = built_content
+    segments = result["segments"]
+    distances = [segment["metrics"]["distance_m"] for segment in segments]
+    assert distances == sorted(distances, reverse=True)
+    assert all(segment["record_type"] == "por-definir" for segment in segments)
+    assert all(segment["review_status"] == "pendiente" for segment in segments)
+    assert all(segment["metrics"]["elevation_min_m"] is not None for segment in segments)
+    assert all(segment["profile"] for segment in segments)
+    assert Counter(segment["elevation_source"] for segment in segments) == {
+        "gpx": 27,
+        "nasa-srtmgl1-v3": 167,
     }
 
-    short = routes["2026-07-19-morning-hike"]
-    assert short["metrics"]["distance_m"] == pytest.approx(6_781.3, abs=1)
-    assert short["metrics"]["ascent_m"] == pytest.approx(192, abs=2)
-    assert short["metrics"]["descent_m"] == pytest.approx(192, abs=2)
-    assert short["metrics"]["effort"]["id"] == "ligera"
 
-    milpa = routes["milpa-alta-santo-domingo-2026"]
-    assert milpa["metrics"]["distance_m"] == pytest.approx(23_748.7, abs=1)
-    assert milpa["metrics"]["ascent_m"] == pytest.approx(147, abs=2)
-    assert milpa["metrics"]["descent_m"] == pytest.approx(1_008, abs=2)
-    assert milpa["metrics"]["effort"]["id"] == "muy-exigente"
-    assert len(milpa["photos"]) == 9
-
-
-def test_photo_exif_is_read_and_positions_match_track(
+def test_generated_json_contains_builder_configuration(
     built_content: tuple[dict, Path, Path],
 ) -> None:
-    result, _, _ = built_content
-    milpa = next(route for route in result["routes"] if route["id"].startswith("milpa"))
-    assert all(photo["location_source"] == "EXIF" for photo in milpa["photos"])
-    assert all(photo["captured_at"].endswith("-06:00") for photo in milpa["photos"])
-    assert max(photo["nearest_track_m"] for photo in milpa["photos"]) < 12
-
-
-def test_sources_keep_exif_and_web_copies_strip_it(
-    built_content: tuple[dict, Path, Path],
-) -> None:
-    result, _, web_output = built_content
-    milpa = next(route for route in result["routes"] if route["id"].startswith("milpa"))
-    source_root = DEFAULT_ROUTES / milpa["id"]
-
-    for photo in milpa["photos"]:
-        with Image.open(source_root / photo["source_file"]) as source:
-            exif = source.getexif()
-            exif_ifd = exif.get_ifd(ExifTags.IFD.Exif)
-            gps_ifd = exif.get_ifd(ExifTags.IFD.GPSInfo)
-            assert exif_ifd.get(ExifTags.Base.DateTimeOriginal)
-            assert gps_ifd.get(ExifTags.GPS.GPSLatitude)
-
-        relative_web_path = photo["image_url"].removeprefix("generated/")
-        with Image.open(web_output / relative_web_path) as public_image:
-            assert not public_image.getexif()
-
-
-def test_generated_json_is_complete(built_content: tuple[dict, Path, Path]) -> None:
     _, data_output, web_output = built_content
     catalog = json.loads((data_output / "catalogo.json").read_text(encoding="utf-8"))
-    assert catalog["default_map"] == "osm"
-    assert len(catalog["routes"]) == 2
-    assert (data_output / "rutas" / "milpa-alta-santo-domingo-2026.json").is_file()
-    assert len(list(web_output.glob("fotos/*/web/*.jpg"))) == 9
-    assert len(list(web_output.glob("fotos/*/miniaturas/*.jpg"))) == 9
+    segments = json.loads((data_output / "tramos.json").read_text(encoding="utf-8"))
 
+    assert catalog["default_map"] == "osm"
+    assert catalog["routes"] == []
+    assert catalog["builder"] == {
+        "direct_connection_m": 100.0,
+        "elevation_profile_count": 194,
+        "segment_count": 194,
+        "warning_connection_m": 500.0,
+    }
+    assert len(segments["segments"]) == 194
+    assert set(segments["elevation_sources"]) == {"gpx", "nasa-srtmgl1-v3"}
+    assert not list(web_output.rglob("*.jpg"))
+
+
+def test_elevation_cache_is_complete_and_geometry_bound() -> None:
+    cache_path = DEFAULT_ROUTES / "_candidatas" / "gilles" / "elevacion-dem.json"
+    cache = json.loads(cache_path.read_text(encoding="utf-8"))
+
+    assert cache["schema_version"] == 1
+    assert cache["source"]["id"] == "nasa-srtmgl1-v3"
+    assert {tile["id"] for tile in cache["source"]["tiles"]} == {
+        "N18W099",
+        "N18W100",
+        "N19W099",
+        "N19W100",
+    }
+    assert cache["validation"]["dem_route_count"] == 167
+    assert cache["validation"]["dem_point_count"] == 8_812
+    assert cache["validation"]["preserved_gpx_route_count"] == 27
+    assert len(cache["segments"]) == 167
+    assert all(
+        len(record["elevations_m"]) == record["point_count"]
+        and len(record["geometry_sha256"]) == 64
+        for record in cache["segments"].values()
+    )

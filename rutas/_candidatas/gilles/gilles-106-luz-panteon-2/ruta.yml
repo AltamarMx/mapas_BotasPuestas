@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-106-luz-panteon-2
+titulo: Luz-panteón-2
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 106
+  nombre_original: Luz-panteón-2
+  nombre_alternativo: null
+  sha256_geometria: f2c9e49cf56c428027ee0b77432e3d0c6b814901dfb3dedba42003beb5b04e93

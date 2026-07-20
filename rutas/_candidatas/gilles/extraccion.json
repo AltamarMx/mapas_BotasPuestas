@@ -1,0 +1,27 @@
+{
+  "distancia_km": {
+    "maxima": 31.718,
+    "mediana": 1.115,
+    "minima": 0.05
+  },
+  "fuente": "rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx",
+  "fuente_comparada": "rutas/GPX-Gilles legacy/TEPOZ-heredar-puntos de partida.gpx",
+  "generador": "scripts/extract_legacy_routes.py",
+  "geometrias_coinciden_entre_fuentes": true,
+  "geometrias_duplicadas": 0,
+  "nombres_distintos_entre_fuentes": 6,
+  "puntos_extraidos": 11037,
+  "rutas_con_elevacion_completa": 27,
+  "rutas_extraidas": 194,
+  "rutas_menores_2_km": 144,
+  "rutas_menores_500_m": 56,
+  "sha256_fuente": "31336cd15041aeba35ad7cdc999efd81443514f1e50fb5bdcfab6553bb29ad37",
+  "sha256_fuente_comparada": "7ab73bffd20c02a2f7c194398c32be6e6b6d669fc73b0487c5f4302a53f32312",
+  "transformaciones": [
+    "cada <rte> se convirtió en un <trk> con un <trkseg>",
+    "se conservaron latitud, longitud y elevación cuando existía",
+    "se descartaron nombres de puntos, extensiones Garmin y marcas de tiempo de edición",
+    "ninguna candidata se publica automáticamente"
+  ],
+  "version_esquema": 1
+}

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Aire-los ocotes</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #11. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00426257" minlon="-99.07331061" maxlat="19.00525616" maxlon="-99.06880056" />
+  </metadata>
+  <trk>
+    <name>Aire-los ocotes</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00426257" lon="-99.06880056" />
+      <trkpt lat="19.00426257" lon="-99.06901304" />
+      <trkpt lat="19.00430666" lon="-99.06919811" />
+      <trkpt lat="19.0043821" lon="-99.06938318" />
+      <trkpt lat="19.00447011" lon="-99.06960254" />
+      <trkpt lat="19.00445125" lon="-99.06981502" />
+      <trkpt lat="19.00452669" lon="-99.07000696" />
+      <trkpt lat="19.00459592" lon="-99.07023998" />
+      <trkpt lat="19.00473422" lon="-99.07045246" />
+      <trkpt lat="19.00481595" lon="-99.07060325" />
+      <trkpt lat="19.00484109" lon="-99.07088421" />
+      <trkpt lat="19.00480337" lon="-99.07119267" />
+      <trkpt lat="19.00480337" lon="-99.07145997" />
+      <trkpt lat="19.00477823" lon="-99.07174101" />
+      <trkpt lat="19.00479709" lon="-99.07202893" />
+      <trkpt lat="19.00491661" lon="-99.07220713" />
+      <trkpt lat="19.00506749" lon="-99.07231676" />
+      <trkpt lat="19.00520587" lon="-99.07241961" />
+      <trkpt lat="19.00525616" lon="-99.07247443" />
+      <trkpt lat="19.00517436" lon="-99.07261147" />
+      <trkpt lat="19.00506749" lon="-99.07273485" />
+      <trkpt lat="19.00491033" lon="-99.07252237" />
+      <trkpt lat="19.00482852" lon="-99.07267316" />
+      <trkpt lat="19.00467136" lon="-99.07252237" />
+      <trkpt lat="19.00455183" lon="-99.07274173" />
+      <trkpt lat="19.00445754" lon="-99.07297474" />
+      <trkpt lat="19.00429409" lon="-99.07331061" />
+    </trkseg>
+  </trk>
+</gpx>

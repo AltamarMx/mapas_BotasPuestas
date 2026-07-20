@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-190-tep-otra-bajada-del-ocelotepetl
+titulo: TEP-otra bajada del Ocelotépetl
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 190
+  nombre_original: TEP-otra bajada del Ocelotépetl
+  nombre_alternativo: null
+  sha256_geometria: 0e152905ee85224e4d7af9475d3bf1a96ef8c56654be2cc8aab6e411286cd167

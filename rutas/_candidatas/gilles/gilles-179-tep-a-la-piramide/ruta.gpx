@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>TEP-a la pirámide</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #179. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00058744" minlon="-99.10161311" maxlat="19.00144265" maxlon="-99.10089344" />
+  </metadata>
+  <trk>
+    <name>TEP-a la pirámide</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00144265" lon="-99.10161311" />
+      <trkpt lat="19.00129178" lon="-99.10157195" />
+      <trkpt lat="19.00120997" lon="-99.10151714" />
+      <trkpt lat="19.00110939" lon="-99.10146232" />
+      <trkpt lat="19.00103395" lon="-99.10138688" />
+      <trkpt lat="19.00102138" lon="-99.10130465" />
+      <trkpt lat="19.00106538" lon="-99.10116074" />
+      <trkpt lat="19.00098994" lon="-99.10112645" />
+      <trkpt lat="19.00087042" lon="-99.10110592" />
+      <trkpt lat="19.00085784" lon="-99.10102361" />
+      <trkpt lat="19.00086413" lon="-99.10098933" />
+      <trkpt lat="19.00080127" lon="-99.10094826" />
+      <trkpt lat="19.00071954" lon="-99.10096192" />
+      <trkpt lat="19.00065039" lon="-99.10089344" />
+      <trkpt lat="19.00058744" lon="-99.10090023" />
+    </trkseg>
+  </trk>
+</gpx>

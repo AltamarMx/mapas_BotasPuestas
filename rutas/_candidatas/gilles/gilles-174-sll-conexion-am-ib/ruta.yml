@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-174-sll-conexion-am-ib
+titulo: SLL-conexión-AM-IB
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 174
+  nombre_original: SLL-conexión-AM-IB
+  nombre_alternativo: null
+  sha256_geometria: a01cf037e2da59ca83307831634f60caa23cc6e6138df0893792a23409aa83e9

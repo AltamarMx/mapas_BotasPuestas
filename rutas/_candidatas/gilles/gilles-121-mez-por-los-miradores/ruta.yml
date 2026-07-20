@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-121-mez-por-los-miradores
+titulo: MEZ-por los miradores
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 121
+  nombre_original: MEZ-por los miradores
+  nombre_alternativo: null
+  sha256_geometria: 1bfd9fd70c7b4544e8799028c258544bc7e2d6940011bd2285bc10c8445c7a5f

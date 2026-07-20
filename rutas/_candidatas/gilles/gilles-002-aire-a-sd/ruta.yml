@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-002-aire-a-sd
+titulo: Aire-a SD
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 2
+  nombre_original: Aire-a SD
+  nombre_alternativo: null
+  sha256_geometria: dd12eada5f582e3674b5598ef88f2d1b194df8713a3159619bd90ad252744e51

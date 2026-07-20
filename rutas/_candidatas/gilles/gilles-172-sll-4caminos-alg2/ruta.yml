@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-172-sll-4caminos-alg2
+titulo: SLL-4caminos-alG2
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 172
+  nombre_original: SLL-4caminos-alG2
+  nombre_alternativo: null
+  sha256_geometria: f7e132a335379c4f0dfe360aa2c989e57fab773d2bec9a26ba738eaf3eb03d29

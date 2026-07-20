@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-126-sac-de-las-torres-a-la-carretera
+titulo: SAC-de las torres a la carretera
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 126
+  nombre_original: SAC-de las torres a la carretera
+  nombre_alternativo: null
+  sha256_geometria: da4278d7f3205786ae0a84b20a661980b41423854b9bcef47c0d8fec9abf537c

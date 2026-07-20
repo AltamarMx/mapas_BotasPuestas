@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-093-iba-amatlan
+titulo: IBA-Amatlán
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 93
+  nombre_original: IBA-Amatlán
+  nombre_alternativo: null
+  sha256_geometria: f8eb94dcd8b49ca906657d7a647bff4668a889fcea3de0c9e5d6224aea19e25a

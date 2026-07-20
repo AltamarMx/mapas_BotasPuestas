@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Luz-a Tepoztlán</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #95. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00100511" minlon="-99.09596412" maxlat="19.00509582" maxlon="-99.09310489" />
+  </metadata>
+  <trk>
+    <name>Luz-a Tepoztlán</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00509582" lon="-99.09596412" />
+      <trkpt lat="19.00508677" lon="-99.09581727" />
+      <trkpt lat="19.0049835" lon="-99.09577318" />
+      <trkpt lat="19.00508232" lon="-99.09559691" />
+      <trkpt lat="19.00487571" lon="-99.09553816" />
+      <trkpt lat="19.00482181" lon="-99.09539131" />
+      <trkpt lat="19.00477236" lon="-99.0951955" />
+      <trkpt lat="19.00466457" lon="-99.09497028" />
+      <trkpt lat="19.00453884" lon="-99.09482829" />
+      <trkpt lat="19.00436819" lon="-99.09473039" />
+      <trkpt lat="19.00415252" lon="-99.09462755" />
+      <trkpt lat="19.00392797" lon="-99.09450517" />
+      <trkpt lat="19.00378766" lon="-99.09447089" />
+      <trkpt lat="19.00362144" lon="-99.09440727" />
+      <trkpt lat="19.00352262" lon="-99.09436813" />
+      <trkpt lat="19.00328005" lon="-99.09438279" />
+      <trkpt lat="19.00315432" lon="-99.09437299" />
+      <trkpt lat="19.00299263" lon="-99.09434851" />
+      <trkpt lat="19.00289381" lon="-99.09431423" />
+      <trkpt lat="19.00275903" lon="-99.09427995" />
+      <trkpt lat="19.00260631" lon="-99.09428976" />
+      <trkpt lat="19.00249852" lon="-99.09431423" />
+      <trkpt lat="19.00239073" lon="-99.0943926" />
+      <trkpt lat="19.00228294" lon="-99.09429462" />
+      <trkpt lat="19.00219761" lon="-99.09426042" />
+      <trkpt lat="19.00205386" lon="-99.09421633" />
+      <trkpt lat="19.00195059" lon="-99.09416738" />
+      <trkpt lat="19.00181581" lon="-99.09411843" />
+      <trkpt lat="19.00165413" lon="-99.09408415" />
+      <trkpt lat="19.00156201" lon="-99.09397141" />
+      <trkpt lat="19.00149914" lon="-99.0938637" />
+      <trkpt lat="19.00136889" lon="-99.09369724" />
+      <trkpt lat="19.00121617" lon="-99.09360914" />
+      <trkpt lat="19.00112187" lon="-99.0935063" />
+      <trkpt lat="19.00100511" lon="-99.09336925" />
+      <trkpt lat="19.00107695" lon="-99.0932566" />
+      <trkpt lat="19.00116228" lon="-99.09318318" />
+      <trkpt lat="19.00122514" lon="-99.09310489" />
+    </trkseg>
+  </trk>
+</gpx>

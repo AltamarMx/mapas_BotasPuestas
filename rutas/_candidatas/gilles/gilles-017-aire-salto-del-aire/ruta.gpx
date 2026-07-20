@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Aire-salto del Aire</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #17. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00029953" minlon="-99.07794697" maxlat="19.00121131" maxlon="-99.07681122" />
+  </metadata>
+  <trk>
+    <name>Aire-salto del Aire</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00121131" lon="-99.07716368" />
+      <trkpt lat="19.00109899" lon="-99.07709512" />
+      <trkpt lat="19.00101366" lon="-99.07704617" />
+      <trkpt lat="19.00087888" lon="-99.07696788" />
+      <trkpt lat="19.00076212" lon="-99.07687484" />
+      <trkpt lat="19.0006633" lon="-99.07681122" />
+      <trkpt lat="19.00056448" lon="-99.07686017" />
+      <trkpt lat="19.00042978" lon="-99.07692379" />
+      <trkpt lat="19.00029953" lon="-99.07706084" />
+      <trkpt lat="19.00034437" lon="-99.07725178" />
+      <trkpt lat="19.0003489" lon="-99.07742805" />
+      <trkpt lat="19.0003354" lon="-99.07761899" />
+      <trkpt lat="19.00031746" lon="-99.07776584" />
+      <trkpt lat="19.00033993" lon="-99.07791764" />
+      <trkpt lat="19.00047462" lon="-99.07793725" />
+      <trkpt lat="19.00062734" lon="-99.07791277" />
+      <trkpt lat="19.00073966" lon="-99.0779225" />
+      <trkpt lat="19.00101366" lon="-99.07794697" />
+    </trkseg>
+  </trk>
+</gpx>

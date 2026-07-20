@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-084-cem-por-la-cresta
+titulo: CEM-por la cresta
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 84
+  nombre_original: CEM-por la cresta
+  nombre_alternativo: null
+  sha256_geometria: 1afedab8aea2cba5346babb342fdd7bdf9322eff7ca7c3179e8c6ae3adc49f05

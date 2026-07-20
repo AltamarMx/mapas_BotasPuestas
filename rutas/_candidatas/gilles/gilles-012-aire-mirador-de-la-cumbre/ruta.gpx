@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Aire-mirador de la cumbre</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #12. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00348532" minlon="-99.07732327" maxlat="19.00469743" maxlon="-99.07692673" />
+  </metadata>
+  <trk>
+    <name>Aire-mirador de la cumbre</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00469743" lon="-99.07732327" />
+      <trkpt lat="19.00463817" lon="-99.0772263" />
+      <trkpt lat="19.0045924" lon="-99.077147" />
+      <trkpt lat="19.00451152" lon="-99.07711172" />
+      <trkpt lat="19.00443608" lon="-99.07710878" />
+      <trkpt lat="19.00433097" lon="-99.07710585" />
+      <trkpt lat="19.00422854" lon="-99.0771294" />
+      <trkpt lat="19.00414766" lon="-99.07712647" />
+      <trkpt lat="19.0040345" lon="-99.07709118" />
+      <trkpt lat="19.0039273" lon="-99.07705304" />
+      <trkpt lat="19.00381406" lon="-99.07707651" />
+      <trkpt lat="19.00372513" lon="-99.07708531" />
+      <trkpt lat="19.003674" lon="-99.07705598" />
+      <trkpt lat="19.00360661" lon="-99.07699135" />
+      <trkpt lat="19.00348532" lon="-99.07692673" />
+    </trkseg>
+  </trk>
+</gpx>

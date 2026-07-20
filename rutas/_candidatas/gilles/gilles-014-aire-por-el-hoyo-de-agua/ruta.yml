@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-014-aire-por-el-hoyo-de-agua
+titulo: Aire-por el hoyo de agua
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 14
+  nombre_original: Aire-por el hoyo de agua
+  nombre_alternativo: null
+  sha256_geometria: 500d4f1815d1076c9a9c5a6e38678c7d0aeec9c7e7c763d9ad5a35972af9785f

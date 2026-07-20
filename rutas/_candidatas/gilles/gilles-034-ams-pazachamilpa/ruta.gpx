@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>AMS-PazaChamilpa</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #34. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.96066771" minlon="-99.03309708" maxlat="18.96181754" maxlon="-99.03115835" />
+  </metadata>
+  <trk>
+    <name>AMS-PazaChamilpa</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.96181754" lon="-99.03309708" />
+      <trkpt lat="18.96181754" lon="-99.03272501" />
+      <trkpt lat="18.96176364" lon="-99.03229418" />
+      <trkpt lat="18.96167379" lon="-99.0319025" />
+      <trkpt lat="18.96165585" lon="-99.03168708" />
+      <trkpt lat="18.96165585" lon="-99.0313933" />
+      <trkpt lat="18.96174571" lon="-99.03115835" />
+      <trkpt lat="18.9615121" lon="-99.03119749" />
+      <trkpt lat="18.96135041" lon="-99.03123664" />
+      <trkpt lat="18.9611169" lon="-99.03129539" />
+      <trkpt lat="18.96093719" lon="-99.03137377" />
+      <trkpt lat="18.96090123" lon="-99.03160871" />
+      <trkpt lat="18.96088329" lon="-99.03178498" />
+      <trkpt lat="18.96066771" lon="-99.03192211" />
+    </trkseg>
+  </trk>
+</gpx>

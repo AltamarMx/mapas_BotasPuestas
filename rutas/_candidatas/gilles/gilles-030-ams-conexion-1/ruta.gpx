@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>AMS-conexión-1</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #30. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.96629205" minlon="-99.03425932" maxlat="18.9679629" maxlon="-99.03127771" />
+  </metadata>
+  <trk>
+    <name>AMS-conexión-1</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.96645374" lon="-99.03425932" />
+      <trkpt lat="18.96629205" lon="-99.03393611" />
+      <trkpt lat="18.96629205" lon="-99.03381868" />
+      <trkpt lat="18.96645374" lon="-99.03362774" />
+      <trkpt lat="18.96669623" lon="-99.03365708" />
+      <trkpt lat="18.9669253" lon="-99.03370117" />
+      <trkpt lat="18.96715438" lon="-99.03365708" />
+      <trkpt lat="18.96732956" lon="-99.0335249" />
+      <trkpt lat="18.96754514" lon="-99.03318711" />
+      <trkpt lat="18.96755864" lon="-99.03287865" />
+      <trkpt lat="18.96751824" lon="-99.03239401" />
+      <trkpt lat="18.96757213" lon="-99.03218832" />
+      <trkpt lat="18.96766643" lon="-99.03198271" />
+      <trkpt lat="18.96781462" lon="-99.03167426" />
+      <trkpt lat="18.9679629" lon="-99.03127771" />
+    </trkseg>
+  </trk>
+</gpx>

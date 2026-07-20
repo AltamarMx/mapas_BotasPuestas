@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-085-cha-conexion
+titulo: CHA-conexión
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 85
+  nombre_original: CHA-conexión
+  nombre_alternativo: null
+  sha256_geometria: 7ff6086259637b47a55eccb3c06db584e26b29c2288044839f5980679202e01f

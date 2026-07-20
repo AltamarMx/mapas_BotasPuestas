@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-178-ta-tlayacapan-i-bastida
+titulo: TA-Tlayacapán-I.Bastida
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 178
+  nombre_original: TA-Tlayacapán-I.Bastida
+  nombre_alternativo: null
+  sha256_geometria: a6175e15efdb47daff6d451e56bd62ff57c14f58f2621d14deb924fce05e0742

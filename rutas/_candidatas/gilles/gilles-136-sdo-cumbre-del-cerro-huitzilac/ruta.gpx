@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>SDO-cumbre del cerro Huitzilac</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #136. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.02224234" minlon="-99.05100368" maxlat="19.02599727" maxlon="-99.05043086" />
+  </metadata>
+  <trk>
+    <name>SDO-cumbre del cerro Huitzilac</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.02599727" lon="-99.05043086" />
+      <trkpt lat="19.02581312" lon="-99.05047495" />
+      <trkpt lat="19.02562897" lon="-99.05053371" />
+      <trkpt lat="19.02549427" lon="-99.0506218" />
+      <trkpt lat="19.02534599" lon="-99.05073931" />
+      <trkpt lat="19.02524273" lon="-99.05083235" />
+      <trkpt lat="19.02506302" lon="-99.05090578" />
+      <trkpt lat="19.02488784" lon="-99.05100368" />
+      <trkpt lat="19.02472615" lon="-99.05099387" />
+      <trkpt lat="19.02456447" lon="-99.05098901" />
+      <trkpt lat="19.02438928" lon="-99.05097434" />
+      <trkpt lat="19.02424109" lon="-99.05092045" />
+      <trkpt lat="19.02410631" lon="-99.05086664" />
+      <trkpt lat="19.02391545" lon="-99.0507834" />
+      <trkpt lat="19.02369987" lon="-99.05074418" />
+      <trkpt lat="19.02353366" lon="-99.05073445" />
+      <trkpt lat="19.02334054" lon="-99.05073931" />
+      <trkpt lat="19.02316536" lon="-99.05071484" />
+      <trkpt lat="19.02293854" lon="-99.05066094" />
+      <trkpt lat="19.02275439" lon="-99.05062675" />
+      <trkpt lat="19.02253881" lon="-99.05060227" />
+      <trkpt lat="19.02224234" lon="-99.05050429" />
+    </trkseg>
+  </trk>
+</gpx>

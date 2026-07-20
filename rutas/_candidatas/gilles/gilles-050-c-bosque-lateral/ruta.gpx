@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque- lateral</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #50. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.01072913" minlon="-99.05288592" maxlat="19.01252118" maxlon="-99.05101583" />
+  </metadata>
+  <trk>
+    <name>C.Bosque- lateral</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01252118" lon="-99.05288592">
+        <ele>2237.59</ele>
+      </trkpt>
+      <trkpt lat="19.01234927" lon="-99.05265835">
+        <ele>2244.38</ele>
+      </trkpt>
+      <trkpt lat="19.01224491" lon="-99.0525721">
+        <ele>2244.55</ele>
+      </trkpt>
+      <trkpt lat="19.01214559" lon="-99.05237077">
+        <ele>2250.79</ele>
+      </trkpt>
+      <trkpt lat="19.01205816" lon="-99.05217798">
+        <ele>2256.39</ele>
+      </trkpt>
+      <trkpt lat="19.01196051" lon="-99.05200758">
+        <ele>2261.83</ele>
+      </trkpt>
+      <trkpt lat="19.01183512" lon="-99.05187464">
+        <ele>2266.2</ele>
+      </trkpt>
+      <trkpt lat="19.01176086" lon="-99.05181748">
+        <ele>2268.02</ele>
+      </trkpt>
+      <trkpt lat="19.01163639" lon="-99.05183181">
+        <ele>2264.65</ele>
+      </trkpt>
+      <trkpt lat="19.01149398" lon="-99.05188143">
+        <ele>2258.54</ele>
+      </trkpt>
+      <trkpt lat="19.01127328" lon="-99.05185243">
+        <ele>2253.35</ele>
+      </trkpt>
+      <trkpt lat="19.01100255" lon="-99.05174296">
+        <ele>2249.61</ele>
+      </trkpt>
+      <trkpt lat="19.01093306" lon="-99.05151489">
+        <ele>2249.53</ele>
+      </trkpt>
+      <trkpt lat="19.01084555" lon="-99.05139805">
+        <ele>2246.14</ele>
+      </trkpt>
+      <trkpt lat="19.0107412" lon="-99.0513118">
+        <ele>2240.96</ele>
+      </trkpt>
+      <trkpt lat="19.01072913" lon="-99.05124751">
+        <ele>2240.38</ele>
+      </trkpt>
+      <trkpt lat="19.01073282" lon="-99.0510813">
+        <ele>2240.42</ele>
+      </trkpt>
+      <trkpt lat="19.01085578" lon="-99.05101583">
+        <ele>2245.23</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

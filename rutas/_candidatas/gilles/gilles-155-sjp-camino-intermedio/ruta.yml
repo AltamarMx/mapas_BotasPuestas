@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-155-sjp-camino-intermedio
+titulo: SJP-camino intermedio
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 155
+  nombre_original: SJP-camino intermedio
+  nombre_alternativo: null
+  sha256_geometria: 82a563545cd6a3627aaac01a7e791e18f3de1faafc10e8e1a56e47335cb6f9da

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>AT4-alterna</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #38. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99580683" minlon="-99.07576223" maxlat="18.99757206" maxlon="-99.07449916" />
+  </metadata>
+  <trk>
+    <name>AT4-alterna</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.99757206" lon="-99.07576223" />
+      <trkpt lat="18.99731599" lon="-99.07571822" />
+      <trkpt lat="18.99708691" lon="-99.07558604" />
+      <trkpt lat="18.99695221" lon="-99.07552728" />
+      <trkpt lat="18.99676354" lon="-99.07538035" />
+      <trkpt lat="18.99664225" lon="-99.07535101" />
+      <trkpt lat="18.99644016" lon="-99.07526292" />
+      <trkpt lat="18.99629189" lon="-99.07505723" />
+      <trkpt lat="18.99619759" lon="-99.0749398" />
+      <trkpt lat="18.996009" lon="-99.07476353" />
+      <trkpt lat="18.99580683" lon="-99.07449916" />
+    </trkseg>
+  </trk>
+</gpx>

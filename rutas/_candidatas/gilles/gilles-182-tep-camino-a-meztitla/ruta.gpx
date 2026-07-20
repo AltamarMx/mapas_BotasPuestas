@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>TEP-camino a Meztitla</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #182. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99053411" minlon="-99.09384744" maxlat="18.99749788" maxlon="-99.08646248" />
+  </metadata>
+  <trk>
+    <name>TEP-camino a Meztitla</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.99749788" lon="-99.08646248" />
+      <trkpt lat="18.99740626" lon="-99.08658" />
+      <trkpt lat="18.99729034" lon="-99.08676507" />
+      <trkpt lat="18.99714483" lon="-99.08687378" />
+      <trkpt lat="18.99698474" lon="-99.0870001" />
+      <trkpt lat="18.99680687" lon="-99.08710579" />
+      <trkpt lat="18.9966451" lon="-99.08721744" />
+      <trkpt lat="18.99647805" lon="-99.08733202" />
+      <trkpt lat="18.99624897" lon="-99.08746714" />
+      <trkpt lat="18.99615468" lon="-99.08755523" />
+      <trkpt lat="18.99605761" lon="-99.08766101" />
+      <trkpt lat="18.99590841" lon="-99.08780099" />
+      <trkpt lat="18.99585184" lon="-99.0879273" />
+      <trkpt lat="18.9957764" lon="-99.08813585" />
+      <trkpt lat="18.99570365" lon="-99.08834741" />
+      <trkpt lat="18.9956174" lon="-99.08856181" />
+      <trkpt lat="18.99553115" lon="-99.08864991" />
+      <trkpt lat="18.99538463" lon="-99.08873222" />
+      <trkpt lat="18.9952149" lon="-99.08876742" />
+      <trkpt lat="18.99499387" lon="-99.08879391" />
+      <trkpt lat="18.99506662" lon="-99.08923153" />
+      <trkpt lat="18.99512052" lon="-99.08955172" />
+      <trkpt lat="18.99516637" lon="-99.08981315" />
+      <trkpt lat="18.99493729" lon="-99.08985137" />
+      <trkpt lat="18.99483486" lon="-99.08986897" />
+      <trkpt lat="18.994657" lon="-99.08986897" />
+      <trkpt lat="18.99455725" lon="-99.08990719" />
+      <trkpt lat="18.99446296" lon="-99.08995413" />
+      <trkpt lat="18.994342" lon="-99.08999529" />
+      <trkpt lat="18.99418568" lon="-99.09003351" />
+      <trkpt lat="18.99400245" lon="-99.09005404" />
+      <trkpt lat="18.99390539" lon="-99.0900952" />
+      <trkpt lat="18.99384613" lon="-99.09018329" />
+      <trkpt lat="18.9938111" lon="-99.09033895" />
+      <trkpt lat="18.99381646" lon="-99.09045931" />
+      <trkpt lat="18.99371948" lon="-99.09050046" />
+      <trkpt lat="18.99368713" lon="-99.09050046" />
+      <trkpt lat="18.99365745" lon="-99.09050046" />
+      <trkpt lat="18.99342301" lon="-99.09045638" />
+      <trkpt lat="18.99294759" lon="-99.09056216" />
+      <trkpt lat="18.99229774" lon="-99.0911789" />
+      <trkpt lat="18.99171294" lon="-99.09172816" />
+      <trkpt lat="18.99156466" lon="-99.09191617" />
+      <trkpt lat="18.99160783" lon="-99.09242788" />
+      <trkpt lat="18.99176415" lon="-99.09249838" />
+      <trkpt lat="18.99196892" lon="-99.09345307" />
+      <trkpt lat="18.99132645" lon="-99.09367704" />
+      <trkpt lat="18.99053411" lon="-99.09384744" />
+    </trkseg>
+  </trk>
+</gpx>

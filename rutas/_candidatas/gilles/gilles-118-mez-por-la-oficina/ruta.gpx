@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>MEZ-por la oficina</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #118. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99377011" minlon="-99.08640926" maxlat="18.99566551" maxlon="-99.0857434" />
+  </metadata>
+  <trk>
+    <name>MEZ-por la oficina</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.99377011" lon="-99.0857434" />
+      <trkpt lat="18.99385996" lon="-99.08590986" />
+      <trkpt lat="18.99389584" lon="-99.08613509" />
+      <trkpt lat="18.99394973" lon="-99.08634069" />
+      <trkpt lat="18.99412047" lon="-99.08640926" />
+      <trkpt lat="18.99440789" lon="-99.08636031" />
+      <trkpt lat="18.99477619" lon="-99.08637984" />
+      <trkpt lat="18.99512655" lon="-99.08629174" />
+      <trkpt lat="18.99542302" lon="-99.08622318" />
+      <trkpt lat="18.99566551" lon="-99.08622318" />
+    </trkseg>
+  </trk>
+</gpx>

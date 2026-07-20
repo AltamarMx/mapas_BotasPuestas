@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Luz-entrada</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #103. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.01045202" minlon="-99.09283256" maxlat="19.01727246" maxlon="-99.09095267" />
+  </metadata>
+  <trk>
+    <name>Luz-entrada</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01727246" lon="-99.0910898" />
+      <trkpt lat="19.01612263" lon="-99.09144234" />
+      <trkpt lat="19.01596991" lon="-99.09107999" />
+      <trkpt lat="19.01511664" lon="-99.09095267" />
+      <trkpt lat="19.0142766" lon="-99.09122684" />
+      <trkpt lat="19.01380948" lon="-99.0913835" />
+      <trkpt lat="19.01364779" lon="-99.09130521" />
+      <trkpt lat="19.01312904" lon="-99.09166748" />
+      <trkpt lat="19.01280558" lon="-99.09190251" />
+      <trkpt lat="19.01252713" lon="-99.09200041" />
+      <trkpt lat="19.0121947" lon="-99.09200041" />
+      <trkpt lat="19.01194316" lon="-99.09201994" />
+      <trkpt lat="19.01175457" lon="-99.09210811" />
+      <trkpt lat="19.01163781" lon="-99.09227458" />
+      <trkpt lat="19.01154804" lon="-99.09247038" />
+      <trkpt lat="19.01140421" lon="-99.09262704" />
+      <trkpt lat="19.01126951" lon="-99.09268579" />
+      <trkpt lat="19.01099986" lon="-99.09267599" />
+      <trkpt lat="19.01065864" lon="-99.09276417" />
+      <trkpt lat="19.01045202" lon="-99.09283256" />
+    </trkseg>
+  </trk>
+</gpx>

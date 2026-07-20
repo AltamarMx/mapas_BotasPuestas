@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Luz-por la cúspide</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #108. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00908141" minlon="-99.09419747" maxlat="19.01046032" maxlon="-99.09284136" />
+  </metadata>
+  <trk>
+    <name>Luz-por la cúspide</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01046032" lon="-99.09284136" />
+      <trkpt lat="19.0103076" lon="-99.09284622" />
+      <trkpt lat="19.0101864" lon="-99.09285117" />
+      <trkpt lat="19.01010099" lon="-99.09291973" />
+      <trkpt lat="19.01002463" lon="-99.09303716" />
+      <trkpt lat="19.00993033" lon="-99.09303716" />
+      <trkpt lat="19.00983604" lon="-99.0931302" />
+      <trkpt lat="19.00977317" lon="-99.09317915" />
+      <trkpt lat="19.00968332" lon="-99.09317915" />
+      <trkpt lat="19.00953957" lon="-99.09320857" />
+      <trkpt lat="19.00944527" lon="-99.09324772" />
+      <trkpt lat="19.00930605" lon="-99.09333581" />
+      <trkpt lat="19.00945424" lon="-99.09337009" />
+      <trkpt lat="19.00944527" lon="-99.09346313" />
+      <trkpt lat="19.00936891" lon="-99.09360512" />
+      <trkpt lat="19.00922516" lon="-99.0937373" />
+      <trkpt lat="19.00918476" lon="-99.09384987" />
+      <trkpt lat="19.00914428" lon="-99.09402614" />
+      <trkpt lat="19.00908141" lon="-99.09419747" />
+    </trkseg>
+  </trk>
+</gpx>

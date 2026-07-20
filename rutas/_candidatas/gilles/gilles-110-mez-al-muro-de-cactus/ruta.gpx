@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>MEZ-al muro de cactus</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #110. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99886656" minlon="-99.09074371" maxlat="19.00458209" maxlon="-99.08531626" />
+  </metadata>
+  <trk>
+    <name>MEZ-al muro de cactus</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00458209" lon="-99.09074371" />
+      <trkpt lat="19.0040117" lon="-99.09010241" />
+      <trkpt lat="19.00299766" lon="-99.08937771" />
+      <trkpt lat="19.00259349" lon="-99.0889126" />
+      <trkpt lat="19.00243624" lon="-99.08890279" />
+      <trkpt lat="19.00212636" lon="-99.0891721" />
+      <trkpt lat="19.00181196" lon="-99.08879508" />
+      <trkpt lat="19.00162328" lon="-99.08990158" />
+      <trkpt lat="19.00147056" lon="-99.09021489" />
+      <trkpt lat="19.00157835" lon="-99.09052335" />
+      <trkpt lat="19.00152446" lon="-99.0905723" />
+      <trkpt lat="19.00122355" lon="-99.09028832" />
+      <trkpt lat="19.00094166" lon="-99.08958323" />
+      <trkpt lat="19.00105398" lon="-99.08909859" />
+      <trkpt lat="19.0010135" lon="-99.08862853" />
+      <trkpt lat="19.00111232" lon="-99.08833483" />
+      <trkpt lat="19.00117527" lon="-99.08808019" />
+      <trkpt lat="19.00088777" lon="-99.08743395" />
+      <trkpt lat="19.00102699" lon="-99.08723328" />
+      <trkpt lat="19.00058233" lon="-99.08690035" />
+      <trkpt lat="19.00080244" lon="-99.08671922" />
+      <trkpt lat="19.00102699" lon="-99.08674856" />
+      <trkpt lat="19.0012067" lon="-99.08661637" />
+      <trkpt lat="19.00115725" lon="-99.08634715" />
+      <trkpt lat="19.00139982" lon="-99.08610231" />
+      <trkpt lat="19.00062055" lon="-99.08537015" />
+      <trkpt lat="19.00041838" lon="-99.08531626" />
+      <trkpt lat="18.99992435" lon="-99.08560024" />
+      <trkpt lat="18.99959419" lon="-99.08575689" />
+      <trkpt lat="18.99886656" lon="-99.08575203" />
+    </trkseg>
+  </trk>
+</gpx>

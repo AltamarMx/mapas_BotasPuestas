@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-111-mez-atongo-a-meztitla
+titulo: MEZ-Atongo a Meztitla
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 111
+  nombre_original: MEZ-Atongo a Meztitla
+  nombre_alternativo: null
+  sha256_geometria: 2063d0b237da014453d086648e3a6275b3fbd22b702746953e200e0c9daad958

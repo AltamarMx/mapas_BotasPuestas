@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import math
 import re
@@ -27,6 +28,7 @@ DEFAULT_ROUTES = REPO_ROOT / "rutas"
 DEFAULT_CONFIG = REPO_ROOT / "app" / "config"
 DEFAULT_DATA_OUTPUT = REPO_ROOT / "app" / "_generated"
 DEFAULT_WEB_OUTPUT = REPO_ROOT / "app" / "www" / "generated"
+ELEVATION_CACHE_FILENAME = "elevacion-dem.json"
 
 EARTH_RADIUS_M = 6_371_008.8
 PROFILE_STEP_M = 20.0
@@ -50,6 +52,19 @@ class TrackPoint:
     lon: float
     elevation_m: float | None
     recorded_at: datetime | None
+
+
+def format_coordinate(value: float) -> str:
+    return f"{value:.8f}".rstrip("0").rstrip(".")
+
+
+def track_geometry_sha256(segments: list[list[TrackPoint]]) -> str:
+    payload = "\n".join(
+        f"{format_coordinate(point.lat)},{format_coordinate(point.lon)}"
+        for segment in segments
+        for point in segment
+    )
+    return hashlib.sha256(payload.encode()).hexdigest()
 
 
 def load_yaml(path: Path) -> dict[str, Any]:
@@ -196,8 +211,7 @@ def resample_profile(
                 else (target - left_distance) / (right_distance - left_distance)
             )
             interpolated.append(
-                elevations[index - 1]
-                + fraction * (elevations[index] - elevations[index - 1])
+                elevations[index - 1] + fraction * (elevations[index] - elevations[index - 1])
             )
 
     filtered = median_filter(interpolated)
@@ -219,9 +233,7 @@ def _perpendicular_distance(
         return math.dist(point, start)
     dx = end[0] - start[0]
     dy = end[1] - start[1]
-    fraction = ((point[0] - start[0]) * dx + (point[1] - start[1]) * dy) / (
-        dx * dx + dy * dy
-    )
+    fraction = ((point[0] - start[0]) * dx + (point[1] - start[1]) * dy) / (dx * dx + dy * dy)
     fraction = min(1.0, max(0.0, fraction))
     projection = (start[0] + fraction * dx, start[1] + fraction * dy)
     return math.dist(point, projection)
@@ -403,9 +415,7 @@ def interpolate_track_position(
     current = timed_points[index]
     elapsed = (current.recorded_at - previous.recorded_at).total_seconds()
     fraction = (
-        0.0
-        if elapsed <= 0
-        else (captured_at - previous.recorded_at).total_seconds() / elapsed
+        0.0 if elapsed <= 0 else (captured_at - previous.recorded_at).total_seconds() / elapsed
     )
     return (
         previous.lat + fraction * (current.lat - previous.lat),
@@ -559,9 +569,7 @@ def classify_effort(
     return effort_km, categories[max(effort_level, time_level)]
 
 
-def build_route(
-    route_dir: Path, classification: dict[str, Any]
-) -> dict[str, Any] | None:
+def build_route(route_dir: Path, classification: dict[str, Any]) -> dict[str, Any] | None:
     manifest_path = route_dir / "ruta.yml"
     manifest = load_yaml(manifest_path)
     if manifest.get("version_esquema") != 1:
@@ -683,6 +691,177 @@ def build_route(
     }
 
 
+def load_elevation_cache(path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ContentError(f"No se pudo leer el caché de elevación {path}: {exc}") from exc
+    if not isinstance(payload, dict) or payload.get("schema_version") != 1:
+        raise ContentError(f"version_esquema no soportada en {path}.")
+    source = payload.get("source")
+    records = payload.get("segments")
+    if not isinstance(source, dict) or not isinstance(source.get("id"), str):
+        raise ContentError(f"{path} requiere una fuente de elevación con id.")
+    if not isinstance(records, dict):
+        raise ContentError(f"{path} requiere un objeto segments.")
+    return payload
+
+
+def apply_candidate_elevation(
+    *,
+    route_id: str,
+    manifest: dict[str, Any],
+    segments: list[list[TrackPoint]],
+    elevation_cache: dict[str, Any] | None,
+    cache_path: Path,
+) -> tuple[list[list[TrackPoint]], str | None]:
+    points = [point for segment in segments for point in segment]
+    original_count = sum(point.elevation_m is not None for point in points)
+    if original_count == len(points):
+        return segments, "gpx"
+
+    if elevation_cache is None:
+        return segments, "gpx-parcial" if original_count else None
+
+    record = elevation_cache["segments"].get(route_id)
+    if record is None:
+        raise ContentError(
+            f"Falta elevación para {route_id} en {cache_path.name}; regenera el caché DEM."
+        )
+    if not isinstance(record, dict):
+        raise ContentError(f"Registro inválido para {route_id} en {cache_path}.")
+
+    geometry_hash = track_geometry_sha256(segments)
+    manifest_provenance = manifest.get("procedencia")
+    manifest_hash = (
+        manifest_provenance.get("sha256_geometria")
+        if isinstance(manifest_provenance, dict)
+        else None
+    )
+    cached_hash = record.get("geometry_sha256")
+    if cached_hash != geometry_hash or (manifest_hash and manifest_hash != geometry_hash):
+        raise ContentError(
+            f"La geometría de {route_id} cambió; regenera {cache_path.name} antes del build."
+        )
+
+    elevations = record.get("elevations_m")
+    if record.get("point_count") != len(points) or not isinstance(elevations, list):
+        elevation_count = len(elevations) if isinstance(elevations, list) else 0
+        raise ContentError(
+            f"El caché de {route_id} declara datos para {record.get('point_count')} puntos "
+            f"y contiene {elevation_count}; se esperaban {len(points)}."
+        )
+    if len(elevations) != len(points):
+        elevation_count = len(elevations) if isinstance(elevations, list) else 0
+        raise ContentError(
+            f"El caché de {route_id} tiene {elevation_count} "
+            f"elevaciones para {len(points)} puntos."
+        )
+    try:
+        dem_elevations = [float(value) for value in elevations]
+    except (TypeError, ValueError) as exc:
+        raise ContentError(f"El caché de {route_id} contiene elevaciones inválidas.") from exc
+    if not all(math.isfinite(value) and -500 <= value <= 9_000 for value in dem_elevations):
+        raise ContentError(f"El caché de {route_id} contiene elevaciones fuera de rango.")
+
+    index = 0
+    enriched_segments: list[list[TrackPoint]] = []
+    for segment in segments:
+        enriched_segment: list[TrackPoint] = []
+        for point in segment:
+            elevation_m = (
+                point.elevation_m if point.elevation_m is not None else dem_elevations[index]
+            )
+            enriched_segment.append(
+                TrackPoint(point.lat, point.lon, elevation_m, point.recorded_at)
+            )
+            index += 1
+        enriched_segments.append(enriched_segment)
+
+    source_id = str(elevation_cache["source"]["id"])
+    source = source_id if original_count == 0 else f"gpx+{source_id}"
+    return enriched_segments, source
+
+
+def build_candidate_segment(
+    route_dir: Path,
+    *,
+    elevation_cache: dict[str, Any] | None = None,
+) -> dict[str, Any] | None:
+    manifest_path = route_dir / "ruta.yml"
+    manifest = load_yaml(manifest_path)
+    if manifest.get("version_esquema") != 1:
+        raise ContentError(f"version_esquema no soportada en {manifest_path}.")
+    route_id = str(manifest.get("id", ""))
+    if not SLUG_PATTERN.fullmatch(route_id):
+        raise ContentError(f"id inválido en {manifest_path}: {route_id}")
+    if route_id != route_dir.name:
+        raise ContentError(f"El id {route_id} debe coincidir con la carpeta {route_dir.name}.")
+
+    record_type = str(manifest.get("tipo_registro", "por-definir"))
+    if record_type == "descartar":
+        return None
+    if record_type not in {"por-definir", "tramo", "recorrido"}:
+        raise ContentError(f"tipo_registro inválido en {manifest_path}: {record_type}")
+
+    title = str(manifest.get("titulo", "")).strip()
+    track_filename = str(manifest.get("archivo_gpx", "")).strip()
+    if not title or not track_filename:
+        raise ContentError(f"{manifest_path} requiere titulo y archivo_gpx.")
+    track_path = confined_path(route_dir, track_filename, field="archivo_gpx")
+    if not track_path.is_file():
+        raise ContentError(f"No existe el GPX declarado: {track_path}")
+
+    segments, _ = parse_gpx(track_path)
+    cache_path = route_dir.parent / ELEVATION_CACHE_FILENAME
+    segments, elevation_source = apply_candidate_elevation(
+        route_id=route_id,
+        manifest=manifest,
+        segments=segments,
+        elevation_cache=elevation_cache,
+        cache_path=cache_path,
+    )
+    analysis = analyze_track(segments)
+    geometry = analysis["segments"]
+    first_segment = next((segment for segment in geometry if segment), None)
+    last_segment = next((segment for segment in reversed(geometry) if segment), None)
+    if first_segment is None or last_segment is None:
+        raise ContentError(f"{track_path} no produjo geometría para el constructor.")
+
+    review = manifest.get("revision")
+    provenance = manifest.get("procedencia")
+    return {
+        "schema_version": 1,
+        "id": route_id,
+        "title": title,
+        "region": str(manifest.get("region", "")),
+        "record_type": record_type,
+        "review_status": (
+            str(review.get("estado", "pendiente")) if isinstance(review, dict) else "pendiente"
+        ),
+        "source_order": (provenance.get("indice") if isinstance(provenance, dict) else None),
+        "metrics": {
+            key: analysis[key]
+            for key in (
+                "distance_m",
+                "ascent_m",
+                "descent_m",
+                "elevation_min_m",
+                "elevation_max_m",
+                "point_count",
+            )
+        },
+        "bounds": analysis["bounds"],
+        "start": first_segment[0],
+        "end": last_segment[-1],
+        "geometry": geometry,
+        "profile": analysis["profile"],
+        "elevation_source": elevation_source,
+    }
+
+
 def route_summary(route: dict[str, Any]) -> dict[str, Any]:
     return {
         key: route[key]
@@ -719,9 +898,20 @@ def build_project(
 ) -> dict[str, Any]:
     classification = load_yaml(config_root / "clasificacion.yml")
     maps = load_yaml(config_root / "mapas.yml")
+    builder = load_yaml(config_root / "constructor.yml")
+    if builder.get("version_esquema") != 1:
+        raise ContentError("version_esquema no soportada en constructor.yml.")
+    try:
+        direct_connection_m = float(builder.get("conexion_directa_m", 100))
+        warning_connection_m = float(builder.get("conexion_advertencia_m", 500))
+    except (TypeError, ValueError) as exc:
+        raise ContentError("constructor.yml contiene valores numéricos inválidos.") from exc
+    if not 0 < direct_connection_m <= warning_connection_m:
+        raise ContentError(
+            "Los umbrales del constructor deben ser positivos y estar en orden creciente."
+        )
+
     route_dirs = sorted(path.parent for path in routes_root.glob("*/ruta.yml"))
-    if not route_dirs:
-        raise ContentError(f"No se encontraron rutas con ruta.yml en {routes_root}.")
 
     routes: list[dict[str, Any]] = []
     route_ids: set[str] = set()
@@ -735,6 +925,38 @@ def build_project(
         routes.append(route)
 
     routes.sort(key=lambda route: (route.get("date") or "", route["id"]), reverse=True)
+    candidate_dirs = sorted(path.parent for path in routes_root.glob("_candidatas/*/*/ruta.yml"))
+    candidate_segments: list[dict[str, Any]] = []
+    segment_ids: set[str] = set()
+    elevation_caches: dict[Path, dict[str, Any] | None] = {}
+    elevation_sources: dict[str, dict[str, Any]] = {
+        "gpx": {
+            "id": "gpx",
+            "name": "Elevación incluida en el archivo GPX",
+        }
+    }
+    for candidate_dir in candidate_dirs:
+        cache_path = candidate_dir.parent / ELEVATION_CACHE_FILENAME
+        if cache_path not in elevation_caches:
+            elevation_caches[cache_path] = load_elevation_cache(cache_path)
+        elevation_cache = elevation_caches[cache_path]
+        if elevation_cache is not None:
+            source = elevation_cache["source"]
+            source_id = str(source["id"])
+            if source_id in elevation_sources and elevation_sources[source_id] != source:
+                raise ContentError(f"Fuente de elevación duplicada e inconsistente: {source_id}")
+            elevation_sources[source_id] = source
+        segment = build_candidate_segment(candidate_dir, elevation_cache=elevation_cache)
+        if segment is None:
+            continue
+        if segment["id"] in segment_ids:
+            raise ContentError(f"id de tramo duplicado: {segment['id']}")
+        segment_ids.add(segment["id"])
+        candidate_segments.append(segment)
+    if not routes and not candidate_segments:
+        raise ContentError(f"No se encontraron rutas ni tramos en {routes_root}.")
+    candidate_segments.sort(key=lambda segment: (-segment["metrics"]["distance_m"], segment["id"]))
+
     if (data_output is None) != (web_output is None):
         raise ValueError("data_output y web_output deben proporcionarse juntos.")
 
@@ -749,9 +971,7 @@ def build_project(
             else:
                 filename = f"{photo['id']}.jpg"
                 photo["image_url"] = f"generated/fotos/{route['id']}/web/{filename}"
-                photo["thumbnail_url"] = (
-                    f"generated/fotos/{route['id']}/miniaturas/{filename}"
-                )
+                photo["thumbnail_url"] = f"generated/fotos/{route['id']}/miniaturas/{filename}"
             del photo["_source_path"]
 
         cover_source = route.pop("_cover_source")
@@ -765,13 +985,34 @@ def build_project(
         "schema_version": 1,
         "default_map": maps.get("mapa_predeterminado"),
         "maps": maps.get("mapas", []),
+        "builder": {
+            "direct_connection_m": direct_connection_m,
+            "elevation_profile_count": sum(
+                bool(segment["profile"]) for segment in candidate_segments
+            ),
+            "warning_connection_m": warning_connection_m,
+            "segment_count": len(candidate_segments),
+        },
         "routes": [route_summary(route) for route in routes],
     }
     if data_output is not None:
         write_json(data_output / "catalogo.json", catalog)
         for route in routes:
             write_json(data_output / "rutas" / f"{route['id']}.json", route)
-    return {"catalog": catalog, "routes": routes}
+        write_json(
+            data_output / "tramos.json",
+            {
+                "schema_version": 1,
+                "elevation_sources": elevation_sources,
+                "segments": candidate_segments,
+            },
+        )
+    return {
+        "catalog": catalog,
+        "routes": routes,
+        "segments": candidate_segments,
+        "elevation_sources": elevation_sources,
+    }
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
@@ -805,6 +1046,7 @@ def main(argv: list[str] | None = None) -> int:
             f"+{(metrics['ascent_m'] or 0):.0f}/-{(metrics['descent_m'] or 0):.0f} m, "
             f"{len(route['photos'])} fotos, {metrics['effort']['label']}"
         )
+    print(f"Tramos disponibles para el constructor: {len(result['segments'])}")
     if args.check:
         print("Validación terminada; no se escribieron artefactos.")
     else:

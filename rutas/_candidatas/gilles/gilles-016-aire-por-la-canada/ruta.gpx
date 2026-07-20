@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Aire-por la cañada</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #16. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00446969" minlon="-99.0772118" maxlat="19.0059294" maxlon="-99.07404444" />
+  </metadata>
+  <trk>
+    <name>Aire-por la cañada</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00446969" lon="-99.07424033" />
+      <trkpt lat="19.004537" lon="-99.07436756" />
+      <trkpt lat="19.00462241" lon="-99.07449489" />
+      <trkpt lat="19.0047302" lon="-99.07452431" />
+      <trkpt lat="19.00477957" lon="-99.07440185" />
+      <trkpt lat="19.00484243" lon="-99.07422071" />
+      <trkpt lat="19.00490982" lon="-99.07407872" />
+      <trkpt lat="19.00506254" lon="-99.07404444" />
+      <trkpt lat="19.00520177" lon="-99.0741669" />
+      <trkpt lat="19.00536345" lon="-99.07434803" />
+      <trkpt lat="19.00548927" lon="-99.0745145" />
+      <trkpt lat="19.00562849" lon="-99.07469563" />
+      <trkpt lat="19.00573175" lon="-99.07487676" />
+      <trkpt lat="19.00577668" lon="-99.07517541" />
+      <trkpt lat="19.00582161" lon="-99.07542016" />
+      <trkpt lat="19.00581264" lon="-99.07569417" />
+      <trkpt lat="19.00579018" lon="-99.07594873" />
+      <trkpt lat="19.00577668" lon="-99.07610538" />
+      <trkpt lat="19.00574525" lon="-99.07635994" />
+      <trkpt lat="19.00571834" lon="-99.07654602" />
+      <trkpt lat="19.00589352" lon="-99.07662925" />
+      <trkpt lat="19.0059294" lon="-99.07686914" />
+      <trkpt lat="19.0058351" lon="-99.0772118" />
+    </trkseg>
+  </trk>
+</gpx>

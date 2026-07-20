@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-023-amn-nopaleras-1
+titulo: AMN-nopaleras-1
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 23
+  nombre_original: AMN-nopaleras-1
+  nombre_alternativo: null
+  sha256_geometria: d61061a185113d5f5d3bdc7b9205f6fdf67d104ffab41fbf2a26c339c945575a

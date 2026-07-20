@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-038-at4-alterna
+titulo: AT4-alterna
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 38
+  nombre_original: AT4-alterna
+  nombre_alternativo: null
+  sha256_geometria: a713049992485369b1cceac1f4258ba9982a7f101dc543ca9c2d8acebaeb8472

@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-017-aire-salto-del-aire
+titulo: Aire-salto del Aire
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 17
+  nombre_original: Aire-salto del Aire
+  nombre_alternativo: null
+  sha256_geometria: d5e5a3c03e5c59fdbfa2861ee19d402fdc3f4f5cdfc213a9998c76944c3d7774

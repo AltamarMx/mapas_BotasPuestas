@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>AT4-cuatro peldaños</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #41. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99254828" minlon="-99.07429598" maxlat="18.99505455" maxlon="-99.07332662" />
+  </metadata>
+  <trk>
+    <name>AT4-cuatro peldaños</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.99505455" lon="-99.07397286" />
+      <trkpt lat="18.99497375" lon="-99.0741638" />
+      <trkpt lat="18.99478507" lon="-99.07426665" />
+      <trkpt lat="18.99470427" lon="-99.07429598" />
+      <trkpt lat="18.99455599" lon="-99.07419322" />
+      <trkpt lat="18.9944078" lon="-99.07425198" />
+      <trkpt lat="18.99431351" lon="-99.07422256" />
+      <trkpt lat="18.99419222" lon="-99.07406104" />
+      <trkpt lat="18.99407093" lon="-99.0741198" />
+      <trkpt lat="18.99390925" lon="-99.07404629" />
+      <trkpt lat="18.99382836" lon="-99.07397286" />
+      <trkpt lat="18.99374756" lon="-99.07384068" />
+      <trkpt lat="18.99370708" lon="-99.07363507" />
+      <trkpt lat="18.99359928" lon="-99.07364974" />
+      <trkpt lat="18.993478" lon="-99.07364974" />
+      <trkpt lat="18.99331631" lon="-99.07364974" />
+      <trkpt lat="18.99320852" lon="-99.07360573" />
+      <trkpt lat="18.99306033" lon="-99.07342946" />
+      <trkpt lat="18.99292555" lon="-99.07332662" />
+      <trkpt lat="18.99280426" lon="-99.07332662" />
+      <trkpt lat="18.99254828" lon="-99.07332662" />
+    </trkseg>
+  </trk>
+</gpx>

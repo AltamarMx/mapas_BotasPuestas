@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>SJE-subida en bosque</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #149. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.02731951" minlon="-99.08166661" maxlat="19.04585794" maxlon="-99.07887602" />
+  </metadata>
+  <trk>
+    <name>SJE-subida en bosque</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.02731951" lon="-99.08166661" />
+      <trkpt lat="19.02826273" lon="-99.08117702" />
+      <trkpt lat="19.0291611" lon="-99.08088332" />
+      <trkpt lat="19.02987977" lon="-99.08044268" />
+      <trkpt lat="19.03064327" lon="-99.0799531" />
+      <trkpt lat="19.03172127" lon="-99.07965931" />
+      <trkpt lat="19.03243993" lon="-99.0799531" />
+      <trkpt lat="19.03338315" lon="-99.07990415" />
+      <trkpt lat="19.03419167" lon="-99.080051" />
+      <trkpt lat="19.03504503" lon="-99.08019785" />
+      <trkpt lat="19.03598825" lon="-99.080051" />
+      <trkpt lat="19.03720102" lon="-99.0799531" />
+      <trkpt lat="19.03800946" lon="-99.07965931" />
+      <trkpt lat="19.03877305" lon="-99.07946351" />
+      <trkpt lat="19.03967134" lon="-99.07931666" />
+      <trkpt lat="19.04055789" lon="-99.07921876" />
+      <trkpt lat="19.04114177" lon="-99.07907182" />
+      <trkpt lat="19.04181551" lon="-99.07887602" />
+      <trkpt lat="19.04253418" lon="-99.07907182" />
+      <trkpt lat="19.04316299" lon="-99.07912077" />
+      <trkpt lat="19.04374695" lon="-99.07907182" />
+      <trkpt lat="19.04451046" lon="-99.07902287" />
+      <trkpt lat="19.04509443" lon="-99.07931666" />
+      <trkpt lat="19.04585794" lon="-99.0797573" />
+    </trkseg>
+  </trk>
+</gpx>

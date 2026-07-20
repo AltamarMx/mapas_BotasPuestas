@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-144-sj-sd-por-la-cresta
+titulo: SJ-SD-por la cresta
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 144
+  nombre_original: SJ-SD-por la cresta
+  nombre_alternativo: null
+  sha256_geometria: 057a5adef7c425387b92ab951a898b36d00be16aad55aec84d8874915c120626

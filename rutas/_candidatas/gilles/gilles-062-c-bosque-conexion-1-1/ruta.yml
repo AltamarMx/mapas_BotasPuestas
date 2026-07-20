@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-062-c-bosque-conexion-1-1
+titulo: C.Bosque-conexión-1-1
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 62
+  nombre_original: C.Bosque-conexión-1-1
+  nombre_alternativo: null
+  sha256_geometria: 04d69140396dcf25ba03688c839434d9521b6a81c9ab554d6e34ddb184a2efff

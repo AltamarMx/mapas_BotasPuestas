@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-072-c-bosque-tiroleza
+titulo: C.Bosque-tiroleza
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 72
+  nombre_original: C.Bosque-tiroleza
+  nombre_alternativo: null
+  sha256_geometria: f7db8e7f53f8bccb33e6b76125d6da34a469be83d7634acb9904a54f7f2e04f7

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>IBA-Amatlán</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #93. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.94014982" minlon="-99.03410048" maxlat="18.95820888" maxlon="-99.01469554" />
+  </metadata>
+  <trk>
+    <name>IBA-Amatlán</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.94014982" lon="-99.01469554">
+        <ele>1299.87</ele>
+      </trkpt>
+      <trkpt lat="18.94138799" lon="-99.01692236">
+        <ele>1300.82</ele>
+      </trkpt>
+      <trkpt lat="18.94273655" lon="-99.01877593">
+        <ele>1325.95</ele>
+      </trkpt>
+      <trkpt lat="18.94272532" lon="-99.01950256">
+        <ele>1332.02</ele>
+      </trkpt>
+      <trkpt lat="18.94312321" lon="-99.01969987">
+        <ele>1338.4</ele>
+      </trkpt>
+      <trkpt lat="18.94379821" lon="-99.01945093">
+        <ele>1354.53</ele>
+      </trkpt>
+      <trkpt lat="18.94391379" lon="-99.01958604">
+        <ele>1356.85</ele>
+      </trkpt>
+      <trkpt lat="18.94436801" lon="-99.02102815">
+        <ele>1379.96</ele>
+      </trkpt>
+      <trkpt lat="18.94435049" lon="-99.0218013">
+        <ele>1383.12</ele>
+      </trkpt>
+      <trkpt lat="18.9447545" lon="-99.02222341">
+        <ele>1385.2</ele>
+      </trkpt>
+      <trkpt lat="18.94490277" lon="-99.02296345">
+        <ele>1383.65</ele>
+      </trkpt>
+      <trkpt lat="18.9449441" lon="-99.02329487">
+        <ele>1382.46</ele>
+      </trkpt>
+      <trkpt lat="18.94456515" lon="-99.02340618">
+        <ele>1378.79</ele>
+      </trkpt>
+      <trkpt lat="18.94451905" lon="-99.02380935">
+        <ele>1376.63</ele>
+      </trkpt>
+      <trkpt lat="18.94514384" lon="-99.02434403">
+        <ele>1376.31</ele>
+      </trkpt>
+      <trkpt lat="18.94531114" lon="-99.02473044">
+        <ele>1370.61</ele>
+      </trkpt>
+      <trkpt lat="18.94501484" lon="-99.02528867">
+        <ele>1361.09</ele>
+      </trkpt>
+      <trkpt lat="18.94553854" lon="-99.02537165">
+        <ele>1367.68</ele>
+      </trkpt>
+      <trkpt lat="18.9454792" lon="-99.02658577">
+        <ele>1368.92</ele>
+      </trkpt>
+      <trkpt lat="18.94763519" lon="-99.02660731">
+        <ele>1370.53</ele>
+      </trkpt>
+      <trkpt lat="18.94807566" lon="-99.0262018">
+        <ele>1379.12</ele>
+      </trkpt>
+      <trkpt lat="18.94813299" lon="-99.02646792">
+        <ele>1373.97</ele>
+      </trkpt>
+      <trkpt lat="18.94899976" lon="-99.02695365">
+        <ele>1374.81</ele>
+      </trkpt>
+      <trkpt lat="18.94963277" lon="-99.02778899">
+        <ele>1372.97</ele>
+      </trkpt>
+      <trkpt lat="18.95076944" lon="-99.02866432">
+        <ele>1380.79</ele>
+      </trkpt>
+      <trkpt lat="18.95096666" lon="-99.0291446">
+        <ele>1379.24</ele>
+      </trkpt>
+      <trkpt lat="18.95010651" lon="-99.02961415">
+        <ele>1387.96</ele>
+      </trkpt>
+      <trkpt lat="18.9501444" lon="-99.03014003">
+        <ele>1398.75</ele>
+      </trkpt>
+      <trkpt lat="18.95034523" lon="-99.03068528">
+        <ele>1406.59</ele>
+      </trkpt>
+      <trkpt lat="18.95112282" lon="-99.03130269">
+        <ele>1413.14</ele>
+      </trkpt>
+      <trkpt lat="18.95129255" lon="-99.0316564">
+        <ele>1417.37</ele>
+      </trkpt>
+      <trkpt lat="18.95293591" lon="-99.03258185">
+        <ele>1433</ele>
+      </trkpt>
+      <trkpt lat="18.95416654" lon="-99.03279123">
+        <ele>1429.83</ele>
+      </trkpt>
+      <trkpt lat="18.95490255" lon="-99.03339833">
+        <ele>1451.36</ele>
+      </trkpt>
+      <trkpt lat="18.95688102" lon="-99.03336531">
+        <ele>1473.05</ele>
+      </trkpt>
+      <trkpt lat="18.95760505" lon="-99.03400325">
+        <ele>1485.32</ele>
+      </trkpt>
+      <trkpt lat="18.95820888" lon="-99.03410048">
+        <ele>1495.11</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

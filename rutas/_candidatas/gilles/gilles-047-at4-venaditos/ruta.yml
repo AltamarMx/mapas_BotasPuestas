@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-047-at4-venaditos
+titulo: AT4-venaditos
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 47
+  nombre_original: AT4-venaditos
+  nombre_alternativo: null
+  sha256_geometria: f12b9887217c76b0a008a1f5183e55ce7c020c6277dafde1b6e3b16cb21de845

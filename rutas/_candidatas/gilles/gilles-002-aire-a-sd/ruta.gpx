@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Aire-a SD</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #2. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00407415" minlon="-99.07119518" maxlat="19.01098327" maxlon="-99.06165465" />
+  </metadata>
+  <trk>
+    <name>Aire-a SD</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00407415" lon="-99.07119518" />
+      <trkpt lat="19.00445142" lon="-99.07066645" />
+      <trkpt lat="19.00453222" lon="-99.07002021" />
+      <trkpt lat="19.00493648" lon="-99.07004954" />
+      <trkpt lat="19.0057854" lon="-99.06935921" />
+      <trkpt lat="19.00614926" lon="-99.06921236" />
+      <trkpt lat="19.0079279" lon="-99.06724429" />
+      <trkpt lat="19.00830517" lon="-99.06708268" />
+      <trkpt lat="19.00923162" lon="-99.06714144" />
+      <trkpt lat="19.00951451" lon="-99.06702393" />
+      <trkpt lat="19.00986487" lon="-99.06681832" />
+      <trkpt lat="19.01044431" lon="-99.06596647" />
+      <trkpt lat="19.01088897" lon="-99.06463617" />
+      <trkpt lat="19.01070029" lon="-99.06357871" />
+      <trkpt lat="19.01098327" lon="-99.06257993" />
+      <trkpt lat="19.01090247" lon="-99.06234498" />
+      <trkpt lat="19.01001315" lon="-99.06165465" />
+    </trkseg>
+  </trk>
+</gpx>

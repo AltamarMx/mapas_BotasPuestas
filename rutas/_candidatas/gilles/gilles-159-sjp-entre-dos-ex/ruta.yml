@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-159-sjp-entre-dos-ex
+titulo: SJP-entre dos ex
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 159
+  nombre_original: SJP-entre dos ex
+  nombre_alternativo: null
+  sha256_geometria: 0c9b8ff0a4fa7c4a545d0348ca938a96d51fad336c3dc65e2cc25580768cd911

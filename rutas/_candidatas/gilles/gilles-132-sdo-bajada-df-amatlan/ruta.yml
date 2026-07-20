@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-132-sdo-bajada-df-amatlan
+titulo: SDO-bajada DF-Amatlán
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 132
+  nombre_original: SDO-bajada DF-Amatlán
+  nombre_alternativo: null
+  sha256_geometria: baa2da88b77baa6ac7ab4e14973f730f398664d8287155c089d469b59f59e085

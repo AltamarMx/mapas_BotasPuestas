@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>TEP-calle la cumbre</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #181. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.98868204" minlon="-99.11001588" maxlat="18.99228877" maxlon="-99.10085714" />
+  </metadata>
+  <trk>
+    <name>TEP-calle la cumbre</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.98868204" lon="-99.10085714" />
+      <trkpt lat="18.98940071" lon="-99.10446044" />
+      <trkpt lat="18.9898229" lon="-99.10588997" />
+      <trkpt lat="18.98990379" lon="-99.10581169" />
+      <trkpt lat="18.99009238" lon="-99.10635022" />
+      <trkpt lat="18.99040679" lon="-99.10636003" />
+      <trkpt lat="18.99114347" lon="-99.107721" />
+      <trkpt lat="18.99195191" lon="-99.10862189" />
+      <trkpt lat="18.99200136" lon="-99.10882129" />
+      <trkpt lat="18.99213606" lon="-99.10894861" />
+      <trkpt lat="18.99228877" lon="-99.11001588" />
+    </trkseg>
+  </trk>
+</gpx>

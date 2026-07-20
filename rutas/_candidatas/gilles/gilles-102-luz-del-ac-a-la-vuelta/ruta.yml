@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-102-luz-del-ac-a-la-vuelta
+titulo: Luz-del AC a la vuelta
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 102
+  nombre_original: Luz-del AC a la vuelta
+  nombre_alternativo: null
+  sha256_geometria: 4f20ecd83ed4ce2c33114342241066a0a4dfa3670eb25df1f63153c038b8936d

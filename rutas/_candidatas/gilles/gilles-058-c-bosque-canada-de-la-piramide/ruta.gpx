@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque-cañada de la pirámide</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #58. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99840211" minlon="-99.05212677" maxlat="19.00733588" maxlon="-99.04635457" />
+  </metadata>
+  <trk>
+    <name>C.Bosque-cañada de la pirámide</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00733588" lon="-99.04915991" />
+      <trkpt lat="19.00701242" lon="-99.04902773" />
+      <trkpt lat="19.00659475" lon="-99.04891022" />
+      <trkpt lat="19.00530118" lon="-99.04885146" />
+      <trkpt lat="19.0050182" lon="-99.04841082" />
+      <trkpt lat="19.00458704" lon="-99.048543" />
+      <trkpt lat="19.00433097" lon="-99.0483374" />
+      <trkpt lat="19.00394021" lon="-99.04851367" />
+      <trkpt lat="19.00345515" lon="-99.04860176" />
+      <trkpt lat="19.00307779" lon="-99.04820521" />
+      <trkpt lat="19.00247823" lon="-99.04861643" />
+      <trkpt lat="19.00206048" lon="-99.04851367" />
+      <trkpt lat="19.0018853" lon="-99.04908649" />
+      <trkpt lat="19.00157542" lon="-99.04864585" />
+      <trkpt lat="19.0018449" lon="-99.04773524" />
+      <trkpt lat="19.00142714" lon="-99.0465896" />
+      <trkpt lat="19.00099598" lon="-99.04657493" />
+      <trkpt lat="19.00090168" lon="-99.04635457" />
+      <trkpt lat="18.999763" lon="-99.04673645" />
+      <trkpt lat="18.99853681" lon="-99.04757364" />
+      <trkpt lat="18.99840211" lon="-99.04777933" />
+      <trkpt lat="18.99846942" lon="-99.04817588" />
+      <trkpt lat="18.99872549" lon="-99.048543" />
+      <trkpt lat="18.99876589" lon="-99.04898364" />
+      <trkpt lat="18.99844252" lon="-99.04942428" />
+      <trkpt lat="18.99919705" lon="-99.05121616" />
+      <trkpt lat="18.99964171" lon="-99.05148053" />
+      <trkpt lat="18.99991128" lon="-99.05159804" />
+      <trkpt lat="19.00008646" lon="-99.05212677" />
+    </trkseg>
+  </trk>
+</gpx>

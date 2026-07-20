@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-176-sll-mariposas-1
+titulo: SLL-Mariposas-1
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 176
+  nombre_original: SLL-Mariposas-1
+  nombre_alternativo: null
+  sha256_geometria: 0e0cd227562d8b0e41c2c246891b52ad4fe4d9517ef4a57ce886b03cd37226c3

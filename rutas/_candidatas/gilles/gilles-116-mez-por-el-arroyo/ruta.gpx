@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>MEZ-por el arroyo</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #116. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.0006509" minlon="-99.08480404" maxlat="19.00284058" maxlon="-99.08432912" />
+  </metadata>
+  <trk>
+    <name>MEZ-por el arroyo</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.0006509" lon="-99.08480404" />
+      <trkpt lat="19.00081258" lon="-99.08467672" />
+      <trkpt lat="19.00099229" lon="-99.08452987" />
+      <trkpt lat="19.00117644" lon="-99.08449559" />
+      <trkpt lat="19.00132019" lon="-99.08454454" />
+      <trkpt lat="19.00148632" lon="-99.08454948" />
+      <trkpt lat="19.00168623" lon="-99.08452501" />
+      <trkpt lat="19.00186585" lon="-99.08437321" />
+      <trkpt lat="19.0020231" lon="-99.08432912" />
+      <trkpt lat="19.00218478" lon="-99.08433893" />
+      <trkpt lat="19.00236449" lon="-99.08438302" />
+      <trkpt lat="19.00258904" lon="-99.08437321" />
+      <trkpt lat="19.00284058" lon="-99.08446625" />
+    </trkseg>
+  </trk>
+</gpx>

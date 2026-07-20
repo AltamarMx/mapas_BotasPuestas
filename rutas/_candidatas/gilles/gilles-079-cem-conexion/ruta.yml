@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-079-cem-conexion
+titulo: CEM-conexión
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 79
+  nombre_original: CEM-conexión
+  nombre_alternativo: null
+  sha256_geometria: 49fc15c05a11c5983527256682e8e2ca3d31e7e17fe3b60f4984dec72fb9c4ca

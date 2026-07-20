@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-135-sdo-conexion-3
+titulo: SDO-conexión-3
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 135
+  nombre_original: SDO-conexión-3
+  nombre_alternativo: null
+  sha256_geometria: e347784cd9b6ce51b9a41c50887e7a4a91fbdaaa0d18a008864ef48caccba203

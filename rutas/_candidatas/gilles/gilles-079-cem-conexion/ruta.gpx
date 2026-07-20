@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>CEM-conexión</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #79. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.9730736" minlon="-99.10018265" maxlat="18.97460975" maxlon="-99.09685353" />
+  </metadata>
+  <trk>
+    <name>CEM-conexión</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.973388" lon="-99.10018265">
+        <ele>1801.58</ele>
+      </trkpt>
+      <trkpt lat="18.97350485" lon="-99.09992315">
+        <ele>1803.32</ele>
+      </trkpt>
+      <trkpt lat="18.97362613" lon="-99.09972735">
+        <ele>1797.71</ele>
+      </trkpt>
+      <trkpt lat="18.97344642" lon="-99.09952174">
+        <ele>1799.74</ele>
+      </trkpt>
+      <trkpt lat="18.97327124" lon="-99.09931605">
+        <ele>1803.76</ele>
+      </trkpt>
+      <trkpt lat="18.97314551" lon="-99.09918881">
+        <ele>1808.32</ele>
+      </trkpt>
+      <trkpt lat="18.97324878" lon="-99.09898806">
+        <ele>1803.85</ele>
+      </trkpt>
+      <trkpt lat="18.97335657" lon="-99.09875304">
+        <ele>1796.68</ele>
+      </trkpt>
+      <trkpt lat="18.97326227" lon="-99.09860132">
+        <ele>1800.12</ele>
+      </trkpt>
+      <trkpt lat="18.97320385" lon="-99.09853762">
+        <ele>1803.17</ele>
+      </trkpt>
+      <trkpt lat="18.9730736" lon="-99.09849362">
+        <ele>1810.75</ele>
+      </trkpt>
+      <trkpt lat="18.97312305" lon="-99.09828306">
+        <ele>1807.97</ele>
+      </trkpt>
+      <trkpt lat="18.97323537" lon="-99.09806765">
+        <ele>1803.01</ele>
+      </trkpt>
+      <trkpt lat="18.97325775" lon="-99.09776414">
+        <ele>1804.91</ele>
+      </trkpt>
+      <trkpt lat="18.97333863" lon="-99.09752425">
+        <ele>1805.1</ele>
+      </trkpt>
+      <trkpt lat="18.97341046" lon="-99.09725008">
+        <ele>1809.91</ele>
+      </trkpt>
+      <trkpt lat="18.97361264" lon="-99.09736759">
+        <ele>1801.26</ele>
+      </trkpt>
+      <trkpt lat="18.97372487" lon="-99.0974214">
+        <ele>1797.22</ele>
+      </trkpt>
+      <trkpt lat="18.97390005" lon="-99.09742635">
+        <ele>1793.71</ele>
+      </trkpt>
+      <trkpt lat="18.97390458" lon="-99.09714237">
+        <ele>1802.57</ele>
+      </trkpt>
+      <trkpt lat="18.97410222" lon="-99.09703952">
+        <ele>1801.34</ele>
+      </trkpt>
+      <trkpt lat="18.97428185" lon="-99.09693182">
+        <ele>1799.27</ele>
+      </trkpt>
+      <trkpt lat="18.97460975" lon="-99.09685353">
+        <ele>1788.48</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

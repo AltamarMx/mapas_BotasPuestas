@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-182-tep-camino-a-meztitla
+titulo: TEP-camino a Meztitla
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 182
+  nombre_original: TEP-camino a Meztitla
+  nombre_alternativo: null
+  sha256_geometria: dee233b2059225992a3e45c3537cb076e51bfea1c0a63e18148a9ddf8ebf1383

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>SDO-subida-2</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #141. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.01452345" minlon="-99.04966769" maxlat="19.02510568" maxlon="-99.0465637" />
+  </metadata>
+  <trk>
+    <name>SDO-subida-2</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01452345" lon="-99.04966769" />
+      <trkpt lat="19.01465823" lon="-99.0495697" />
+      <trkpt lat="19.01484691" lon="-99.049276" />
+      <trkpt lat="19.01494564" lon="-99.04910954" />
+      <trkpt lat="19.01508939" lon="-99.04892346" />
+      <trkpt lat="19.01515226" lon="-99.04871785" />
+      <trkpt lat="19.01522418" lon="-99.04827721" />
+      <trkpt lat="19.01528704" lon="-99.04790514" />
+      <trkpt lat="19.01534094" lon="-99.0474645" />
+      <trkpt lat="19.01536793" lon="-99.04711205" />
+      <trkpt lat="19.0154577" lon="-99.04686729" />
+      <trkpt lat="19.01557454" lon="-99.04668122" />
+      <trkpt lat="19.01565534" lon="-99.04659312" />
+      <trkpt lat="19.01578115" lon="-99.0465637" />
+      <trkpt lat="19.01598777" lon="-99.04659312" />
+      <trkpt lat="19.0161404" lon="-99.04663227" />
+      <trkpt lat="19.01634702" lon="-99.04675959" />
+      <trkpt lat="19.01649076" lon="-99.04689663" />
+      <trkpt lat="19.01676024" lon="-99.04701415" />
+      <trkpt lat="19.01695789" lon="-99.04718061" />
+      <trkpt lat="19.01710164" lon="-99.04733727" />
+      <trkpt lat="19.01728126" lon="-99.04739602" />
+      <trkpt lat="19.01743398" lon="-99.04739602" />
+      <trkpt lat="19.01755979" lon="-99.0473568" />
+      <trkpt lat="19.01767655" lon="-99.04751354" />
+      <trkpt lat="19.01777538" lon="-99.04770934" />
+      <trkpt lat="19.01792809" lon="-99.04792476" />
+      <trkpt lat="19.0181078" lon="-99.04814017" />
+      <trkpt lat="19.01829639" lon="-99.04834578" />
+      <trkpt lat="19.01846705" lon="-99.04849263" />
+      <trkpt lat="19.01867366" lon="-99.04859061" />
+      <trkpt lat="19.01886234" lon="-99.04864929" />
+      <trkpt lat="19.01904205" lon="-99.0487668" />
+      <trkpt lat="19.01935645" lon="-99.04883537" />
+      <trkpt lat="19.01957204" lon="-99.04897241" />
+      <trkpt lat="19.01971579" lon="-99.04907039" />
+      <trkpt lat="19.01986842" lon="-99.04919763" />
+      <trkpt lat="19.02006607" lon="-99.04926619" />
+      <trkpt lat="19.02024577" lon="-99.0491781" />
+      <trkpt lat="19.02038952" lon="-99.04911934" />
+      <trkpt lat="19.02052422" lon="-99.04894307" />
+      <trkpt lat="19.02053319" lon="-99.04873746" />
+      <trkpt lat="19.02052422" lon="-99.04856119" />
+      <trkpt lat="19.02066797" lon="-99.04838492" />
+      <trkpt lat="19.02089705" lon="-99.04848291" />
+      <trkpt lat="19.02107667" lon="-99.04852205" />
+      <trkpt lat="19.02130131" lon="-99.04845349" />
+      <trkpt lat="19.02146299" lon="-99.04845349" />
+      <trkpt lat="19.02168754" lon="-99.04858081" />
+      <trkpt lat="19.02189416" lon="-99.04868851" />
+      <trkpt lat="19.02213673" lon="-99.04877661" />
+      <trkpt lat="19.02242415" lon="-99.04880603" />
+      <trkpt lat="19.02262179" lon="-99.04890393" />
+      <trkpt lat="19.02284643" lon="-99.04900183" />
+      <trkpt lat="19.02307995" lon="-99.04905078" />
+      <trkpt lat="19.02342578" lon="-99.04911934" />
+      <trkpt lat="19.02364137" lon="-99.0491781" />
+      <trkpt lat="19.02393783" lon="-99.04915849" />
+      <trkpt lat="19.02434209" lon="-99.04900183" />
+      <trkpt lat="19.02468349" lon="-99.04891374" />
+      <trkpt lat="19.02490804" lon="-99.04880603" />
+      <trkpt lat="19.02510568" lon="-99.04853186" />
+    </trkseg>
+  </trk>
+</gpx>

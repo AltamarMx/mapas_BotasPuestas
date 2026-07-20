@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-148-sje-por-el-magno
+titulo: SJE-por el Magno
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 148
+  nombre_original: SJE-por el Magno
+  nombre_alternativo: null
+  sha256_geometria: 27a7606014de503eab1985c4fdf64048925e84f2057d8d0d3b850f003768044a

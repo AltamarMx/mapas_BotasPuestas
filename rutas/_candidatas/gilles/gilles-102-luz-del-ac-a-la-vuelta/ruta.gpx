@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Luz-del AC a la vuelta</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #102. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00723279" minlon="-99.09796564" maxlat="19.01124696" maxlon="-99.09686903" />
+  </metadata>
+  <trk>
+    <name>Luz-del AC a la vuelta</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01124696" lon="-99.09796564">
+        <ele>2258.38</ele>
+      </trkpt>
+      <trkpt lat="19.01112115" lon="-99.09777378">
+        <ele>2258.77</ele>
+      </trkpt>
+      <trkpt lat="19.0109199" lon="-99.09755442">
+        <ele>2258.18</ele>
+      </trkpt>
+      <trkpt lat="19.01075645" lon="-99.09735569">
+        <ele>2261.3</ele>
+      </trkpt>
+      <trkpt lat="19.01059921" lon="-99.09724597">
+        <ele>2264.08</ele>
+      </trkpt>
+      <trkpt lat="19.0103729" lon="-99.09705411">
+        <ele>2270.16</ele>
+      </trkpt>
+      <trkpt lat="19.01019679" lon="-99.09697867">
+        <ele>2272.61</ele>
+      </trkpt>
+      <trkpt lat="19.00998297" lon="-99.09708839">
+        <ele>2269.6</ele>
+      </trkpt>
+      <trkpt lat="19.00988239" lon="-99.09717749">
+        <ele>2267.33</ele>
+      </trkpt>
+      <trkpt lat="19.00967485" lon="-99.0970609">
+        <ele>2272.54</ele>
+      </trkpt>
+      <trkpt lat="19.00947369" lon="-99.0970609">
+        <ele>2274.47</ele>
+      </trkpt>
+      <trkpt lat="19.00919474" lon="-99.09704723">
+        <ele>2277.2</ele>
+      </trkpt>
+      <trkpt lat="19.00899349" lon="-99.09686903">
+        <ele>2286.03</ele>
+      </trkpt>
+      <trkpt lat="19.00876089" lon="-99.09686903">
+        <ele>2292.49</ele>
+      </trkpt>
+      <trkpt lat="19.00850306" lon="-99.09704036">
+        <ele>2299.29</ele>
+      </trkpt>
+      <trkpt lat="19.00833325" lon="-99.09706777">
+        <ele>2305.43</ele>
+      </trkpt>
+      <trkpt lat="19.00824524" lon="-99.09707464">
+        <ele>2308.8</ele>
+      </trkpt>
+      <trkpt lat="19.00809428" lon="-99.09707464">
+        <ele>2314.32</ele>
+      </trkpt>
+      <trkpt lat="19.0078994" lon="-99.09710892">
+        <ele>2321.63</ele>
+      </trkpt>
+      <trkpt lat="19.00787425" lon="-99.09696501">
+        <ele>2322.9</ele>
+      </trkpt>
+      <trkpt lat="19.00774215" lon="-99.09692385">
+        <ele>2328.51</ele>
+      </trkpt>
+      <trkpt lat="19.00760385" lon="-99.09693073">
+        <ele>2333.86</ele>
+      </trkpt>
+      <trkpt lat="19.00747175" lon="-99.09705411">
+        <ele>2336.95</ele>
+      </trkpt>
+      <trkpt lat="19.00750319" lon="-99.09722543">
+        <ele>2334.54</ele>
+      </trkpt>
+      <trkpt lat="19.00751576" lon="-99.09732141">
+        <ele>2333.16</ele>
+      </trkpt>
+      <trkpt lat="19.00737117" lon="-99.09734881">
+        <ele>2334.37</ele>
+      </trkpt>
+      <trkpt lat="19.00723279" lon="-99.09749273">
+        <ele>2331.15</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>SAC-a las torres</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #125. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.96513627" minlon="-99.11671671" maxlat="18.97068786" maxlon="-99.11494017" />
+  </metadata>
+  <trk>
+    <name>SAC-a las torres</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.96513627" lon="-99.11494017" />
+      <trkpt lat="18.96527105" lon="-99.11512105" />
+      <trkpt lat="18.96536535" lon="-99.11533495" />
+      <trkpt lat="18.96536535" lon="-99.11553235" />
+      <trkpt lat="18.96537884" lon="-99.11568037" />
+      <trkpt lat="18.96566181" lon="-99.11597642" />
+      <trkpt lat="18.9658774" lon="-99.11615739" />
+      <trkpt lat="18.96617386" lon="-99.11637121" />
+      <trkpt lat="18.96634896" lon="-99.11637121" />
+      <trkpt lat="18.96657804" lon="-99.11633835" />
+      <trkpt lat="18.966888" lon="-99.11642058" />
+      <trkpt lat="18.96699579" lon="-99.11651932" />
+      <trkpt lat="18.96722487" lon="-99.11666734" />
+      <trkpt lat="18.96742696" lon="-99.11671671" />
+      <trkpt lat="18.96772343" lon="-99.11660154" />
+      <trkpt lat="18.96799291" lon="-99.11642058" />
+      <trkpt lat="18.96831628" lon="-99.11630541" />
+      <trkpt lat="18.96855885" lon="-99.11607516" />
+      <trkpt lat="18.96881483" lon="-99.11600936" />
+      <trkpt lat="18.9691113" lon="-99.11595999" />
+      <trkpt lat="18.96943468" lon="-99.11587777" />
+      <trkpt lat="18.96977155" lon="-99.11577903" />
+      <trkpt lat="18.97001412" lon="-99.11566394" />
+      <trkpt lat="18.97021621" lon="-99.11561457" />
+      <trkpt lat="18.97048577" lon="-99.115631" />
+      <trkpt lat="18.97068786" lon="-99.11551584" />
+    </trkseg>
+  </trk>
+</gpx>

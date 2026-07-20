@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-124-sac-a-la-cruz
+titulo: SAC-a la Cruz
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 124
+  nombre_original: SAC-a la Cruz
+  nombre_alternativo: null
+  sha256_geometria: 6f4a601a9cd5346200ece67f6263cce3d309c4f0290c56de7e39ca16dba43b5f

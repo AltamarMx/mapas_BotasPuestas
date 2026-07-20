@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>SDO-lateral arriba</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #139. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.02510124" minlon="-99.05117744" maxlat="19.02692481" maxlon="-99.04855331" />
+  </metadata>
+  <trk>
+    <name>SDO-lateral arriba</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.02692481" lon="-99.05117744" />
+      <trkpt lat="19.02683051" lon="-99.05102665" />
+      <trkpt lat="19.02671727" lon="-99.05089639" />
+      <trkpt lat="19.02657897" lon="-99.05080042" />
+      <trkpt lat="19.02641544" lon="-99.05071819" />
+      <trkpt lat="19.02627714" lon="-99.05063597" />
+      <trkpt lat="19.02611361" lon="-99.05053312" />
+      <trkpt lat="19.02599417" lon="-99.05042348" />
+      <trkpt lat="19.02591244" lon="-99.0503001" />
+      <trkpt lat="19.02586207" lon="-99.05014931" />
+      <trkpt lat="19.02582435" lon="-99.0499437" />
+      <trkpt lat="19.02581178" lon="-99.04980658" />
+      <trkpt lat="19.02571119" lon="-99.04962838" />
+      <trkpt lat="19.02559804" lon="-99.04949133" />
+      <trkpt lat="19.02547223" lon="-99.04938161" />
+      <trkpt lat="19.02535907" lon="-99.04928564" />
+      <trkpt lat="19.0252584" lon="-99.04922504" />
+      <trkpt lat="19.02518297" lon="-99.04906738" />
+      <trkpt lat="19.0251201" lon="-99.04887551" />
+      <trkpt lat="19.02510124" lon="-99.04855331" />
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>AT4-a la catedral</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #36. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.9938126" minlon="-99.07048649" maxlat="18.99926763" maxlon="-99.06836176" />
+  </metadata>
+  <trk>
+    <name>AT4-a la catedral</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.9938126" lon="-99.06852823" />
+      <trkpt lat="18.99398326" lon="-99.06843024" />
+      <trkpt lat="18.99415391" lon="-99.06836176" />
+      <trkpt lat="18.9943695" lon="-99.06847919" />
+      <trkpt lat="18.99454921" lon="-99.06868489" />
+      <trkpt lat="18.99468399" lon="-99.06893944" />
+      <trkpt lat="18.99489052" lon="-99.06910591" />
+      <trkpt lat="18.99508816" lon="-99.0691842" />
+      <trkpt lat="18.99523191" lon="-99.06932132" />
+      <trkpt lat="18.99534867" lon="-99.06947798" />
+      <trkpt lat="18.99550139" lon="-99.0696053" />
+      <trkpt lat="18.99564514" lon="-99.06967378" />
+      <trkpt lat="18.99584278" lon="-99.06981091" />
+      <trkpt lat="18.99604043" lon="-99.06992842" />
+      <trkpt lat="18.99620212" lon="-99.07003613" />
+      <trkpt lat="18.9963638" lon="-99.07006547" />
+      <trkpt lat="18.99659732" lon="-99.07009489" />
+      <trkpt lat="18.99672314" lon="-99.07019279" />
+      <trkpt lat="18.99684886" lon="-99.07032983" />
+      <trkpt lat="18.99708247" lon="-99.07029069" />
+      <trkpt lat="18.99724642" lon="-99.07032003" />
+      <trkpt lat="18.99747994" lon="-99.07041801" />
+      <trkpt lat="18.99771354" lon="-99.07048649" />
+      <trkpt lat="18.9978842" lon="-99.0704082" />
+      <trkpt lat="18.99806391" lon="-99.0703984" />
+      <trkpt lat="18.99826147" lon="-99.0703984" />
+      <trkpt lat="18.99847713" lon="-99.07032983" />
+      <trkpt lat="18.99861183" lon="-99.07037878" />
+      <trkpt lat="18.99881844" lon="-99.07041801" />
+      <trkpt lat="18.99901609" lon="-99.07037878" />
+      <trkpt lat="18.99926763" lon="-99.07029069" />
+    </trkseg>
+  </trk>
+</gpx>

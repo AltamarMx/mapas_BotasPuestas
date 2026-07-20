@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>CEM-carretera al vigilante</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #78. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.9705975" minlon="-99.08358749" maxlat="18.97590081" maxlon="-99.07970952" />
+  </metadata>
+  <trk>
+    <name>CEM-carretera al vigilante</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.9705975" lon="-99.08358749">
+        <ele>1688.7</ele>
+      </trkpt>
+      <trkpt lat="18.97077352" lon="-99.08347777">
+        <ele>1687.41</ele>
+      </trkpt>
+      <trkpt lat="18.97089933" lon="-99.08329278">
+        <ele>1690.13</ele>
+      </trkpt>
+      <trkpt lat="18.9708679" lon="-99.08307343">
+        <ele>1701.27</ele>
+      </trkpt>
+      <trkpt lat="18.97076723" lon="-99.0829363">
+        <ele>1708.59</ele>
+      </trkpt>
+      <trkpt lat="18.97079866" lon="-99.08278551">
+        <ele>1714.94</ele>
+      </trkpt>
+      <trkpt lat="18.97083638" lon="-99.08262106">
+        <ele>1722.63</ele>
+      </trkpt>
+      <trkpt lat="18.97086161" lon="-99.08247714">
+        <ele>1728.79</ele>
+      </trkpt>
+      <trkpt lat="18.97082381" lon="-99.08233314">
+        <ele>1734.58</ele>
+      </trkpt>
+      <trkpt lat="18.97093705" lon="-99.08221663">
+        <ele>1737.79</ele>
+      </trkpt>
+      <trkpt lat="18.97111307" lon="-99.08216181">
+        <ele>1737.77</ele>
+      </trkpt>
+      <trkpt lat="18.97134575" lon="-99.08214807">
+        <ele>1735.44</ele>
+      </trkpt>
+      <trkpt lat="18.97155957" lon="-99.08216181">
+        <ele>1732.27</ele>
+      </trkpt>
+      <trkpt lat="18.97179854" lon="-99.08214807">
+        <ele>1727.18</ele>
+      </trkpt>
+      <trkpt lat="18.97192427" lon="-99.08214128">
+        <ele>1723.16</ele>
+      </trkpt>
+      <trkpt lat="18.97213181" lon="-99.08198361">
+        <ele>1723.75</ele>
+      </trkpt>
+      <trkpt lat="18.97230154" lon="-99.0818671">
+        <ele>1722.41</ele>
+      </trkpt>
+      <trkpt lat="18.97244898" lon="-99.08171782">
+        <ele>1723.54</ele>
+      </trkpt>
+      <trkpt lat="18.97265023" lon="-99.08149847">
+        <ele>1720.46</ele>
+      </trkpt>
+      <trkpt lat="18.9728389" lon="-99.08127224">
+        <ele>1715.76</ele>
+      </trkpt>
+      <trkpt lat="18.97298978" lon="-99.08099815">
+        <ele>1713.9</ele>
+      </trkpt>
+      <trkpt lat="18.9732036" lon="-99.08072398">
+        <ele>1700.46</ele>
+      </trkpt>
+      <trkpt lat="18.97342371" lon="-99.08066908">
+        <ele>1687.2</ele>
+      </trkpt>
+      <trkpt lat="18.97359973" lon="-99.0806897">
+        <ele>1681.68</ele>
+      </trkpt>
+      <trkpt lat="18.97381355" lon="-99.08066908">
+        <ele>1674.09</ele>
+      </trkpt>
+      <trkpt lat="18.97387013" lon="-99.08098441">
+        <ele>1672.43</ele>
+      </trkpt>
+      <trkpt lat="18.97390156" lon="-99.08130652">
+        <ele>1666.9</ele>
+      </trkpt>
+      <trkpt lat="18.97412167" lon="-99.08140937">
+        <ele>1659.36</ele>
+      </trkpt>
+      <trkpt lat="18.97431663" lon="-99.0814916">
+        <ele>1654.72</ele>
+      </trkpt>
+      <trkpt lat="18.97443607" lon="-99.08152588">
+        <ele>1653</ele>
+      </trkpt>
+      <trkpt lat="18.97450523" lon="-99.08129973">
+        <ele>1653.71</ele>
+      </trkpt>
+      <trkpt lat="18.97454931" lon="-99.08112145">
+        <ele>1653.96</ele>
+      </trkpt>
+      <trkpt lat="18.97468133" lon="-99.080957">
+        <ele>1652.12</ele>
+      </trkpt>
+      <trkpt lat="18.97487587" lon="-99.08084736">
+        <ele>1648.39</ele>
+      </trkpt>
+      <trkpt lat="18.97511484" lon="-99.08070336">
+        <ele>1644.74</ele>
+      </trkpt>
+      <trkpt lat="18.975272" lon="-99.08050463">
+        <ele>1643.07</ele>
+      </trkpt>
+      <trkpt lat="18.97546696" lon="-99.08034009">
+        <ele>1641.88</ele>
+      </trkpt>
+      <trkpt lat="18.97570593" lon="-99.0801893">
+        <ele>1640.01</ele>
+      </trkpt>
+      <trkpt lat="18.97583166" lon="-99.08013448">
+        <ele>1639.74</ele>
+      </trkpt>
+      <trkpt lat="18.97586309" lon="-99.07999056">
+        <ele>1638.95</ele>
+      </trkpt>
+      <trkpt lat="18.97590081" lon="-99.07970952">
+        <ele>1638.12</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Aire-conexión-3</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #5. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00373946" minlon="-99.0693173" maxlat="19.00415453" maxlon="-99.06827543" />
+  </metadata>
+  <trk>
+    <name>Aire-conexión-3</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00415453" lon="-99.0693173" />
+      <trkpt lat="19.00410424" lon="-99.06918017" />
+      <trkpt lat="19.00402872" lon="-99.06906366" />
+      <trkpt lat="19.00397843" lon="-99.0689951" />
+      <trkpt lat="19.00392185" lon="-99.06889234" />
+      <trkpt lat="19.0038527" lon="-99.06879636" />
+      <trkpt lat="19.00376461" lon="-99.06870039" />
+      <trkpt lat="19.00377089" lon="-99.06859755" />
+      <trkpt lat="19.00377718" lon="-99.06845363" />
+      <trkpt lat="19.00373946" lon="-99.06827543" />
+    </trkseg>
+  </trk>
+</gpx>

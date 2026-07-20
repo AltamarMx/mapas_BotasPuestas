@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Luz-conexión Meztitla-Tepoztlán</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #100. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00123847" minlon="-99.09321385" maxlat="19.00456994" maxlon="-99.09074639" />
+  </metadata>
+  <trk>
+    <name>Luz-conexión Meztitla-Tepoztlán</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00456994" lon="-99.09076014" />
+      <trkpt lat="19.0043562" lon="-99.09083549" />
+      <trkpt lat="19.00421153" lon="-99.09087664" />
+      <trkpt lat="19.00404808" lon="-99.09084236" />
+      <trkpt lat="19.00392227" lon="-99.0907738" />
+      <trkpt lat="19.00379025" lon="-99.09074639" />
+      <trkpt lat="19.003589" lon="-99.09076701" />
+      <trkpt lat="19.00351357" lon="-99.09085611" />
+      <trkpt lat="19.00344442" lon="-99.09108225" />
+      <trkpt lat="19.0033689" lon="-99.09135642" />
+      <trkpt lat="19.00329974" lon="-99.09161006" />
+      <trkpt lat="19.00323059" lon="-99.09189102" />
+      <trkpt lat="19.00311107" lon="-99.09208984" />
+      <trkpt lat="19.00299917" lon="-99.09213779" />
+      <trkpt lat="19.00284193" lon="-99.09214466" />
+      <trkpt lat="19.00270362" lon="-99.09223376" />
+      <trkpt lat="19.00259038" lon="-99.09238455" />
+      <trkpt lat="19.00250866" lon="-99.09252159" />
+      <trkpt lat="19.00247094" lon="-99.0926039" />
+      <trkpt lat="19.00235142" lon="-99.09266559" />
+      <trkpt lat="19.00222569" lon="-99.09268613" />
+      <trkpt lat="19.00206844" lon="-99.09272041" />
+      <trkpt lat="19.00197415" lon="-99.09277523" />
+      <trkpt lat="19.00184842" lon="-99.09293289" />
+      <trkpt lat="19.00173518" lon="-99.09306994" />
+      <trkpt lat="19.00164088" lon="-99.09316591" />
+      <trkpt lat="19.00155916" lon="-99.09321385" />
+      <trkpt lat="19.00143335" lon="-99.09319332" />
+      <trkpt lat="19.00123847" lon="-99.09309735" />
+    </trkseg>
+  </trk>
+</gpx>

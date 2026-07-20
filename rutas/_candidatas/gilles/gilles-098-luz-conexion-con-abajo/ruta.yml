@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-098-luz-conexion-con-abajo
+titulo: Luz-conexión con abajo
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 98
+  nombre_original: Luz-conexión con abajo
+  nombre_alternativo: null
+  sha256_geometria: 11ac05cec8a15bfd04450f40e89e345ec9321cf60ed2bba4c21f8c733641dab6

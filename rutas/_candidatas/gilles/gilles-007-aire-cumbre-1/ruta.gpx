@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Aire-cumbre-1</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #7. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00399494" minlon="-99.07753467" maxlat="19.00491301" maxlon="-99.07603364" />
+  </metadata>
+  <trk>
+    <name>Aire-cumbre-1</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00475577" lon="-99.07753467" />
+      <trkpt lat="19.00469919" lon="-99.07749351" />
+      <trkpt lat="19.00468033" lon="-99.07740441" />
+      <trkpt lat="19.0046929" lon="-99.07732906" />
+      <trkpt lat="19.00476205" lon="-99.07729478" />
+      <trkpt lat="19.00483757" lon="-99.0772879" />
+      <trkpt lat="19.00491301" lon="-99.0772879" />
+      <trkpt lat="19.00485015" lon="-99.07715086" />
+      <trkpt lat="19.00473691" lon="-99.07693838" />
+      <trkpt lat="19.00461118" lon="-99.07676018" />
+      <trkpt lat="19.00452937" lon="-99.07650654" />
+      <trkpt lat="19.0044225" lon="-99.07628719" />
+      <trkpt lat="19.00432192" lon="-99.07623924" />
+      <trkpt lat="19.00420868" lon="-99.07621183" />
+      <trkpt lat="19.00399494" lon="-99.07603364" />
+    </trkseg>
+  </trk>
+</gpx>

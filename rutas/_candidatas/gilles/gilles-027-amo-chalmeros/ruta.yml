@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-027-amo-chalmeros
+titulo: AMO-chalmeros
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 27
+  nombre_original: AMO-chalmeros
+  nombre_alternativo: null
+  sha256_geometria: 8e9ad79b1b5ab0bfcd10d6fbd7315e1c3e3bed317c36bcb1526ce229043805b6

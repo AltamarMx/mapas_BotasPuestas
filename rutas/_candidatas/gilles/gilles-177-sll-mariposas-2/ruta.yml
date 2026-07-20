@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-177-sll-mariposas-2
+titulo: SLL-Mariposas-2
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 177
+  nombre_original: SLL-Mariposas-2
+  nombre_alternativo: null
+  sha256_geometria: b06dffb9f9cb83abe1a7d3df0a0a0e693e964daf17dc1d6c4f6625289d4b7c47

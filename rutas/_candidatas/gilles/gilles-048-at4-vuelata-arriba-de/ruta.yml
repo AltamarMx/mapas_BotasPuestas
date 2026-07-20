@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-048-at4-vuelata-arriba-de
+titulo: AT4-vuelata arriba de...
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 48
+  nombre_original: AT4-vuelata arriba de...
+  nombre_alternativo: null
+  sha256_geometria: ae444b1b457d6a9201ee3be539269cfd922bd6baa51a0b9aba91f879502804d1

@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-039-at4-conexion
+titulo: AT4-conexión
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 39
+  nombre_original: AT4-conexión
+  nombre_alternativo: null
+  sha256_geometria: b1f82f3a59709c39912ac3c6be559b4340d16f90e9b5f79a8d71e4ce6a9b4bee

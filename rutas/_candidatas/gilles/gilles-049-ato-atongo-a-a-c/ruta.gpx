@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>ATO-Atongo a A.C.</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #49. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.98124377" minlon="-99.08400147" maxlat="18.98567193" maxlon="-99.07665809" />
+  </metadata>
+  <trk>
+    <name>ATO-Atongo a A.C.</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.9826635" lon="-99.08400147" />
+      <trkpt lat="18.98257549" lon="-99.08374105" />
+      <trkpt lat="18.98260692" lon="-99.08335716" />
+      <trkpt lat="18.98243082" lon="-99.08279515" />
+      <trkpt lat="18.98190896" lon="-99.08086916" />
+      <trkpt lat="18.98176571" lon="-99.07990012" />
+      <trkpt lat="18.98143245" lon="-99.07913242" />
+      <trkpt lat="18.98124377" lon="-99.07861149" />
+      <trkpt lat="18.98208012" lon="-99.07825509" />
+      <trkpt lat="18.98297304" lon="-99.07789182" />
+      <trkpt lat="18.98347612" lon="-99.07769996" />
+      <trkpt lat="18.98430116" lon="-99.07732294" />
+      <trkpt lat="18.98448346" lon="-99.07717902" />
+      <trkpt lat="18.98567193" lon="-99.07665809" />
+    </trkseg>
+  </trk>
+</gpx>

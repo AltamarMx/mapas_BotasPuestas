@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>MEZ-Atongo a Meztitla</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #111. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.9798875" minlon="-99.08541977" maxlat="18.98786229" maxlon="-99.08348104" />
+  </metadata>
+  <trk>
+    <name>MEZ-Atongo a Meztitla</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.9798875" lon="-99.08348104" />
+      <trkpt lat="18.98266325" lon="-99.08399996" />
+      <trkpt lat="18.98297765" lon="-99.08456792" />
+      <trkpt lat="18.9831214" lon="-99.08496933" />
+      <trkpt lat="18.98378843" lon="-99.08525331" />
+      <trkpt lat="18.98434541" lon="-99.08503789" />
+      <trkpt lat="18.98455203" lon="-99.08541977" />
+      <trkpt lat="18.98592641" lon="-99.08492038" />
+      <trkpt lat="18.98616001" lon="-99.08478334" />
+      <trkpt lat="18.98700893" lon="-99.08447983" />
+      <trkpt lat="18.98751193" lon="-99.0841469" />
+      <trkpt lat="18.98766465" lon="-99.08399024" />
+      <trkpt lat="18.98786229" lon="-99.08394129" />
+    </trkseg>
+  </trk>
+</gpx>

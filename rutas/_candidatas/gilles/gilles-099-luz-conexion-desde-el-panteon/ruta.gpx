@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Luz-conexión desde el pantéón</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #99. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.01030475" minlon="-99.09404115" maxlat="19.01119768" maxlon="-99.09312266" />
+  </metadata>
+  <trk>
+    <name>Luz-conexión desde el pantéón</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01119768" lon="-99.09313641" />
+      <trkpt lat="19.01101537" lon="-99.09312266" />
+      <trkpt lat="19.01086441" lon="-99.09312266" />
+      <trkpt lat="19.01071982" lon="-99.09317756" />
+      <trkpt lat="19.01062544" lon="-99.09321863" />
+      <trkpt lat="19.01053743" lon="-99.09339004" />
+      <trkpt lat="19.01048086" lon="-99.09353396" />
+      <trkpt lat="19.01053115" lon="-99.09370529" />
+      <trkpt lat="19.01049343" lon="-99.09386295" />
+      <trkpt lat="19.01039285" lon="-99.09395892" />
+      <trkpt lat="19.01030475" lon="-99.09404115" />
+    </trkseg>
+  </trk>
+</gpx>

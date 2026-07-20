@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque-peña San Giuseppe</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #71. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00584055" minlon="-99.03780503" maxlat="19.00728685" maxlon="-99.03679744" />
+  </metadata>
+  <trk>
+    <name>C.Bosque-peña San Giuseppe</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00728685" lon="-99.0369277" />
+      <trkpt lat="19.00710446" lon="-99.03679744" />
+      <trkpt lat="19.00687178" lon="-99.03681798" />
+      <trkpt lat="19.00659509" lon="-99.03689342" />
+      <trkpt lat="19.00635621" lon="-99.03695511" />
+      <trkpt lat="19.00621153" lon="-99.03711277" />
+      <trkpt lat="19.00614867" lon="-99.03732525" />
+      <trkpt lat="19.00604809" lon="-99.0374623" />
+      <trkpt lat="19.00593485" lon="-99.03752399" />
+      <trkpt lat="19.00584055" lon="-99.03761996" />
+      <trkpt lat="19.00589713" lon="-99.03780503" />
+    </trkseg>
+  </trk>
+</gpx>

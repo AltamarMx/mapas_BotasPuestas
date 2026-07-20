@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque-cañada 5ª</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #57. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99400648" minlon="-99.04488699" maxlat="19.00737578" maxlon="-99.04137178" />
+  </metadata>
+  <trk>
+    <name>C.Bosque-cañada 5ª</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00737578" lon="-99.0420964" />
+      <trkpt lat="19.00706129" lon="-99.0414991" />
+      <trkpt lat="19.00678284" lon="-99.0414991" />
+      <trkpt lat="19.00649543" lon="-99.04147949" />
+      <trkpt lat="19.0062169" lon="-99.0414012" />
+      <trkpt lat="19.00580367" lon="-99.0413914" />
+      <trkpt lat="19.00533655" lon="-99.04137178" />
+      <trkpt lat="19.00503111" lon="-99.04154805" />
+      <trkpt lat="19.0046359" lon="-99.04200822" />
+      <trkpt lat="19.00424061" lon="-99.04253704" />
+      <trkpt lat="19.00406996" lon="-99.04313425" />
+      <trkpt lat="19.00402503" lon="-99.04325176" />
+      <trkpt lat="19.00376452" lon="-99.04335947" />
+      <trkpt lat="19.0036118" lon="-99.04374135" />
+      <trkpt lat="19.00367467" lon="-99.04408408" />
+      <trkpt lat="19.0036657" lon="-99.04428969" />
+      <trkpt lat="19.00340519" lon="-99.04430931" />
+      <trkpt lat="19.0032435" lon="-99.04448549" />
+      <trkpt lat="19.00302113" lon="-99.04466176" />
+      <trkpt lat="19.00272466" lon="-99.04467157" />
+      <trkpt lat="19.00241026" lon="-99.04458348" />
+      <trkpt lat="19.00206886" lon="-99.04452472" />
+      <trkpt lat="19.00174549" lon="-99.04438768" />
+      <trkpt lat="19.00159948" lon="-99.04432892" />
+      <trkpt lat="19.00118625" lon="-99.04445616" />
+      <trkpt lat="19.00078207" lon="-99.04460309" />
+      <trkpt lat="19.00016223" lon="-99.0447108" />
+      <trkpt lat="18.99976694" lon="-99.04479889" />
+      <trkpt lat="18.9993807" lon="-99.04482823" />
+      <trkpt lat="18.99896521" lon="-99.04485765" />
+      <trkpt lat="18.99865081" lon="-99.04474994" />
+      <trkpt lat="18.99815669" lon="-99.04486746" />
+      <trkpt lat="18.9977345" lon="-99.04485765" />
+      <trkpt lat="18.99735723" lon="-99.04488699" />
+      <trkpt lat="18.99701583" lon="-99.04488699" />
+      <trkpt lat="18.9966565" lon="-99.04456386" />
+      <trkpt lat="18.99619834" lon="-99.04355535" />
+      <trkpt lat="18.99561446" lon="-99.04316367" />
+      <trkpt lat="18.99520123" lon="-99.04326157" />
+      <trkpt lat="18.99457242" lon="-99.04319309" />
+      <trkpt lat="18.99400648" lon="-99.04402533" />
+    </trkseg>
+  </trk>
+</gpx>

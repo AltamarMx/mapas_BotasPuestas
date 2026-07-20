@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>TEP-cerro del Hombre</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #183. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.99520509" minlon="-99.10563617" maxlat="18.99692983" maxlon="-99.10383456" />
+  </metadata>
+  <trk>
+    <name>TEP-cerro del Hombre</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.99640429" lon="-99.10563617" />
+      <trkpt lat="18.99635039" lon="-99.10544523" />
+      <trkpt lat="18.99632793" lon="-99.10536208" />
+      <trkpt lat="18.99641778" lon="-99.10520534" />
+      <trkpt lat="18.99648065" lon="-99.10502421" />
+      <trkpt lat="18.99648065" lon="-99.10493125" />
+      <trkpt lat="18.99638635" lon="-99.10489697" />
+      <trkpt lat="18.9963369" lon="-99.10484307" />
+      <trkpt lat="18.99640881" lon="-99.10476479" />
+      <trkpt lat="18.99650764" lon="-99.10469128" />
+      <trkpt lat="18.9966109" lon="-99.10471575" />
+      <trkpt lat="18.99670076" lon="-99.10476965" />
+      <trkpt lat="18.99684451" lon="-99.10483821" />
+      <trkpt lat="18.99692983" lon="-99.10485774" />
+      <trkpt lat="18.99676362" lon="-99.10465213" />
+      <trkpt lat="18.99666036" lon="-99.10459338" />
+      <trkpt lat="18.99659741" lon="-99.10445139" />
+      <trkpt lat="18.99651208" lon="-99.10436816" />
+      <trkpt lat="18.99643128" lon="-99.10431921" />
+      <trkpt lat="18.99637286" lon="-99.10418702" />
+      <trkpt lat="18.99653454" lon="-99.10407932" />
+      <trkpt lat="18.99657494" lon="-99.1040157" />
+      <trkpt lat="18.996584" lon="-99.10394227" />
+      <trkpt lat="18.99642223" lon="-99.10383456" />
+      <trkpt lat="18.99628753" lon="-99.10385904" />
+      <trkpt lat="18.99619323" lon="-99.10389818" />
+      <trkpt lat="18.99606298" lon="-99.10395208" />
+      <trkpt lat="18.9958878" lon="-99.10400589" />
+      <trkpt lat="18.99569015" lon="-99.10404017" />
+      <trkpt lat="18.99547004" lon="-99.1041234" />
+      <trkpt lat="18.99534431" lon="-99.10416255" />
+      <trkpt lat="18.99520509" lon="-99.10415274" />
+    </trkseg>
+  </trk>
+</gpx>

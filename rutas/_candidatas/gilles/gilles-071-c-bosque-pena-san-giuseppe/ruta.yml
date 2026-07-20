@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-071-c-bosque-pena-san-giuseppe
+titulo: C.Bosque-peña San Giuseppe
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 71
+  nombre_original: C.Bosque-peña San Giuseppe
+  nombre_alternativo: null
+  sha256_geometria: c7bf7720a37ceec72028297b0d21921b1b99357b66eb9c47068a97f47479f07b

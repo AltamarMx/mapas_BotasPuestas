@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-045-at4-por-la-maravillosa
+titulo: AT4-por la maravillosa
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 45
+  nombre_original: AT4-por la maravillosa
+  nombre_alternativo: null
+  sha256_geometria: 6637c858e1e7708e85e51b3d43de785b8ff855dd55653c56f0be8e9f53ad4af9

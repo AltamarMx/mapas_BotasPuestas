@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>Luz-atajo a la cumbre</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #96. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.0066049" minlon="-99.09748125" maxlat="19.00723371" maxlon="-99.09630233" />
+  </metadata>
+  <trk>
+    <name>Luz-atajo a la cumbre</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.0066049" lon="-99.09630233" />
+      <trkpt lat="19.00663004" lon="-99.09632974" />
+      <trkpt lat="19.00661747" lon="-99.09641884" />
+      <trkpt lat="19.00668662" lon="-99.09646" />
+      <trkpt lat="19.00674948" lon="-99.09645312" />
+      <trkpt lat="19.00680606" lon="-99.09650794" />
+      <trkpt lat="19.00679978" lon="-99.09660392" />
+      <trkpt lat="19.0068753" lon="-99.09661766" />
+      <trkpt lat="19.00678092" lon="-99.09671355" />
+      <trkpt lat="19.00672434" lon="-99.09677524" />
+      <trkpt lat="19.00683749" lon="-99.09683693" />
+      <trkpt lat="19.00682492" lon="-99.09695352" />
+      <trkpt lat="19.00686901" lon="-99.09707003" />
+      <trkpt lat="19.00690044" lon="-99.09714539" />
+      <trkpt lat="19.00691302" lon="-99.09726877" />
+      <trkpt lat="19.00700731" lon="-99.09735099" />
+      <trkpt lat="19.00709532" lon="-99.0974333" />
+      <trkpt lat="19.00723371" lon="-99.09748125" />
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque-cañada 3ª</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #56. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00143108" minlon="-99.04709302" maxlat="19.00770142" maxlon="-99.04577019" />
+  </metadata>
+  <trk>
+    <name>C.Bosque-cañada 3ª</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00770142" lon="-99.04709302" />
+      <trkpt lat="19.00719834" lon="-99.04659958" />
+      <trkpt lat="19.00648152" lon="-99.04620202" />
+      <trkpt lat="19.00521761" lon="-99.04608551" />
+      <trkpt lat="19.00492466" lon="-99.04618828" />
+      <trkpt lat="19.00331492" lon="-99.046298" />
+      <trkpt lat="19.00297981" lon="-99.04610605" />
+      <trkpt lat="19.00272827" lon="-99.04577019" />
+      <trkpt lat="19.00204288" lon="-99.0457976" />
+      <trkpt lat="19.00143108" lon="-99.04658583" />
+    </trkseg>
+  </trk>
+</gpx>

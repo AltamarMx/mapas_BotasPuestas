@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-142-sdo-vuelta-arriba
+titulo: SDO-vuelta arriba
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 142
+  nombre_original: SDO-vuelta arriba
+  nombre_alternativo: null
+  sha256_geometria: c972cce72a7ab84e1966e950ce61c359eb8c5105382df5319b34d4cd2fda4b35

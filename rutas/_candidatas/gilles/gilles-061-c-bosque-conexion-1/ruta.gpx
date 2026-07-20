@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque-conexión-1</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #61. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00867531" minlon="-99.05068802" maxlat="19.01387519" maxlon="-99.04726778" />
+  </metadata>
+  <trk>
+    <name>C.Bosque-conexión-1</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01387519" lon="-99.05068802" />
+      <trkpt lat="19.01385005" lon="-99.05020136" />
+      <trkpt lat="19.01376204" lon="-99.04996835" />
+      <trkpt lat="19.01358593" lon="-99.0498655" />
+      <trkpt lat="19.01337219" lon="-99.04960508" />
+      <trkpt lat="19.01321495" lon="-99.04931716" />
+      <trkpt lat="19.01312694" lon="-99.04913896" />
+      <trkpt lat="19.01295712" lon="-99.04924868" />
+      <trkpt lat="19.01271815" lon="-99.04946116" />
+      <trkpt lat="19.01245412" lon="-99.04966677" />
+      <trkpt lat="19.01225287" lon="-99.04989291" />
+      <trkpt lat="19.0121082" lon="-99.05010539" />
+      <trkpt lat="19.01188818" lon="-99.04996147" />
+      <trkpt lat="19.0115778" lon="-99.04970784" />
+      <trkpt lat="19.01121939" lon="-99.04952285" />
+      <trkpt lat="19.01094899" lon="-99.04923493" />
+      <trkpt lat="19.01058429" lon="-99.0490362" />
+      <trkpt lat="19.01033275" lon="-99.04888541" />
+      <trkpt lat="19.0100372" lon="-99.0486249" />
+      <trkpt lat="19.00969137" lon="-99.04837134" />
+      <trkpt lat="19.0095907" lon="-99.04824109" />
+      <trkpt lat="19.00967879" lon="-99.04815199" />
+      <trkpt lat="19.0099051" lon="-99.04808342" />
+      <trkpt lat="19.01019436" lon="-99.04804235" />
+      <trkpt lat="19.00993654" lon="-99.04769274" />
+      <trkpt lat="19.00977938" lon="-99.04730206" />
+      <trkpt lat="19.00952155" lon="-99.0472884" />
+      <trkpt lat="19.00934813" lon="-99.04727465" />
+      <trkpt lat="19.0091846" lon="-99.04726778" />
+      <trkpt lat="19.00901486" lon="-99.04738429" />
+      <trkpt lat="19.0089142" lon="-99.0475557" />
+      <trkpt lat="19.00887019" lon="-99.04781613" />
+      <trkpt lat="19.00867531" lon="-99.04824796" />
+    </trkseg>
+  </trk>
+</gpx>

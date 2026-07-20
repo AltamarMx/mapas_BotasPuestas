@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>MEZ-camino a Meztitla</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #113. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="18.98851952" minlon="-99.08696716" maxlat="18.99320349" maxlon="-99.08589796" />
+  </metadata>
+  <trk>
+    <name>MEZ-camino a Meztitla</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="18.98851952" lon="-99.08605554" />
+      <trkpt lat="18.98940615" lon="-99.08612411" />
+      <trkpt lat="18.98955083" lon="-99.08659022" />
+      <trkpt lat="18.99033956" lon="-99.08659022" />
+      <trkpt lat="18.99044015" lon="-99.08696716" />
+      <trkpt lat="18.9913645" lon="-99.08685065" />
+      <trkpt lat="18.99135193" lon="-99.08640515" />
+      <trkpt lat="18.99227913" lon="-99.08606929" />
+      <trkpt lat="18.99320349" lon="-99.08589796" />
+    </trkseg>
+  </trk>
+</gpx>

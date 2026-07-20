@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-035-ams-porelcocrodilo
+titulo: AMS-porElCocrodilo
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 35
+  nombre_original: AMS-porElCocrodilo
+  nombre_alternativo: AMS-porElCocrodilo 1
+  sha256_geometria: 50b162fe6f04c6cbcf691a2663b86cce8c71f3990f2f5b40cf4203bae724dfc5

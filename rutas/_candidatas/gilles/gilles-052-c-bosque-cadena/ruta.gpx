@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque-cadena</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #52. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.0108676" minlon="-99.05602318" maxlat="19.01288613" maxlon="-99.05011495" />
+  </metadata>
+  <trk>
+    <name>C.Bosque-cadena</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.01212522" lon="-99.05602318" />
+      <trkpt lat="19.01207493" lon="-99.05455635" />
+      <trkpt lat="19.01222588" lon="-99.05363794" />
+      <trkpt lat="19.01206864" lon="-99.05347341" />
+      <trkpt lat="19.01216294" lon="-99.05332949" />
+      <trkpt lat="19.01237676" lon="-99.05345974" />
+      <trkpt lat="19.01257172" lon="-99.05354884" />
+      <trkpt lat="19.01268488" lon="-99.05397381" />
+      <trkpt lat="19.01281698" lon="-99.0540355" />
+      <trkpt lat="19.01288613" lon="-99.05388471" />
+      <trkpt lat="19.01288613" lon="-99.05352144" />
+      <trkpt lat="19.01255286" lon="-99.05310335" />
+      <trkpt lat="19.0124962" lon="-99.05252759" />
+      <trkpt lat="19.01252143" lon="-99.05179418" />
+      <trkpt lat="19.01244591" lon="-99.05143091" />
+      <trkpt lat="19.0122636" lon="-99.05121155" />
+      <trkpt lat="19.01182967" lon="-99.05121842" />
+      <trkpt lat="19.01151527" lon="-99.05120476" />
+      <trkpt lat="19.01134553" lon="-99.0513144" />
+      <trkpt lat="19.0108676" lon="-99.05101969" />
+      <trkpt lat="19.01123229" lon="-99.05073864" />
+      <trkpt lat="19.01161585" lon="-99.0504576" />
+      <trkpt lat="19.01230132" lon="-99.05041653" />
+      <trkpt lat="19.01242076" lon="-99.05018343" />
+      <trkpt lat="19.01215036" lon="-99.05011495" />
+    </trkseg>
+  </trk>
+</gpx>

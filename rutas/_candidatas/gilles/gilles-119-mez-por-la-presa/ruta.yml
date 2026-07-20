@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-119-mez-por-la-presa
+titulo: MEZ-por la presa
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 119
+  nombre_original: MEZ-por la presa
+  nombre_alternativo: null
+  sha256_geometria: bb002f88efc238c9e3fb0bdf517897b0081e21092fda0b0412a720ff4d6c59d2

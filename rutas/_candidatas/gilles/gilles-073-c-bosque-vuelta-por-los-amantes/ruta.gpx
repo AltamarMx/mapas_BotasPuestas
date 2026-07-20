@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas legacy extractor">
+  <metadata>
+    <name>C.Bosque-vuelta por Los Amantes</name>
+    <desc>Candidata extraída de TEPOZ-todo-heredar-pueblos-cerros.gpx, &lt;rte&gt; #73. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.00453147" minlon="-99.04211325" maxlat="19.00745826" maxlon="-99.03828129" />
+  </metadata>
+  <trk>
+    <name>C.Bosque-vuelta por Los Amantes</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.00738207" lon="-99.04211325" />
+      <trkpt lat="19.00724368" lon="-99.0419762" />
+      <trkpt lat="19.00721854" lon="-99.04113994" />
+      <trkpt lat="19.00675954" lon="-99.04068078" />
+      <trkpt lat="19.00658344" lon="-99.0402901" />
+      <trkpt lat="19.0055585" lon="-99.03950874" />
+      <trkpt lat="19.00544526" lon="-99.03920028" />
+      <trkpt lat="19.00531953" lon="-99.03926885" />
+      <trkpt lat="19.0054264" lon="-99.04001593" />
+      <trkpt lat="19.00523772" lon="-99.03961837" />
+      <trkpt lat="19.00492332" lon="-99.03952927" />
+      <trkpt lat="19.00475359" lon="-99.0394333" />
+      <trkpt lat="19.00477245" lon="-99.03909056" />
+      <trkpt lat="19.00477245" lon="-99.03891237" />
+      <trkpt lat="19.00474101" lon="-99.0386314" />
+      <trkpt lat="19.0047012" lon="-99.03852797" />
+      <trkpt lat="19.00454404" lon="-99.03845262" />
+      <trkpt lat="19.00453147" lon="-99.03833611" />
+      <trkpt lat="19.00488988" lon="-99.03844574" />
+      <trkpt lat="19.00519799" lon="-99.03896668" />
+      <trkpt lat="19.00585195" lon="-99.03828129" />
+      <trkpt lat="19.00609092" lon="-99.03832236" />
+      <trkpt lat="19.00652133" lon="-99.03931797" />
+      <trkpt lat="19.00692383" lon="-99.03940707" />
+      <trkpt lat="19.00745826" lon="-99.03985944" />
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,30 @@
+version_esquema: 1
+id: gilles-040-at4-cresta
+titulo: AT4-cresta
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Tepoztlán, Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: gilles-legacy
+  archivo: rutas/GPX-Gilles legacy/TEPOZ-todo-heredar-pueblos-cerros.gpx
+  elemento: rte
+  indice: 40
+  nombre_original: AT4-cresta
+  nombre_alternativo: null
+  sha256_geometria: ed8be62532597c00246c74ab469fcb0fd2534b62d92e7f3676f0045b0dace154
