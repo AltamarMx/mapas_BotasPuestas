@@ -1,0 +1,10 @@
+version_esquema: 1
+mapa_predeterminado: osm
+mapas:
+  - id: osm
+    nombre: OpenStreetMap
+    url: https://tile.openstreetmap.org/{z}/{x}/{y}.png
+    atribucion: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    zoom_minimo: 1
+    zoom_maximo: 19
+

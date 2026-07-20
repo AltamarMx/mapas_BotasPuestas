@@ -1,0 +1,33 @@
+[project]
+name = "mapas-botaspuestas"
+version = "0.1.0"
+description = "Explorador web de rutas, altimetría y fotografías geolocalizadas"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipyleaflet>=0.20.0",
+    "pillow>=12.3.0",
+    "pillow-heif>=1.4.0",
+    "plotly>=6.9.0",
+    "pyyaml>=6.0.3",
+    "shiny>=1.6.3",
+    "shinywidgets>=0.8.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.15.22",
+    "shinylive>=0.8.9",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "UP"]

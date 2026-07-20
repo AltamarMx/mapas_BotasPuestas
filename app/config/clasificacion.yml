@@ -1,0 +1,21 @@
+version_esquema: 1
+categorias:
+  - id: ligera
+    etiqueta: Ligera
+    max_km_esfuerzo: 10
+    max_horas_movimiento: 3
+    color: "#2f855a"
+  - id: moderada
+    etiqueta: Moderada
+    max_km_esfuerzo: 20
+    max_horas_movimiento: 5
+    color: "#b7791f"
+  - id: exigente
+    etiqueta: Exigente
+    max_km_esfuerzo: 30
+    max_horas_movimiento: 7
+    color: "#c05621"
+  - id: muy-exigente
+    etiqueta: Muy exigente
+    color: "#9b2c2c"
+

@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv
+
+# macOS
+.DS_Store
+
+# Generated application artifacts
+app/_generated/
+app/www/generated/
+site/
