@@ -8,6 +8,8 @@ from typing import Any
 
 import plotly.graph_objects as go
 from ipyleaflet import (
+    CircleMarker,
+    DivIcon,
     FullScreenControl,
     Map,
     Marker,
@@ -55,6 +57,9 @@ ROUTE_CHOICES = {ALL_ROUTES_ID: "Todas las rutas"} | {
     summary["id"]: summary["title"] for summary in CATALOG.get("routes", [])
 }
 DEFAULT_ROUTE = ALL_ROUTES_ID
+ROUTE_COLOR_INDEX = {
+    summary["id"]: index for index, summary in enumerate(CATALOG.get("routes", []))
+}
 
 
 def format_duration(seconds: float | None) -> str:
@@ -112,8 +117,18 @@ def combined_bounds(routes: list[dict[str, Any]]) -> list[list[float]] | None:
     ]
 
 
-def route_color(index: int) -> str:
+def route_color(route_id: str) -> str:
+    index = ROUTE_COLOR_INDEX.get(route_id, 0)
     return ROUTE_COLORS[index % len(ROUTE_COLORS)]
+
+
+def route_marker_position(route: dict[str, Any]) -> tuple[float, float] | None:
+    segments = [segment for segment in route["segments"] if segment]
+    if not segments:
+        return None
+    longest_segment = max(segments, key=len)
+    point = longest_segment[len(longest_segment) // 2]
+    return point[0], point[1]
 
 
 def metric_card(label: str, value: str, *, accent: str = "#315c45") -> Any:
@@ -235,6 +250,28 @@ def server(input: Any, output: Any, session: Any) -> None:
             return ui.tags.p("No hay rutas generadas.", class_="empty-state")
         if showing_all_routes():
             photo_count = sum(len(route["photos"]) for route in routes)
+            route_buttons = []
+            for index, route in enumerate(routes):
+                ascent_m = route["metrics"]["ascent_m"]
+                details = [f"{route['metrics']['distance_m'] / 1_000:.1f} km"]
+                if ascent_m is not None:
+                    details.append(f"+{round(ascent_m / 10) * 10:.0f} m")
+                details.append(f"{len(route['photos'])} fotos")
+                route_buttons.append(
+                    ui.tags.button(
+                        ui.tags.span(str(index + 1), class_="route-overview-number"),
+                        ui.tags.span(
+                            ui.tags.strong(route["title"]),
+                            ui.tags.small(" · ".join(details)),
+                            class_="route-overview-copy",
+                        ),
+                        type="button",
+                        class_="route-overview-button",
+                        style=f"--route-color: {route_color(route['id'])}",
+                        data_route_id=route["id"],
+                        aria_label=f"Abrir {route['title']}",
+                    )
+                )
             return ui.div(
                 ui.h2("Todas las rutas", class_="route-title"),
                 ui.tags.p(
@@ -242,9 +279,10 @@ def server(input: Any, output: Any, session: Any) -> None:
                     class_="route-meta",
                 ),
                 ui.tags.p(
-                    "Vista general del archivo. Selecciona una ruta para consultar su detalle.",
+                    "Selecciona una tarjeta o un trazo del mapa para acercarte y ver sus fotos.",
                     class_="route-description",
                 ),
+                ui.div(*route_buttons, class_="route-overview-list"),
                 class_="route-summary",
             )
         route = routes[0]
@@ -302,6 +340,7 @@ def server(input: Any, output: Any, session: Any) -> None:
     @render_widget
     def mapa() -> Map:
         routes = selected_routes()
+        showing_all = showing_all_routes()
         bounds = combined_bounds(routes)
         if not routes or bounds is None:
             return Map(center=(19.4326, -99.1332), zoom=9)
@@ -331,46 +370,113 @@ def server(input: Any, output: Any, session: Any) -> None:
             scroll_wheel_zoom=True,
             layout={"height": "100%", "width": "100%"},
         )
+
+        def select_route_callback(route_id: str) -> Any:
+            def select_route(**_: Any) -> None:
+                ui.update_select("ruta", selected=route_id, session=session)
+
+            return select_route
+
         for index, route in enumerate(routes):
-            color = route_color(index)
+            color = route_color(route["id"])
             for segment in route["segments"]:
                 route_map.add(
                     Polyline(
                         locations=segment,
-                        color=color,
-                        weight=5,
-                        opacity=0.92,
+                        color="#fffdf7",
+                        weight=10,
+                        opacity=0.95,
+                        line_cap="round",
+                        line_join="round",
+                        pointer_events="none",
                     )
                 )
+                route_line = Polyline(
+                    locations=segment,
+                    color=color,
+                    weight=6,
+                    opacity=1,
+                    line_cap="round",
+                    line_join="round",
+                )
+                if showing_all:
+                    route_line.on_click(select_route_callback(route["id"]))
+                route_map.add(route_line)
 
-        if not showing_all_routes():
+            if showing_all:
+                label_position = route_marker_position(route)
+                if label_position is not None:
+                    route_number = Marker(
+                        location=label_position,
+                        icon=DivIcon(
+                            html=(
+                                '<span class="route-map-number" style="--route-color:'
+                                f"{color}\">{index + 1}</span>"
+                            ),
+                            icon_size=(36, 36),
+                            icon_anchor=(18, 18),
+                        ),
+                        title=route["title"],
+                        keyboard=True,
+                        rise_on_hover=True,
+                        z_index_offset=1000 + index,
+                    )
+                    route_number.on_click(select_route_callback(route["id"]))
+                    route_map.add(route_number)
+
+        if not showing_all:
             route = routes[0]
+            color = route_color(route["id"])
             first_segment = next((segment for segment in route["segments"] if segment), None)
             last_segment = next(
                 (segment for segment in reversed(route["segments"]) if segment),
                 None,
             )
             if first_segment:
-                route_map.add(Marker(location=first_segment[0], title="Inicio"))
+                start_marker = CircleMarker(
+                    location=first_segment[0],
+                    radius=7,
+                    color="#fffdf7",
+                    weight=3,
+                    fill_color=color,
+                    fill_opacity=1,
+                )
+                start_marker.popup = HTML(value="<strong>Inicio</strong>")
+                route_map.add(start_marker)
             if last_segment:
-                route_map.add(Marker(location=last_segment[-1], title="Final"))
+                end_marker = CircleMarker(
+                    location=last_segment[-1],
+                    radius=7,
+                    color=color,
+                    weight=3,
+                    fill_color="#fffdf7",
+                    fill_opacity=1,
+                )
+                end_marker.popup = HTML(value="<strong>Final</strong>")
+                route_map.add(end_marker)
 
         photo_markers: list[Marker] = []
-        for route in routes:
-            for photo in route["photos"]:
-                marker = Marker(
-                    location=(photo["lat"], photo["lon"]),
-                    title=format_photo_date(photo["captured_at"]),
-                )
-                marker.popup = HTML(value=popup_html(photo, route["title"]))
-                photo_markers.append(marker)
+        if not showing_all:
+            for route in routes:
+                for photo in route["photos"]:
+                    marker = Marker(
+                        location=(photo["lat"], photo["lon"]),
+                        title=format_photo_date(photo["captured_at"]),
+                    )
+                    marker.popup = HTML(value=popup_html(photo, route["title"]))
+                    photo_markers.append(marker)
         if photo_markers:
             route_map.add(MarkerCluster(markers=photo_markers))
 
-        if showing_all_routes():
+        if showing_all:
             legend_items = "".join(
-                "<div><span style=\"background:"
-                f"{route_color(index)}\"></span>{escape(route['title'])}</div>"
+                '<div class="map-legend-item">'
+                '<span class="map-route-number map-route-number--legend" '
+                f'style="--route-color:{route_color(route["id"])}">{index + 1}</span>'
+                '<span class="map-legend-copy">'
+                f"<strong>{escape(route['title'])}</strong>"
+                f"<small>{route['metrics']['distance_m'] / 1_000:.1f} km</small>"
+                "</span></div>"
                 for index, route in enumerate(routes)
             )
             route_map.add(
@@ -378,7 +484,9 @@ def server(input: Any, output: Any, session: Any) -> None:
                     widget=HTML(
                         value=(
                             '<aside class="map-legend"><strong>Rutas</strong>'
-                            f"{legend_items}</aside>"
+                            f"{legend_items}"
+                            "<p>Haz clic en un trazo o número para abrirlo. "
+                            "Las fotos aparecen en el detalle.</p></aside>"
                         )
                     ),
                     position="bottomright",
@@ -395,7 +503,7 @@ def server(input: Any, output: Any, session: Any) -> None:
         routes = selected_routes()
         figure = go.Figure()
         routes_with_profile = [route for route in routes if route["profile"]]
-        for index, route in enumerate(routes_with_profile):
+        for route in routes_with_profile:
             profile = route["profile"]
             single_route = len(routes_with_profile) == 1
             figure.add_trace(
@@ -404,7 +512,7 @@ def server(input: Any, output: Any, session: Any) -> None:
                     y=[point[1] for point in profile],
                     name=route["title"],
                     mode="lines",
-                    line={"color": route_color(index), "width": 2.5},
+                    line={"color": route_color(route["id"]), "width": 2.5},
                     fill="tozeroy" if single_route else None,
                     fillcolor="rgba(200, 100, 59, 0.14)",
                     hovertemplate="%{x:.1f} km<br>%{y:.0f} m<extra>%{fullData.name}</extra>",

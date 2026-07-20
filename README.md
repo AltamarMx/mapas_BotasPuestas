@@ -20,6 +20,7 @@ Comprobaciones completas:
 uv run ruff check .
 uv run pytest
 uv run shinylive export app site
+uv run python scripts/version_shinylive_export.py site
 uv run python -m http.server --directory site 8008
 ```
 
@@ -43,6 +44,16 @@ En GitHub, abre **Settings → Pages → Build and deployment** y selecciona **G
 <https://altamarmx.github.io/mapas_BotasPuestas/>
 
 No subas `site/` manualmente ni crees una rama `gh-pages`; el workflow genera y despliega ese artefacto.
+
+### Si el navegador muestra una versión anterior
+
+Una ventana privada empieza con caché limpio, por eso puede mostrar el despliegue nuevo antes que una ventana normal. Para corregir la sesión actual:
+
+1. abre las herramientas de desarrollo del navegador;
+2. busca **Application/Storage → Clear site data** (o elimina los datos de `altamarmx.github.io` desde Privacidad);
+3. recarga la página con `Cmd+Shift+R` en macOS o `Ctrl+Shift+R` en Windows/Linux.
+
+El workflow aplica además una huella del contenido al bundle de Shinylive. Cada publicación genera una URL distinta para los datos de la app, de modo que los siguientes cambios de rutas, fotos, CSS o Python no reutilicen el bundle anterior. Después de incorporar esta mejora hay que limpiar una sola vez la caché que ya estaba guardada.
 
 ## Cómo ingerir una ruta nueva
 
@@ -198,7 +209,8 @@ Al hacer push a `main`, el workflow:
 2. ejecuta lint y pruebas;
 3. valida y procesa las rutas;
 4. exporta la app con Shinylive;
-5. despliega el artefacto en GitHub Pages.
+5. asigna al bundle una URL basada en su contenido para invalidar cachés anteriores;
+6. despliega el artefacto en GitHub Pages.
 
 ## Errores frecuentes de ingestión
 

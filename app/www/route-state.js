@@ -13,6 +13,19 @@
 
   document.addEventListener("shiny:connected", applyRouteFromUrl, { once: true });
   window.addEventListener("popstate", applyRouteFromUrl);
+  document.addEventListener("click", (event) => {
+    if (!(event.target instanceof Element)) {
+      return;
+    }
+    const trigger = event.target.closest("[data-route-id]");
+    const select = document.getElementById("ruta");
+    const route = trigger?.dataset.routeId;
+    if (!route || !(select instanceof HTMLSelectElement)) {
+      return;
+    }
+    select.value = route;
+    select.dispatchEvent(new Event("change", { bubbles: true }));
+  });
   document.addEventListener("change", (event) => {
     if (!(event.target instanceof HTMLSelectElement) || event.target.id !== "ruta") {
       return;
@@ -22,4 +35,3 @@
     window.history.replaceState({}, "", url);
   });
 })();
-

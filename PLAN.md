@@ -1,6 +1,6 @@
 # Plan de implementación: explorador de rutas Botas Puestas
 
-Estado: MVP implementado localmente; pendiente primer despliegue en GitHub Pages
+Estado: MVP publicado en GitHub Pages; mejoras de legibilidad y caché listas para el siguiente push
 
 Última revisión: 2026-07-20
 
@@ -283,6 +283,8 @@ Presupuesto inicial de contenido generado, sin contar la distribución de Shinyl
 
 ### 6.1 Vista principal
 
+La entrada predeterminada será **Todas las rutas**. El mapa ajustará el encuadre para incluir todos los recorridos y usará una base desaturada, trazo con halo, color estable y número por ruta. La misma numeración aparecerá en una lista lateral y en la leyenda. Al pulsar una tarjeta, un número o un trazo se abrirá el detalle de esa ruta. Los marcadores de fotos se reservarán para el detalle, evitando que los clusters se confundan con recorridos en la vista general.
+
 En escritorio:
 
 - panel lateral con buscador, lista de rutas, fecha, región y clasificación;
@@ -440,10 +442,11 @@ Se usará un workflow personalizado, porque hay que validar y transformar conten
 1. repetir todas las verificaciones;
 2. generar `app/_generated/`;
 3. ejecutar `uv run shinylive export app site`;
-4. añadir `.nojekyll` al artefacto;
-5. comprobar que `site/index.html` esté en la raíz;
-6. subir el artefacto de Pages;
-7. desplegar al entorno `github-pages` con permisos mínimos `contents: read`, `pages: write` e `id-token: write`.
+4. ejecutar `uv run python scripts/version_shinylive_export.py site` para que `app.json` tenga una URL derivada de su contenido y no se reutilice un bundle anterior del navegador;
+5. añadir `.nojekyll` al artefacto;
+6. comprobar que `site/index.html` esté en la raíz;
+7. subir el artefacto de Pages;
+8. desplegar al entorno `github-pages` con permisos mínimos `contents: read`, `pages: write` e `id-token: write`.
 
 Todas las URLs propias serán relativas para funcionar tanto en un dominio raíz como en `usuario.github.io/repositorio/`. El workflow tendrá concurrencia para cancelar despliegues anteriores aún en curso.
 
@@ -462,6 +465,7 @@ La guía oficial de `uv` recomienda `astral-sh/setup-uv`, `uv sync` y `uv run` e
 - foto antes/después del track, sin fecha o sin posición;
 - manifiestos duplicados, paths inseguros y coordenadas inválidas;
 - salida JSON determinista;
+- versionado determinista del bundle exportado para invalidar caché;
 - build y exportación Shinylive completos.
 
 ### 11.2 Aceptación funcional del MVP

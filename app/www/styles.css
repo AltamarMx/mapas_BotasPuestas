@@ -126,6 +126,72 @@ body {
   overflow-wrap: anywhere;
 }
 
+.route-overview-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.route-overview-button {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 10px;
+  color: var(--ink);
+  text-align: left;
+  background: #faf7ef;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.route-overview-button:hover,
+.route-overview-button:focus-visible {
+  border-color: var(--route-color);
+  box-shadow: 0 5px 14px rgba(42, 52, 45, 0.11);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.route-overview-number,
+.route-map-number {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  background: var(--route-color);
+  border: 3px solid #fffdf7;
+  border-radius: 50%;
+  box-shadow: 0 2px 7px rgba(24, 39, 31, 0.35);
+  font-size: 0.76rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.route-overview-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.route-overview-copy strong {
+  overflow: hidden;
+  font-size: 0.78rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.route-overview-copy small {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -276,12 +342,29 @@ body {
   border-radius: 8px;
 }
 
+.leaflet-tile-pane {
+  filter: saturate(0.62) brightness(1.04) contrast(0.94);
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: 0;
+}
+
+.route-map-number {
+  width: 36px;
+  height: 36px;
+  border-width: 4px;
+  box-shadow: 0 3px 10px rgba(24, 39, 31, 0.45);
+  font-size: 0.88rem;
+}
+
 .map-legend {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  max-width: 240px;
-  padding: 10px 12px;
+  gap: 8px;
+  width: min(230px, calc(100vw - 76px));
+  padding: 11px 12px;
   color: var(--ink);
   background: rgba(255, 253, 247, 0.94);
   border: 1px solid var(--line);
@@ -290,18 +373,44 @@ body {
   font-size: 0.76rem;
 }
 
-.map-legend div {
+.map-legend-item {
   display: grid;
-  grid-template-columns: 18px minmax(0, 1fr);
+  grid-template-columns: 26px minmax(0, 1fr);
   align-items: center;
-  gap: 7px;
+  gap: 8px;
 }
 
-.map-legend div span {
-  display: block;
-  width: 18px;
-  height: 4px;
-  border-radius: 999px;
+.map-route-number--legend {
+  width: 24px;
+  height: 24px;
+  border-width: 2px;
+  font-size: 0.67rem;
+}
+
+.map-legend-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  line-height: 1.22;
+}
+
+.map-legend-copy strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.map-legend-copy small {
+  color: var(--muted);
+}
+
+.map-legend p {
+  padding-top: 7px;
+  margin: 0;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 0.68rem;
+  line-height: 1.35;
 }
 
 .empty-state,
