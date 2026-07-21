@@ -10,18 +10,77 @@ from app.app import (
     active_segment_ids,
     append_segment,
     available_segments,
+    base_map_layer_options,
     build_segment_spatial_index,
     closest_orientation,
     combined_bounds,
     construction_details,
     construction_gpx,
     construction_profile,
+    default_base_map_index,
     normalized_search,
     oriented_geometry,
     rank_segments,
+    replace_base_map,
     segment_network_color,
     segment_within_bounds,
 )
+
+
+class FakeMap:
+    def __init__(self, layers: tuple[object, ...]) -> None:
+        self.layers = layers
+
+    def add(self, layer: object) -> None:
+        self.layers += (layer,)
+
+    def substitute(self, old: object, new: object) -> None:
+        self.layers = tuple(new if layer is old else layer for layer in self.layers)
+
+
+def test_base_map_layer_options_and_configured_default() -> None:
+    configs = [
+        {
+            "id": "standard",
+            "nombre": "Estándar",
+            "url": "https://example.com/standard/{z}/{x}/{y}.png",
+        },
+        {
+            "id": "satellite",
+            "nombre": "Satélite",
+            "url": "https://example.com/satellite/{z}/{x}/{y}.jpg",
+            "zoom_nativo_maximo": 14,
+        },
+    ]
+
+    options = base_map_layer_options(configs)
+
+    assert [item["name"] for item in options] == ["Estándar", "Satélite"]
+    assert all(item["base"] for item in options)
+    assert options[1]["max_native_zoom"] == 14
+    assert default_base_map_index(configs, "satellite") == 1
+
+
+def test_base_map_layer_options_fall_back_to_the_first_available_map() -> None:
+    configs = [
+        {"id": "only", "nombre": "Único", "url": "https://example.com/{z}/{x}/{y}.png"}
+    ]
+    options = base_map_layer_options(configs)
+
+    assert len(options) == 1
+    assert options[0]["name"] == "Único"
+    assert default_base_map_index(configs, "missing") == 0
+
+
+def test_replacing_base_map_removes_the_previous_tile_layer() -> None:
+    standard = object()
+    satellite = object()
+    routes = object()
+    map_widget = FakeMap((standard, routes))
+
+    replace_base_map(map_widget, (standard, satellite), 1)
+
+    assert map_widget.layers == (satellite, routes)
 
 
 def segment(

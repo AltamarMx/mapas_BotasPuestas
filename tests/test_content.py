@@ -63,6 +63,7 @@ def test_generated_json_contains_builder_configuration(
     segments = json.loads((data_output / "tramos.json").read_text(encoding="utf-8"))
 
     assert catalog["default_map"] == "osm"
+    assert [item["id"] for item in catalog["maps"]] == ["osm", "satelite", "topografico"]
     assert catalog["routes"] == []
     assert catalog["builder"] == {
         "direct_connection_m": 100.0,

@@ -13,6 +13,7 @@ from ipyleaflet import (
     CircleMarker,
     DivIcon,
     FullScreenControl,
+    LayerGroup,
     Map,
     Marker,
     Polyline,
@@ -20,7 +21,7 @@ from ipyleaflet import (
     TileLayer,
     WidgetControl,
 )
-from ipywidgets import HTML
+from ipywidgets import HTML, Dropdown
 from shiny import App, reactive, render, ui
 from shinywidgets import output_widget, reactive_read, render_widget
 
@@ -45,10 +46,95 @@ AVAILABLE_SEGMENT_COLORS = (
     "#6b5b95",
 )
 SELECTED_SEGMENT_COLOR = "#16803d"
+FALLBACK_MAP_CONFIG = {
+    "id": "osm",
+    "nombre": "Estándar",
+    "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "atribucion": "© OpenStreetMap contributors",
+    "zoom_minimo": 1,
+    "zoom_maximo": 19,
+}
 
 Point = list[float]
 Selection = tuple[tuple[str, bool], ...]
 SpatialIndex = dict[tuple[int, int], list[tuple[str, Point]]]
+
+
+def base_map_layer_options(
+    map_configs: list[dict[str, Any]],
+) -> tuple[dict[str, Any], ...]:
+    """Translate the map catalog into tile-layer options."""
+    configs = map_configs or [FALLBACK_MAP_CONFIG]
+    layer_options: list[dict[str, Any]] = []
+    for config in configs:
+        options: dict[str, Any] = {
+            "url": config.get("url", FALLBACK_MAP_CONFIG["url"]),
+            "attribution": config.get("atribucion", FALLBACK_MAP_CONFIG["atribucion"]),
+            "min_zoom": config.get("zoom_minimo", FALLBACK_MAP_CONFIG["zoom_minimo"]),
+            "max_zoom": config.get("zoom_maximo", FALLBACK_MAP_CONFIG["zoom_maximo"]),
+            "name": config.get("nombre", config.get("id", "Mapa base")),
+            "base": True,
+        }
+        if config.get("zoom_nativo_maximo") is not None:
+            options["max_native_zoom"] = config["zoom_nativo_maximo"]
+        layer_options.append(options)
+    return tuple(layer_options)
+
+
+def base_map_layers(
+    map_configs: list[dict[str, Any]],
+) -> tuple[TileLayer, ...]:
+    """Create tile widgets inside the active Shiny session."""
+    return tuple(TileLayer(**options) for options in base_map_layer_options(map_configs))
+
+
+def default_base_map_index(
+    map_configs: list[dict[str, Any]],
+    default_map_id: str | None,
+) -> int:
+    configs = map_configs or [FALLBACK_MAP_CONFIG]
+    return next(
+        (index for index, config in enumerate(configs) if config.get("id") == default_map_id),
+        0,
+    )
+
+
+def replace_base_map(
+    map_widget: Map,
+    layers: tuple[TileLayer, ...],
+    selected_index: int,
+) -> None:
+    """Replace the active tile layer without leaving transparent bases behind."""
+    new_layer = layers[selected_index]
+    current_layer = next((layer for layer in layers if layer in map_widget.layers), None)
+    if current_layer is new_layer:
+        return
+    if current_layer is None:
+        map_widget.add(new_layer)
+    else:
+        map_widget.substitute(current_layer, new_layer)
+
+
+def base_map_picker(
+    map_widget: Map,
+    layers: tuple[TileLayer, ...],
+    selected_index: int,
+) -> Dropdown:
+    """Create a picker that replaces the active base layer on the map."""
+    picker = Dropdown(
+        options=[(layer.name, index) for index, layer in enumerate(layers)],
+        value=selected_index,
+        description="Mapa:",
+        layout={"width": "210px"},
+        style={"description_width": "45px"},
+    )
+    picker.add_class("map-layer-picker")
+
+    def switch_base_map(change: dict[str, Any]) -> None:
+        replace_base_map(map_widget, layers, change["new"])
+
+    picker.observe(switch_base_map, names="value")
+    return picker
 
 
 def read_json(path: Path) -> dict[str, Any]:
@@ -1234,21 +1320,12 @@ def server(input: Any, output: Any, session: Any) -> None:
         else (19.02, -99.09)
     )
     map_configs = CATALOG.get("maps", [])
-    map_config = next(
-        (item for item in map_configs if item["id"] == CATALOG.get("default_map")),
-        map_configs[0] if map_configs else {},
-    )
+    selected_base_map_index = default_base_map_index(map_configs, CATALOG.get("default_map"))
+    route_base_layers = base_map_layers(map_configs)
     route_map = Map(
         center=map_center,
         zoom=12,
-        layers=(
-            TileLayer(
-                url=map_config.get("url", "https://tile.openstreetmap.org/{z}/{x}/{y}.png"),
-                attribution=map_config.get("atribucion", "© OpenStreetMap contributors"),
-                min_zoom=map_config.get("zoom_minimo", 1),
-                max_zoom=map_config.get("zoom_maximo", 19),
-            ),
-        ),
+        layers=(route_base_layers[selected_base_map_index],),
         scroll_wheel_zoom=True,
         layout={"height": "100%", "width": "100%"},
     )
@@ -1257,6 +1334,10 @@ def server(input: Any, output: Any, session: Any) -> None:
         cell_size_m=DIRECT_CONNECTION_M,
     )
     network_lines: dict[str, list[Polyline]] = {}
+    available_route_layers = LayerGroup(name="Tramos disponibles")
+    selected_route_layers = LayerGroup(name="Ruta seleccionada")
+    route_map.add(available_route_layers)
+    route_map.add(selected_route_layers)
 
     def add_callback(segment_id: str) -> Any:
         def add_segment_from_map(**event: Any) -> None:
@@ -1279,11 +1360,12 @@ def server(input: Any, output: Any, session: Any) -> None:
                 color=color,
                 weight=5,
                 opacity=0.75,
+                fill=False,
                 line_cap="round",
                 line_join="round",
             )
             available_line.on_click(add_callback(segment["id"]))
-            route_map.add(available_line)
+            available_route_layers.add(available_line)
             network_lines.setdefault(segment["id"], []).append(available_line)
 
     help_widget = HTML(
@@ -1295,11 +1377,17 @@ def server(input: Any, output: Any, session: Any) -> None:
     )
     route_map.add(WidgetControl(widget=help_widget, position="bottomright"))
     route_map.add(ScaleControl(position="bottomleft", metric=True, imperial=False))
+    route_map.add(
+        WidgetControl(
+            widget=base_map_picker(route_map, route_base_layers, selected_base_map_index),
+            position="topright",
+        )
+    )
     route_map.add(FullScreenControl(position="topright"))
     selected_layers: list[Any] = []
 
     def add_selected_layer(layer: Any) -> None:
-        route_map.add(layer)
+        selected_route_layers.add(layer)
         selected_layers.append(layer)
 
     @reactive.effect
@@ -1326,7 +1414,7 @@ def server(input: Any, output: Any, session: Any) -> None:
                 line.pointer_events = "auto" if is_active else "none"
 
         for layer in selected_layers:
-            route_map.remove(layer)
+            selected_route_layers.remove(layer)
         selected_layers.clear()
 
         previous_end = None
@@ -1340,6 +1428,7 @@ def server(input: Any, output: Any, session: Any) -> None:
                         color=gap_color,
                         weight=4,
                         opacity=0.9,
+                        fill=False,
                         dash_array="7, 9",
                     )
                 )
@@ -1350,6 +1439,7 @@ def server(input: Any, output: Any, session: Any) -> None:
                         color="#fffdf7",
                         weight=11,
                         opacity=0.9,
+                        fill=False,
                         line_cap="round",
                         line_join="round",
                         pointer_events="none",
@@ -1361,6 +1451,7 @@ def server(input: Any, output: Any, session: Any) -> None:
                         color=SELECTED_SEGMENT_COLOR,
                         weight=7,
                         opacity=1,
+                        fill=False,
                         line_cap="round",
                         line_join="round",
                         pointer_events="none",
@@ -1429,20 +1520,18 @@ def server(input: Any, output: Any, session: Any) -> None:
             route_map.fit_bounds(map_bounds)
         return route_map
 
+    explorer_base_layers = base_map_layers(map_configs)
     explorer_map = Map(
         center=map_center,
         zoom=12,
-        layers=(
-            TileLayer(
-                url=map_config.get("url", "https://tile.openstreetmap.org/{z}/{x}/{y}.png"),
-                attribution=map_config.get("atribucion", "© OpenStreetMap contributors"),
-                min_zoom=map_config.get("zoom_minimo", 1),
-                max_zoom=map_config.get("zoom_maximo", 19),
-            ),
-        ),
+        layers=(explorer_base_layers[selected_base_map_index],),
         scroll_wheel_zoom=True,
         layout={"height": "100%", "width": "100%"},
     )
+    available_explorer_layers = LayerGroup(name="Todos los tramos")
+    selected_explorer_layers = LayerGroup(name="Tramo seleccionado")
+    explorer_map.add(available_explorer_layers)
+    explorer_map.add(selected_explorer_layers)
 
     def explore_callback(segment_id: str) -> Any:
         def explore_segment_from_map(**_: Any) -> None:
@@ -1459,11 +1548,12 @@ def server(input: Any, output: Any, session: Any) -> None:
                 color=color,
                 weight=5,
                 opacity=0.72,
+                fill=False,
                 line_cap="round",
                 line_join="round",
             )
             explore_line.on_click(explore_callback(segment["id"]))
-            explorer_map.add(explore_line)
+            available_explorer_layers.add(explore_line)
 
     explorer_help_widget = HTML(
         value=(
@@ -1473,18 +1563,24 @@ def server(input: Any, output: Any, session: Any) -> None:
     )
     explorer_map.add(WidgetControl(widget=explorer_help_widget, position="bottomright"))
     explorer_map.add(ScaleControl(position="bottomleft", metric=True, imperial=False))
+    explorer_map.add(
+        WidgetControl(
+            widget=base_map_picker(explorer_map, explorer_base_layers, selected_base_map_index),
+            position="topright",
+        )
+    )
     explorer_map.add(FullScreenControl(position="topright"))
     explored_layers: list[Any] = []
 
     def add_explored_layer(layer: Any) -> None:
-        explorer_map.add(layer)
+        selected_explorer_layers.add(layer)
         explored_layers.append(layer)
 
     @reactive.effect
     def update_explored_map_layers() -> None:
         segment = SEGMENTS.get(explored_segment_id.get() or "")
         for layer in explored_layers:
-            explorer_map.remove(layer)
+            selected_explorer_layers.remove(layer)
         explored_layers.clear()
         if segment is None:
             return
@@ -1497,6 +1593,7 @@ def server(input: Any, output: Any, session: Any) -> None:
                     color="#fffdf7",
                     weight=12,
                     opacity=0.95,
+                    fill=False,
                     line_cap="round",
                     line_join="round",
                     pointer_events="none",
@@ -1508,6 +1605,7 @@ def server(input: Any, output: Any, session: Any) -> None:
                     color=color,
                     weight=8,
                     opacity=1,
+                    fill=False,
                     line_cap="round",
                     line_join="round",
                     pointer_events="none",
