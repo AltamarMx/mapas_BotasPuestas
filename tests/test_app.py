@@ -15,9 +15,11 @@ from app.app import (
     closest_orientation,
     combined_bounds,
     construction_details,
+    construction_elevation,
     construction_gpx,
     construction_profile,
     default_base_map_index,
+    format_elevation,
     normalized_search,
     oriented_geometry,
     rank_segments,
@@ -182,6 +184,60 @@ def test_construction_profile_accumulates_distance_and_reverses_elevation() -> N
     assert pieces[0]["points"] == [[0.0, 100.0], [1.0, 200.0]]
     assert pieces[1]["points"] == [[1.0, 400.0], [1.5, 300.0]]
     assert pieces[-1]["end_km"] == pytest.approx(1.5)
+
+
+def test_construction_elevation_follows_route_direction() -> None:
+    first = segment("first", "Primero", 1_000, [19.0, -99.01], [19.0, -99.0])
+    first["profile"] = [[0.0, 100.0], [0.5, 180.0], [1.0, 150.0]]
+    second = segment("second", "Segundo", 500, [19.0, -98.995], [19.0, -99.0])
+    second["profile"] = [[0.0, 200.0], [0.25, 260.0], [0.5, 220.0]]
+    lookup = {item["id"]: item for item in (first, second)}
+    details = construction_details((("first", False), ("second", True)), lookup)
+
+    ascent_m, descent_m = construction_elevation(details)
+
+    assert ascent_m == pytest.approx(120)
+    assert descent_m == pytest.approx(90)
+
+
+def test_construction_elevation_uses_only_trimmed_portions() -> None:
+    first = segment("first", "Oeste a este", 1_000, [19.0, -99.01], [19.0, -99.0])
+    first["profile"] = [[0.0, 100.0], [0.5, 150.0], [1.0, 100.0]]
+    crossing = segment(
+        "crossing",
+        "Sur a norte",
+        1_000,
+        [18.995, -99.005],
+        [19.005, -99.005],
+    )
+    crossing["profile"] = [[0.0, 300.0], [0.5, 250.0], [1.0, 350.0]]
+    lookup = {item["id"]: item for item in (first, crossing)}
+    selection = append_segment((), "first", lookup)
+    selection = append_segment(
+        selection,
+        "crossing",
+        lookup,
+        click_point=[19.004, -99.005],
+    )
+
+    ascent_m, descent_m = construction_elevation(construction_details(selection, lookup))
+
+    assert ascent_m == pytest.approx(150, abs=1)
+    assert descent_m == pytest.approx(0, abs=1)
+
+
+def test_construction_elevation_prefers_precise_metrics_for_complete_segments() -> None:
+    item = segment("one", "Uno", 1_000, [19.0, -99.01], [19.0, -99.0])
+    item["profile"] = [[0.0, 100.0], [1.0, 200.0]]
+    item["metrics"].update({"ascent_m": 123.4, "descent_m": 4.5})
+    details = construction_details((("one", True),), {"one": item})
+
+    assert construction_elevation(details) == pytest.approx((4.5, 123.4))
+
+
+def test_format_elevation_rounds_for_presentation_and_handles_missing_data() -> None:
+    assert format_elevation(124.9, 75.1) == "+120 / −80 m"
+    assert format_elevation(None, 75.1) == "Sin datos"
 
 
 def test_construction_gpx_exports_ordered_track_with_elevation() -> None:

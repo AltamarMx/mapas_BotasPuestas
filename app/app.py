@@ -681,6 +681,51 @@ def slice_profile(
     return list(reversed(points)) if end_km < start_km else points
 
 
+def construction_elevation(
+    details: list[dict[str, Any]],
+) -> tuple[float | None, float | None]:
+    """Return ascent and descent for the portions used by a construction."""
+    ascent_m = 0.0
+    descent_m = 0.0
+    for detail in details:
+        segment = detail["segment"]
+        metrics = segment["metrics"]
+        source_distance_m = float(metrics["distance_m"])
+        source_start_m = float(detail["source_start_m"])
+        source_end_m = float(detail["source_end_m"])
+        lower_m, upper_m = sorted((source_start_m, source_end_m))
+        uses_full_segment = math.isclose(lower_m, 0.0, abs_tol=1e-6) and math.isclose(
+            upper_m,
+            source_distance_m,
+            abs_tol=1e-6,
+        )
+        segment_ascent_m = metrics.get("ascent_m")
+        segment_descent_m = metrics.get("descent_m")
+
+        if uses_full_segment and segment_ascent_m is not None and segment_descent_m is not None:
+            if detail["reversed"]:
+                ascent_m += float(segment_descent_m)
+                descent_m += float(segment_ascent_m)
+            else:
+                ascent_m += float(segment_ascent_m)
+                descent_m += float(segment_descent_m)
+            continue
+
+        source_points = slice_profile(
+            segment.get("profile") or [],
+            source_start_m / 1_000,
+            source_end_m / 1_000,
+        )
+        if not source_points:
+            return None, None
+        for previous, current in zip(source_points, source_points[1:], strict=False):
+            change_m = float(current[1]) - float(previous[1])
+            ascent_m += max(0.0, change_m)
+            descent_m += max(0.0, -change_m)
+
+    return ascent_m, descent_m
+
+
 def construction_profile(
     selection: Selection,
     segments: dict[str, dict[str, Any]],
@@ -763,6 +808,14 @@ def combined_bounds(details: list[dict[str, Any]]) -> list[list[float]] | None:
 
 def format_distance(distance_m: float) -> str:
     return f"{distance_m / 1_000:.1f} km" if distance_m >= 1_000 else f"{distance_m:.0f} m"
+
+
+def format_elevation(ascent_m: float | None, descent_m: float | None) -> str:
+    if ascent_m is None or descent_m is None:
+        return "Sin datos"
+    rounded_ascent_m = round(ascent_m / 10) * 10
+    rounded_descent_m = round(descent_m / 10) * 10
+    return f"+{rounded_ascent_m:.0f} / −{rounded_descent_m:.0f} m"
 
 
 def connection_state(gap_m: float | None) -> tuple[str, str]:
@@ -970,7 +1023,7 @@ app_ui = ui.page_fluid(
         ),
         ui.tags.footer(
             "La clasificación editorial se incorporará después. Por ahora el constructor usa "
-            "longitud, orden, sentido y distancia entre extremos.",
+            "longitud, desnivel, orden, sentido y distancia entre extremos.",
             class_="site-footer",
         ),
         class_="app-container",
@@ -1140,13 +1193,16 @@ def server(input: Any, output: Any, session: Any) -> None:
         details = selected_details()
         distance_m = sum(item["distance_m"] for item in details)
         gaps = [item["gap_m"] for item in details if item["gap_m"] is not None]
-        direct = sum(gap <= DIRECT_CONNECTION_M for gap in gaps)
-        connection_copy = f"{direct}/{len(gaps)} directas" if gaps else "Sin conexiones"
+        ascent_m, descent_m = construction_elevation(details)
         return ui.div(
             metric_card("Tramos", str(len(details))),
             metric_card("Distancia", format_distance(distance_m + sum(gaps))),
             metric_card("Huecos", format_distance(sum(gaps)), accent="#b7791f"),
-            metric_card("Conexiones", connection_copy, accent="#2b6f8a"),
+            metric_card(
+                "Desnivel (+)/(−)",
+                format_elevation(ascent_m, descent_m),
+                accent="#2b6f8a",
+            ),
             class_="metrics-grid",
         )
 
