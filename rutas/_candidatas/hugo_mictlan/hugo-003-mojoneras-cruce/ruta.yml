@@ -1,0 +1,31 @@
+version_esquema: 1
+id: hugo-003-mojoneras-cruce
+titulo: Mojoneras cruce
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: hugo_mictlan
+  archivo: rutas/_candidatas/hugo_mictlan/fuentes/Mojoneras_cruce.gpx
+  sha256_archivo: fca92def2078c935191bd2e55cb5d9ff7810b4b3bbc967e61112be515b4905c2
+  elemento: trk
+  indice_trk: 1
+  indice: 3
+  nombre_original: Mojoneras cruce
+  sha256_geometria: 75a13242a922e0370480148ad92d95cf682cfaee98c353d8aa1fb39170574981

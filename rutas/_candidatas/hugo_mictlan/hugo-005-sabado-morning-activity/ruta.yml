@@ -1,0 +1,31 @@
+version_esquema: 1
+id: hugo-005-sabado-morning-activity
+titulo: sábado Morning Activity
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: hugo_mictlan
+  archivo: rutas/_candidatas/hugo_mictlan/fuentes/sbado_Morning_Activity.gpx
+  sha256_archivo: 382211aead89bd119400fff9068ba555f0af438765f5e9dc294881d8d821474a
+  elemento: trk
+  indice_trk: 1
+  indice: 5
+  nombre_original: sábado Morning Activity
+  sha256_geometria: 0487b85697a0a071b4106b03a666ef5155d32111f0e7c30c17806959c3f1c121

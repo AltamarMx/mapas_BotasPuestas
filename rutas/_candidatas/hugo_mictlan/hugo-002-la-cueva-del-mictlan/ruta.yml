@@ -1,0 +1,31 @@
+version_esquema: 1
+id: hugo-002-la-cueva-del-mictlan
+titulo: La cueva del mictlan
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: hugo_mictlan
+  archivo: rutas/_candidatas/hugo_mictlan/fuentes/La_cueva_del_mictlan_.gpx
+  sha256_archivo: 61793ed6b5e1dc8961dc383ad4dfed59412c6f8d84f43663828337ded4aa23cc
+  elemento: trk
+  indice_trk: 1
+  indice: 2
+  nombre_original: La cueva del mictlan
+  sha256_geometria: 2fa164a237a0251513a1226b76fd33082612a5af1ebdd2271b2daec5886e7515

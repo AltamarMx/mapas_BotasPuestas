@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="mapas_BotasPuestas GPX importer">
+  <metadata>
+    <name>sábado Morning Activity</name>
+    <desc>Candidata importada de sbado_Morning_Activity.gpx, &lt;trk&gt; #1. Debe revisarse antes de publicarse.</desc>
+    <bounds minlat="19.008308" minlon="-99.203733" maxlat="19.009556" maxlon="-99.200332" />
+  </metadata>
+  <trk>
+    <name>sábado Morning Activity</name>
+    <type>senderismo</type>
+    <trkseg>
+      <trkpt lat="19.008308" lon="-99.203714">
+        <ele>2250.4</ele>
+      </trkpt>
+      <trkpt lat="19.008318" lon="-99.203719">
+        <ele>2250.1</ele>
+      </trkpt>
+      <trkpt lat="19.008322" lon="-99.203707">
+        <ele>2250.5</ele>
+      </trkpt>
+      <trkpt lat="19.008327" lon="-99.203723">
+        <ele>2250</ele>
+      </trkpt>
+      <trkpt lat="19.00833" lon="-99.203697">
+        <ele>2248</ele>
+      </trkpt>
+      <trkpt lat="19.008378" lon="-99.203614">
+        <ele>2247</ele>
+      </trkpt>
+      <trkpt lat="19.008402" lon="-99.203624">
+        <ele>2247</ele>
+      </trkpt>
+      <trkpt lat="19.008435" lon="-99.20366">
+        <ele>2249</ele>
+      </trkpt>
+      <trkpt lat="19.008428" lon="-99.203617">
+        <ele>2250</ele>
+      </trkpt>
+      <trkpt lat="19.008445" lon="-99.203666">
+        <ele>2237</ele>
+      </trkpt>
+      <trkpt lat="19.008467" lon="-99.203661">
+        <ele>2251</ele>
+      </trkpt>
+      <trkpt lat="19.008584" lon="-99.20372">
+        <ele>2257</ele>
+      </trkpt>
+      <trkpt lat="19.008622" lon="-99.20371">
+        <ele>2256</ele>
+      </trkpt>
+      <trkpt lat="19.008607" lon="-99.203733">
+        <ele>2258</ele>
+      </trkpt>
+      <trkpt lat="19.008674" lon="-99.20361">
+        <ele>2258</ele>
+      </trkpt>
+      <trkpt lat="19.00865" lon="-99.203543">
+        <ele>2260</ele>
+      </trkpt>
+      <trkpt lat="19.008583" lon="-99.203492">
+        <ele>2255</ele>
+      </trkpt>
+      <trkpt lat="19.008592" lon="-99.20341">
+        <ele>2256</ele>
+      </trkpt>
+      <trkpt lat="19.00858" lon="-99.203369">
+        <ele>2256</ele>
+      </trkpt>
+      <trkpt lat="19.008577" lon="-99.20325">
+        <ele>2252</ele>
+      </trkpt>
+      <trkpt lat="19.008517" lon="-99.203196">
+        <ele>2252</ele>
+      </trkpt>
+      <trkpt lat="19.008529" lon="-99.203124">
+        <ele>2250</ele>
+      </trkpt>
+      <trkpt lat="19.008578" lon="-99.20307">
+        <ele>2248</ele>
+      </trkpt>
+      <trkpt lat="19.008615" lon="-99.202973">
+        <ele>2249</ele>
+      </trkpt>
+      <trkpt lat="19.008617" lon="-99.202929">
+        <ele>2245</ele>
+      </trkpt>
+      <trkpt lat="19.008634" lon="-99.202901">
+        <ele>2248</ele>
+      </trkpt>
+      <trkpt lat="19.008742" lon="-99.202881">
+        <ele>2251</ele>
+      </trkpt>
+      <trkpt lat="19.008754" lon="-99.20284">
+        <ele>2250</ele>
+      </trkpt>
+      <trkpt lat="19.00873" lon="-99.20272">
+        <ele>2252</ele>
+      </trkpt>
+      <trkpt lat="19.008741" lon="-99.202659">
+        <ele>2253</ele>
+      </trkpt>
+      <trkpt lat="19.008739" lon="-99.20246">
+        <ele>2248</ele>
+      </trkpt>
+      <trkpt lat="19.008707" lon="-99.202286">
+        <ele>2247</ele>
+      </trkpt>
+      <trkpt lat="19.008713" lon="-99.202231">
+        <ele>2245</ele>
+      </trkpt>
+      <trkpt lat="19.008687" lon="-99.202206">
+        <ele>2244</ele>
+      </trkpt>
+      <trkpt lat="19.008659" lon="-99.202156">
+        <ele>2245</ele>
+      </trkpt>
+      <trkpt lat="19.008634" lon="-99.202072">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.008658" lon="-99.202023">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.008677" lon="-99.201843">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.008712" lon="-99.201704">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.008755" lon="-99.201609">
+        <ele>2241</ele>
+      </trkpt>
+      <trkpt lat="19.00883" lon="-99.201594">
+        <ele>2238</ele>
+      </trkpt>
+      <trkpt lat="19.008878" lon="-99.201595">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.008912" lon="-99.201584">
+        <ele>2238</ele>
+      </trkpt>
+      <trkpt lat="19.008934" lon="-99.201558">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.008962" lon="-99.201573">
+        <ele>2238</ele>
+      </trkpt>
+      <trkpt lat="19.008994" lon="-99.201558">
+        <ele>2241</ele>
+      </trkpt>
+      <trkpt lat="19.009044" lon="-99.201442">
+        <ele>2242</ele>
+      </trkpt>
+      <trkpt lat="19.009095" lon="-99.201269">
+        <ele>2242</ele>
+      </trkpt>
+      <trkpt lat="19.0091" lon="-99.201167">
+        <ele>2244</ele>
+      </trkpt>
+      <trkpt lat="19.009139" lon="-99.201102">
+        <ele>2244</ele>
+      </trkpt>
+      <trkpt lat="19.009338" lon="-99.201098">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.009444" lon="-99.201142">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.009525" lon="-99.201102">
+        <ele>2243</ele>
+      </trkpt>
+      <trkpt lat="19.009546" lon="-99.201076">
+        <ele>2244</ele>
+      </trkpt>
+      <trkpt lat="19.009556" lon="-99.201043">
+        <ele>2244</ele>
+      </trkpt>
+      <trkpt lat="19.009487" lon="-99.20098">
+        <ele>2244</ele>
+      </trkpt>
+      <trkpt lat="19.009426" lon="-99.200954">
+        <ele>2245</ele>
+      </trkpt>
+      <trkpt lat="19.009362" lon="-99.200792">
+        <ele>2244</ele>
+      </trkpt>
+      <trkpt lat="19.009273" lon="-99.200747">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.009268" lon="-99.200634">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.009256" lon="-99.200576">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.009267" lon="-99.200521">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.009174" lon="-99.200489">
+        <ele>2240</ele>
+      </trkpt>
+      <trkpt lat="19.009141" lon="-99.200456">
+        <ele>2230</ele>
+      </trkpt>
+      <trkpt lat="19.009086" lon="-99.20044">
+        <ele>2233</ele>
+      </trkpt>
+      <trkpt lat="19.009076" lon="-99.200408">
+        <ele>2232</ele>
+      </trkpt>
+      <trkpt lat="19.009098" lon="-99.200332">
+        <ele>2237.2</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

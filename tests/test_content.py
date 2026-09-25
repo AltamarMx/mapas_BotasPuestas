@@ -28,7 +28,11 @@ def test_current_content_is_a_segment_library(
 ) -> None:
     result, _, _ = built_content
     assert result["routes"] == []
-    assert len(result["segments"]) == 194
+    assert len(result["segments"]) == 199
+    assert Counter(segment["id"].split("-")[0] for segment in result["segments"]) == {
+        "gilles": 194,
+        "hugo": 5,
+    }
 
     longest = result["segments"][0]
     assert longest["id"] == "gilles-092-exvia"
@@ -50,7 +54,7 @@ def test_segments_are_sorted_and_keep_review_state(
     assert all(segment["metrics"]["elevation_min_m"] is not None for segment in segments)
     assert all(segment["profile"] for segment in segments)
     assert Counter(segment["elevation_source"] for segment in segments) == {
-        "gpx": 27,
+        "gpx": 32,
         "nasa-srtmgl1-v3": 167,
     }
 
@@ -67,11 +71,11 @@ def test_generated_json_contains_builder_configuration(
     assert catalog["routes"] == []
     assert catalog["builder"] == {
         "direct_connection_m": 100.0,
-        "elevation_profile_count": 194,
-        "segment_count": 194,
+        "elevation_profile_count": 199,
+        "segment_count": 199,
         "warning_connection_m": 500.0,
     }
-    assert len(segments["segments"]) == 194
+    assert len(segments["segments"]) == 199
     assert set(segments["elevation_sources"]) == {"gpx", "nasa-srtmgl1-v3"}
     assert not list(web_output.rglob("*.jpg"))
 

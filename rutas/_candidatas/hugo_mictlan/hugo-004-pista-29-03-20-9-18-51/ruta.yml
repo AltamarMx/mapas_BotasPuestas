@@ -1,0 +1,31 @@
+version_esquema: 1
+id: hugo-004-pista-29-03-20-9-18-51
+titulo: Pista (29/03/20 9:18:51)
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: hugo_mictlan
+  archivo: rutas/_candidatas/hugo_mictlan/fuentes/Pista_29-03-20_91851.gpx
+  sha256_archivo: 360c18c6232c44a8625771093d74231698a127050b6eac2d5f01553a833b4049
+  elemento: trk
+  indice_trk: 1
+  indice: 4
+  nombre_original: Pista (29/03/20 9:18:51)
+  sha256_geometria: 1463cfd0446e2754a0723159e3e651047ba3ff7542aa4aed01645e5ba636ae84

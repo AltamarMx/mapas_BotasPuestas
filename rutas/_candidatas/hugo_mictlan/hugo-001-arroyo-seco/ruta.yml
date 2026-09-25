@@ -1,0 +1,31 @@
+version_esquema: 1
+id: hugo-001-arroyo-seco
+titulo: Arroyo seco
+archivo_gpx: ruta.gpx
+zona_horaria: America/Mexico_City
+actividad: senderismo
+region: Morelos
+descripcion: ''
+publicada: false
+tipo_registro: por-definir
+clasificacion_editorial:
+  criterio_1: null
+  criterio_2: null
+  criterio_3: null
+fotos_estrategicas: []
+revision:
+  estado: pendiente
+  nombre: pendiente
+  geometria: pendiente
+  clasificacion: pendiente
+  resena: pendiente
+  fotos: pendiente
+procedencia:
+  coleccion: hugo_mictlan
+  archivo: rutas/_candidatas/hugo_mictlan/fuentes/Arroyo_seco_.gpx
+  sha256_archivo: 94fecb65322f635c06503185066a1905fff3c9febeb7ed1f2ecaa0170af24538
+  elemento: trk
+  indice_trk: 1
+  indice: 1
+  nombre_original: Arroyo seco
+  sha256_geometria: 34d6c5b6d76a212244eedde0f74ede1c1c54ad820d952d25401ef9fc47ed23e0

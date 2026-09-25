@@ -48,6 +48,25 @@ hashes de geometría y de las cuatro teselas para que los builds posteriores no 
 El extractor, la estructura editorial propuesta y el flujo para clasificar, reseñar, asociar fotos
 y publicar rutas nuevas están documentados en [`docs/flujo-de-datos-rutas.md`](docs/flujo-de-datos-rutas.md).
 
+## Tramos de otros colaboradores
+
+Para sumar tracks GPX (GaiaGPS, Strava, etc.) al constructor, crea una colección y copia allí los
+archivos tal como se exportaron:
+
+```bash
+mkdir rutas/_candidatas/<coleccion>
+cp ~/Descargas/*.gpx rutas/_candidatas/<coleccion>/
+uv run python -m scripts.import_gpx_tracks rutas/_candidatas/<coleccion> --prefijo <prefijo> --check
+uv run python -m scripts.import_gpx_tracks rutas/_candidatas/<coleccion> --prefijo <prefijo>
+```
+
+El importador mueve los originales a `<coleccion>/fuentes/` y crea una candidata
+`<prefijo>-NNN-<nombre>/` por cada `<trk>`, sin marcas de tiempo ni waypoints. Puede repetirse al
+agregar GPX nuevos: solo importa los que aún no tienen candidata. Si algún track no trae `<ele>`,
+genera el caché DEM de esa colección con `build_elevation_cache --candidates ... --output ...`.
+Después corrige `titulo` y `region` en cada `ruta.yml` y actualiza los conteos de
+`tests/test_content.py`.
+
 No abras `site/index.html` directamente con `file://`: Shinylive necesita que los archivos se sirvan por HTTP.
 
 ## Primera publicación de este repositorio
