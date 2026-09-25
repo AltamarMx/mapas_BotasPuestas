@@ -4,6 +4,7 @@ import json
 import math
 import unicodedata
 import zlib
+from collections.abc import Callable
 from html import escape
 from pathlib import Path
 from typing import Any
@@ -21,9 +22,12 @@ from ipyleaflet import (
     TileLayer,
     WidgetControl,
 )
-from ipywidgets import HTML, Dropdown
+from ipywidgets import HTML, Dropdown, widget_serialization
+from ipywidgets.widgets.trait_types import InstanceDict
+from ipywidgets.widgets.widget_string import HTMLStyle
 from shiny import App, reactive, render, ui
 from shinywidgets import output_widget, reactive_read, render_widget
+from traitlets import Unicode
 
 APP_DIR = Path(__file__).parent
 DATA_DIR = APP_DIR / "_generated"
@@ -54,6 +58,22 @@ FALLBACK_MAP_CONFIG = {
     "zoom_minimo": 1,
     "zoom_maximo": 19,
 }
+
+
+
+class EmbedHTMLStyle(HTMLStyle):
+    """HTMLStyle that the widget bundle of shinywidgets 0.8 can instantiate.
+
+    Its JavaScript controls lack HTMLStyleModel; any HTML widget using it fails to render and
+    breaks every map control added after it.
+    """
+
+    _model_name = Unicode("DescriptionStyleModel").tag(sync=True)
+
+
+class MapHTML(HTML):
+    style = InstanceDict(EmbedHTMLStyle).tag(sync=True, **widget_serialization)
+
 
 Point = list[float]
 Selection = tuple[tuple[str, bool], ...]
@@ -116,11 +136,14 @@ def replace_base_map(
 
 
 def base_map_picker(
-    map_widget: Map,
+    get_map: Callable[[], Map],
     layers: tuple[TileLayer, ...],
     selected_index: int,
 ) -> Dropdown:
-    """Create a picker that replaces the active base layer on the map."""
+    """Create a picker that replaces the active base layer on the map.
+
+    The map is looked up lazily so the picker can be built before the map (see ``build_map``).
+    """
     picker = Dropdown(
         options=[(layer.name, index) for index, layer in enumerate(layers)],
         value=selected_index,
@@ -131,10 +154,34 @@ def base_map_picker(
     picker.add_class("map-layer-picker")
 
     def switch_base_map(change: dict[str, Any]) -> None:
-        replace_base_map(map_widget, layers, change["new"])
+        replace_base_map(get_map(), layers, change["new"])
 
     picker.observe(switch_base_map, names="value")
     return picker
+
+
+def build_map(
+    *,
+    layers: tuple[Any, ...],
+    controls: tuple[Any, ...],
+    center: tuple[float, float],
+) -> Map:
+    """Create the map after every child widget.
+
+    shinywidgets opens each widget's comm in construction order. If the map is opened first,
+    the browser receives references to controls and layers it does not know yet, and every
+    control after the first missing one fails to render (only under Shinylive/Pyodide).
+    """
+    map_widget = Map(
+        center=center,
+        zoom=12,
+        layers=layers,
+        scroll_wheel_zoom=True,
+        layout={"height": "100%", "width": "100%"},
+    )
+    for control in controls:
+        map_widget.add(control)
+    return map_widget
 
 
 def read_json(path: Path) -> dict[str, Any]:
@@ -1378,22 +1425,11 @@ def server(input: Any, output: Any, session: Any) -> None:
     map_configs = CATALOG.get("maps", [])
     selected_base_map_index = default_base_map_index(map_configs, CATALOG.get("default_map"))
     route_base_layers = base_map_layers(map_configs)
-    route_map = Map(
-        center=map_center,
-        zoom=12,
-        layers=(route_base_layers[selected_base_map_index],),
-        scroll_wheel_zoom=True,
-        layout={"height": "100%", "width": "100%"},
-    )
     segment_spatial_index = build_segment_spatial_index(
         SEGMENTS,
         cell_size_m=DIRECT_CONNECTION_M,
     )
     network_lines: dict[str, list[Polyline]] = {}
-    available_route_layers = LayerGroup(name="Tramos disponibles")
-    selected_route_layers = LayerGroup(name="Ruta seleccionada")
-    route_map.add(available_route_layers)
-    route_map.add(selected_route_layers)
 
     def add_callback(segment_id: str) -> Any:
         def add_segment_from_map(**event: Any) -> None:
@@ -1421,25 +1457,39 @@ def server(input: Any, output: Any, session: Any) -> None:
                 line_join="round",
             )
             available_line.on_click(add_callback(segment["id"]))
-            available_route_layers.add(available_line)
             network_lines.setdefault(segment["id"], []).append(available_line)
+    available_route_layers = LayerGroup(
+        name="Tramos disponibles",
+        layers=tuple(line for lines in network_lines.values() for line in lines),
+    )
+    selected_route_layers = LayerGroup(name="Ruta seleccionada")
 
-    help_widget = HTML(
+    help_widget = MapHTML(
         value=(
             '<aside class="map-help"><strong>'
             f"{len(SEGMENTS)} disponibles · 0 seleccionados"
             "</strong><span>Pulsa un trazo de color para iniciar la ruta.</span></aside>"
         )
     )
-    route_map.add(WidgetControl(widget=help_widget, position="bottomright"))
-    route_map.add(ScaleControl(position="bottomleft", metric=True, imperial=False))
-    route_map.add(
-        WidgetControl(
-            widget=base_map_picker(route_map, route_base_layers, selected_base_map_index),
-            position="topright",
-        )
+    route_map = build_map(
+        layers=(
+            route_base_layers[selected_base_map_index],
+            available_route_layers,
+            selected_route_layers,
+        ),
+        controls=(
+            WidgetControl(widget=help_widget, position="bottomright"),
+            ScaleControl(position="bottomleft", metric=True, imperial=False),
+            WidgetControl(
+                widget=base_map_picker(
+                    lambda: route_map, route_base_layers, selected_base_map_index
+                ),
+                position="topright",
+            ),
+            FullScreenControl(position="topright"),
+        ),
+        center=map_center,
     )
-    route_map.add(FullScreenControl(position="topright"))
     selected_layers: list[Any] = []
 
     def add_selected_layer(layer: Any) -> None:
@@ -1542,7 +1592,7 @@ def server(input: Any, output: Any, session: Any) -> None:
                 fill_color=SELECTED_SEGMENT_COLOR,
                 fill_opacity=1,
             )
-            start_marker.popup = HTML(value="<strong>Inicio</strong>")
+            start_marker.popup = MapHTML(value="<strong>Inicio</strong>")
             add_selected_layer(start_marker)
             end_marker = CircleMarker(
                 location=details[-1]["end"],
@@ -1552,7 +1602,7 @@ def server(input: Any, output: Any, session: Any) -> None:
                 fill_color="#fffdf7",
                 fill_opacity=1,
             )
-            end_marker.popup = HTML(value="<strong>Final actual</strong>")
+            end_marker.popup = MapHTML(value="<strong>Final actual</strong>")
             add_selected_layer(end_marker)
 
         active_count = len(active_ids)
@@ -1577,17 +1627,7 @@ def server(input: Any, output: Any, session: Any) -> None:
         return route_map
 
     explorer_base_layers = base_map_layers(map_configs)
-    explorer_map = Map(
-        center=map_center,
-        zoom=12,
-        layers=(explorer_base_layers[selected_base_map_index],),
-        scroll_wheel_zoom=True,
-        layout={"height": "100%", "width": "100%"},
-    )
-    available_explorer_layers = LayerGroup(name="Todos los tramos")
-    selected_explorer_layers = LayerGroup(name="Tramo seleccionado")
-    explorer_map.add(available_explorer_layers)
-    explorer_map.add(selected_explorer_layers)
+    explore_lines: list[Polyline] = []
 
     def explore_callback(segment_id: str) -> Any:
         def explore_segment_from_map(**_: Any) -> None:
@@ -1609,23 +1649,35 @@ def server(input: Any, output: Any, session: Any) -> None:
                 line_join="round",
             )
             explore_line.on_click(explore_callback(segment["id"]))
-            available_explorer_layers.add(explore_line)
+            explore_lines.append(explore_line)
+    available_explorer_layers = LayerGroup(name="Todos los tramos", layers=tuple(explore_lines))
+    selected_explorer_layers = LayerGroup(name="Tramo seleccionado")
 
-    explorer_help_widget = HTML(
+    explorer_help_widget = MapHTML(
         value=(
             '<aside class="map-help"><strong>Mapa de exploración</strong>'
             "<span>Pulsa un tramo para encuadrarlo y consultar sus datos.</span></aside>"
         )
     )
-    explorer_map.add(WidgetControl(widget=explorer_help_widget, position="bottomright"))
-    explorer_map.add(ScaleControl(position="bottomleft", metric=True, imperial=False))
-    explorer_map.add(
-        WidgetControl(
-            widget=base_map_picker(explorer_map, explorer_base_layers, selected_base_map_index),
-            position="topright",
-        )
+    explorer_map = build_map(
+        layers=(
+            explorer_base_layers[selected_base_map_index],
+            available_explorer_layers,
+            selected_explorer_layers,
+        ),
+        controls=(
+            WidgetControl(widget=explorer_help_widget, position="bottomright"),
+            ScaleControl(position="bottomleft", metric=True, imperial=False),
+            WidgetControl(
+                widget=base_map_picker(
+                    lambda: explorer_map, explorer_base_layers, selected_base_map_index
+                ),
+                position="topright",
+            ),
+            FullScreenControl(position="topright"),
+        ),
+        center=map_center,
     )
-    explorer_map.add(FullScreenControl(position="topright"))
     explored_layers: list[Any] = []
 
     def add_explored_layer(layer: Any) -> None:
@@ -1676,7 +1728,7 @@ def server(input: Any, output: Any, session: Any) -> None:
                 fill_color=color,
                 fill_opacity=1,
             )
-            marker.popup = HTML(value=f"<strong>{label}</strong>")
+            marker.popup = MapHTML(value=f"<strong>{label}</strong>")
             add_explored_layer(marker)
 
         explorer_help_widget.value = (
